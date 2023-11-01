@@ -12,7 +12,7 @@ export default defineConfig({
       reporter: ["html", "text"],
       provider: "v8",
     },
-    setupFiles: "./tests/setup.ts",
+    setupFiles: "./setup.ts",
     include: ["**/?(*.){test,spec}.?(c|m)[jt]s?(x)"],
   },
   resolve: {

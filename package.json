@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "SKIP_ENV_VALIDATION=true next lint",
+    "lint:fix": "SKIP_ENV_VALIDATION=true next lint --fix",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest --coverage",
@@ -62,8 +62,5 @@
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   },
-  "packageManager": "pnpm@8.10.0",
-  "lint-staged": {
-    "*.{ts,tsx}": "SKIP_ENV_VALIDATION=true next lint"
-  }
+  "packageManager": "pnpm@8.10.0"
 }

@@ -1,0 +1,35 @@
+$buttonPadding: 16px 48px;
+$buttonFontSize: 18px;
+$buttonFontWeight: bold;
+
+.button {
+    border: $noBorder;
+    outline: $noOutline;
+    cursor: $pointer;
+    color: $black;
+    padding: $buttonPadding;
+    font-family: $senFont;
+    font-size: $buttonFontSize;
+    font-weight: $buttonFontWeight;
+    transition: $transitionSetup;
+
+    &:active {
+        transform: $activeScale;
+    }
+}
+
+.button__primary {
+    background-color: $yellow;
+
+    &:hover {
+        background-color: $yellowHover;
+    }
+}
+
+.button__regular {
+    background-color: $white;
+
+    &:hover {
+        background-color: $yellow;
+    }
+}

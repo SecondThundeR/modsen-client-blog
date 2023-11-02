@@ -5,13 +5,11 @@ import { Inter, Sen } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "600", "700", "900"],
-  variable: "--font-inter",
   display: "swap",
 });
 const sen = Sen({
   subsets: ["latin"],
   weight: ["700"],
-  variable: "--font-sen",
   display: "swap",
 });
 

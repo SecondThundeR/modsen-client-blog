@@ -1,8 +1,21 @@
+$white: #FFF;
 $black: #232536;
 $yellow: #FFD050;
+$yellowHover: #EDC14A;
 $purple: #592EA9;
 $darkGray: #4C4C4C;
 $mediumGray: #6D6E76;
 $lightGray: #F4F4F4;
 $lavender: #F4F0F8;
 $lightYellow: #FBF6EA;
+
+$interFont: var(--inter-font);
+$senFont: var(--sen-font);
+
+$noBorder: none;
+$noOutline: none;
+
+$pointer: pointer;
+
+$transitionSetup: all 0.3s;
+$activeScale: scale(0.95)

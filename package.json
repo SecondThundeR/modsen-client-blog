@@ -21,6 +21,7 @@
     "@emailjs/browser": "^3.11.0",
     "@formatjs/intl-localematcher": "^0.4.2",
     "@t3-oss/env-nextjs": "^0.7.1",
+    "clsx": "^2.0.0",
     "negotiator": "^0.6.3",
     "next": "^14.0.1",
     "react": "^18.2.0",

@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import { Button, Display, Title } from "@/components";
 import { getDictionary } from "@/locale/get-dictionary";
 import { type Locale } from "@/locale/i18n-config";
 
@@ -14,8 +14,14 @@ export default async function Home({
   return (
     <main>
       <LocaleSwitcher />
-      <h1>{dictionary.hello}</h1>
-      <Button text={dictionary.button} />
+      <Display>{dictionary.hello}</Display>
+      <Title headingLevel={1}>Heading 1</Title>
+      <Title headingLevel={2}>Heading 2</Title>
+      <Title headingLevel={3}>Heading 3</Title>
+      <Title headingLevel={4}>Heading 4</Title>
+      <Title headingLevel={5}>Heading 5</Title>
+      <Title headingLevel={6}>Heading 6</Title>
+      <Button>{dictionary.button}</Button>
     </main>
   );
 }

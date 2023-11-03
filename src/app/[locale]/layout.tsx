@@ -1,17 +1,6 @@
 import "@/styles/globals.scss";
 
-import { Inter, Sen } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
-  display: "swap",
-});
-const sen = Sen({
-  subsets: ["latin"],
-  weight: ["700"],
-  display: "swap",
-});
+import { inter, sen } from "@/lib/fonts";
 
 export const metadata = {
   title: "Modsen Client Blog",

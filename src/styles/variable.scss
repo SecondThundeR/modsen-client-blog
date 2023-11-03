@@ -9,13 +9,8 @@ $lightGray: #F4F4F4;
 $lavender: #F4F0F8;
 $lightYellow: #FBF6EA;
 
-$interFont: Inter, serif;
-$senFont: Sen, sans-serif;
-
-$noBorder: none;
-$noOutline: none;
-
-$pointer: pointer;
+$interFont: var(--inter-font);
+$senFont: var(--sen-font);
 
 $transitionSetup: all 0.3s;
 $activeScale: scale(0.95)

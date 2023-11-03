@@ -15,9 +15,8 @@ const meta = {
     },
   },
   args: {
-    text: "Button",
+    children: "Button",
     variant: "primary",
-    onClick: () => console.log("Clicked"),
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;

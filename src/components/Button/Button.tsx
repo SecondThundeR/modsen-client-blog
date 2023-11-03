@@ -4,7 +4,7 @@ import styles from "./Button.module.scss";
 import type { ButtonProps } from "./interfaces";
 
 export default function Button({
-  text,
+  children,
   variant = "primary",
   onClick,
 }: ButtonProps) {
@@ -16,7 +16,7 @@ export default function Button({
       })}
       onClick={onClick}
     >
-      {text}
+      {children}
     </button>
   );
 }

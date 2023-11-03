@@ -1,13 +1,13 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, test, vi } from "vitest";
 
-import { Button } from "@/components";
+import Button from "./Button";
 
 describe("Button", () => {
   test("should render button", () => {
-    render(<Button text="Button" />);
+    render(<Button>Button</Button>);
 
-    const button = screen.getByText(/Button/i);
+    const button = screen.getByRole("button", { name: /Button/i });
 
     expect(button).toBeInTheDocument();
     expect(button.className).toEqual("button button__primary");
@@ -15,9 +15,9 @@ describe("Button", () => {
   });
 
   test("should render button with regular variant", () => {
-    render(<Button text="Button" variant="regular" />);
+    render(<Button variant="regular">Button</Button>);
 
-    const button = screen.getByText(/Button/i);
+    const button = screen.getByRole("button", { name: /Button/i });
 
     expect(button).toBeInTheDocument();
     expect(button.className).toEqual("button button__regular");
@@ -27,9 +27,9 @@ describe("Button", () => {
   test("should call onClick", () => {
     const onClick = vi.fn();
 
-    render(<Button text="Button" onClick={onClick} />);
+    render(<Button onClick={onClick}>Button</Button>);
 
-    const button = screen.getByText(/Button/i);
+    const button = screen.getByRole("button", { name: /Button/i });
     fireEvent.click(button);
 
     expect(onClick).toHaveBeenCalled();

@@ -1,11 +1,11 @@
 $buttonPadding: 16px 48px;
 $buttonFontSize: 18px;
-$buttonFontWeight: bold;
+$buttonFontWeight: 700;
 
 .button {
-    border: $noBorder;
-    outline: $noOutline;
-    cursor: $pointer;
+    border: none;
+    outline: none;
+    cursor: pointer;
     color: $black;
     padding: $buttonPadding;
     font-family: $senFont;

@@ -1,4 +1,4 @@
-import { Button, Display, Title } from "@/components";
+import { Button, Display, Title } from "@/components/ui";
 import { getDictionary } from "@/locale/get-dictionary";
 import { type Locale } from "@/locale/i18n-config";
 

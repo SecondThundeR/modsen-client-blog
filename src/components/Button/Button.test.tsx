@@ -34,15 +34,4 @@ describe("Button", () => {
 
     expect(onClick).toHaveBeenCalled();
   });
-
-  test("should call onClick", () => {
-    const onClick = vi.fn();
-
-    render(<Button text="Button" onClick={onClick} />);
-
-    const button = screen.getByText(/Button/i);
-    fireEvent.click(button);
-
-    expect(onClick).toHaveBeenCalled();
-  });
 });

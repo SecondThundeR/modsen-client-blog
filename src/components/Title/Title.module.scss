@@ -1,0 +1,42 @@
+$titleFontStyle: normal;
+$titleFontWeight: 700;
+
+.title {
+    margin: 0;
+    color: $black;
+    font-style: $titleFontStyle;
+    font-weight: $titleFontWeight;
+}
+
+.title__1 {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.title__2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+.title__3 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+.title__4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.title__5 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.title__6 {
+    font-size: 16px;
+    line-height: 24px;
+}

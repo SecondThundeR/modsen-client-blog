@@ -1,0 +1,15 @@
+$displayFontSize: 56px;
+$displayFontWeight: 700;
+$displayFontStyle: normal;
+$displayLineHeight: 64px;
+$displayLetterSpacing: -2px;
+
+.display {
+    margin: 0;
+    color: $black;
+    line-height: $displayLineHeight;
+    font-size: $displayFontSize;
+    font-style: $displayFontStyle;
+    font-weight: $displayFontWeight;
+    letter-spacing: $displayLetterSpacing;
+}

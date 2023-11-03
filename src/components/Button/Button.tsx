@@ -1,10 +1,9 @@
 import clsx from "clsx";
-import { memo } from "react";
 
 import styles from "./Button.module.scss";
 import type { ButtonProps } from "./interfaces";
 
-const Button = memo(function Button({
+export default function Button({
   text,
   variant = "primary",
   onClick,
@@ -20,6 +19,4 @@ const Button = memo(function Button({
       {text}
     </button>
   );
-});
-
-export default Button;
+}

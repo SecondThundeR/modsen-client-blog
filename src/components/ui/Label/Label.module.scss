@@ -1,0 +1,12 @@
+$labelFontStyle: normal;
+$labelFontWeight: 500;
+
+.label {
+    margin: 0;
+    color: $black;
+    font-family: $interFont;
+    font-style: $labelFontStyle;
+    font-weight: $labelFontWeight;
+    font-size: 14px;
+    line-height: 20px;
+}

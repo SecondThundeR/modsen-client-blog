@@ -9,12 +9,7 @@ import { getDictionary } from "@/locale/get-dictionary";
 export default async function LayoutFooter({
   locale,
 }: PageLocaleParams["params"]) {
-  const {
-    title,
-    links,
-    subscribe,
-    snackbar: { dismiss },
-  } = await getDictionary(locale);
+  const { title, links, subscribe } = await getDictionary(locale);
   const linksElements = getLinks(locale, links, "footer").map(
     ({ id, href, text }) => (
       <Link key={id} href={href}>
@@ -36,7 +31,7 @@ export default async function LayoutFooter({
         </Heading>
       }
       linksSlot={linksElements}
-      ctaSlot={<SubscribeBlock {...subscribe} dismiss={dismiss} />}
+      ctaSlot={<SubscribeBlock {...subscribe} />}
       contactInfoSlot={
         <>
           <Body>{address}</Body>

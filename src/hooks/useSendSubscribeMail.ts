@@ -10,13 +10,8 @@ import { env } from "@/env.mjs";
 import { SubscribeSchema } from "@/schemas/subscribeSchema";
 
 export function useSendSubscribeMail(templateId: string) {
-  const [status, setStatus] = useState("");
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
-  const onDismiss = useCallback(() => {
-    setStatus("");
-  }, []);
 
   const onChange: ChangeEventHandler<HTMLInputElement> = useCallback(
     (event) => {
@@ -28,7 +23,6 @@ export function useSendSubscribeMail(templateId: string) {
   const onEmailSend: FormEventHandler<HTMLFormElement> = useCallback(
     (event) => {
       event.preventDefault();
-      setStatus("");
       setIsLoading(true);
 
       const parsedForm = SubscribeSchema.safeParse({
@@ -36,7 +30,6 @@ export function useSendSubscribeMail(templateId: string) {
       });
 
       if (!parsedForm.success) {
-        setStatus("Failed to validate email input");
         setIsLoading(false);
         console.log(parsedForm.error);
         return;
@@ -56,14 +49,8 @@ export function useSendSubscribeMail(templateId: string) {
         .then(
           (result) => {
             console.log(result.text);
-            setStatus(
-              result.text === "OK"
-                ? "Sent successfully"
-                : "Something went wrong",
-            );
           },
           (error) => {
-            setStatus("Failed to send email");
             console.error(error);
           },
         )
@@ -76,8 +63,7 @@ export function useSendSubscribeMail(templateId: string) {
 
   return {
     email,
-    status,
     isLoading,
-    handlers: { onChange, onDismiss, onEmailSend },
+    handlers: { onChange, onEmailSend },
   };
 }

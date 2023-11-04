@@ -1,6 +1,5 @@
 "use client";
 
-import { Snackbar } from "@/components";
 import { Button, Heading, Input } from "@/components/ui";
 import { useSendSubscribeMail } from "@/hooks/useSendSubscribeMail";
 
@@ -12,13 +11,11 @@ export default function SubscribeBlock({
   placeholder,
   buttonText,
   templateId,
-  dismiss,
 }: SubscribeBlockProps) {
   const {
     email,
-    status,
     isLoading,
-    handlers: { onDismiss, onChange, onEmailSend },
+    handlers: { onChange, onEmailSend },
   } = useSendSubscribeMail(templateId);
   const isButtonDisabled = email === "" || isLoading;
 
@@ -37,7 +34,6 @@ export default function SubscribeBlock({
           {buttonText}
         </Button>
       </form>
-      <Snackbar text={status} buttonText={dismiss} onDismiss={onDismiss} />
     </div>
   );
 }

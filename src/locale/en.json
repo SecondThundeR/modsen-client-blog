@@ -19,8 +19,5 @@
         "placeholder": "Enter Your Email",
         "buttonText": "Subscribe",
         "templateId": "template_p5q7u8p"
-    },
-    "snackbar": {
-        "dismiss": "Dismiss"
     }
 }

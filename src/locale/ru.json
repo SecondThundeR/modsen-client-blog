@@ -19,8 +19,5 @@
         "placeholder": "Введите свою почту",
         "buttonText": "Подписаться",
         "templateId": "template_qkr6f2k"
-    },
-    "snackbar": {
-        "dismiss": "Закрыть"
     }
 }

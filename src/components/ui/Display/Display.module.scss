@@ -1,0 +1,23 @@
+$displayFontSize: 56px;
+$displayFontWeight: 700;
+$displayFontStyle: normal;
+$displayLineHeight: 64px;
+$displayLetterSpacing: -2px;
+
+.display {
+    margin: 0;
+    color: inherit;
+    line-height: $displayLineHeight;
+    font-size: $displayFontSize;
+    font-style: $displayFontStyle;
+    font-weight: $displayFontWeight;
+    letter-spacing: $displayLetterSpacing;
+}
+
+.display__sen {
+    font-family: $senFont;
+}
+
+.display__inter {
+    font-family: $interFont;
+}

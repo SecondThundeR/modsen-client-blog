@@ -1,19 +1,7 @@
 import "@/styles/globals.scss";
 
-import { Inter, Sen } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
-  variable: "--font-inter",
-  display: "swap",
-});
-const sen = Sen({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-sen",
-  display: "swap",
-});
+import { LayoutFooter, LayoutNavbar } from "@/components";
+import { inter, sen } from "@/lib/fonts";
 
 export const metadata = {
   title: "Modsen Client Blog",
@@ -22,7 +10,7 @@ export const metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "ru" }];
+  return [{ locale: "en" }, { locale: "ru" }] as const;
 }
 
 export default function RootLayout({
@@ -30,11 +18,14 @@ export default function RootLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
+} & PageLocaleParams) {
   return (
     <html lang={locale}>
-      <body className={`${sen.className} ${inter.className}`}>{children}</body>
+      <body className={`${sen.variable} ${inter.variable}`}>
+        <LayoutNavbar locale={locale} />
+        {children}
+        <LayoutFooter locale={locale} />
+      </body>
     </html>
   );
 }

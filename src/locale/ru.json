@@ -1,4 +1,23 @@
 {
+    "title": "Блог клиентов Modsen",
+    "videoAboutUs": "Видео о нас",
     "hello": "Привет, мир!",
-    "button": "Кнопка"
+    "button": "Кнопка",
+    "privacyPolicy": {
+        "heading": "Политика приватности",
+        "body": "Последнее обновление: 27 января 2022"
+    },
+    "links": {
+        "home": "Главная",
+        "blog": "Блог",
+        "aboutUs": "О нас",
+        "contactUs": "Связаться с нами",
+        "privacyPolicy": "Политика приватности"
+    },
+    "subscribe": {
+        "heading": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+        "placeholder": "Введите свою почту",
+        "buttonText": "Подписаться",
+        "templateId": "template_qkr6f2k"
+    }
 }

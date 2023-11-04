@@ -1,4 +1,23 @@
 {
+    "title": "Modsen Client Blog",
+    "videoAboutUs": "Video about us",
     "hello": "Hello, world!",
-    "button": "Button"
+    "button": "Button",
+    "privacyPolicy": {
+        "heading": "Privacy Policy",
+        "body": "Last Updated on 27th January 2022"
+    },
+    "links": {
+        "home": "Home",
+        "blog": "Blog",
+        "aboutUs": "About Us",
+        "contactUs": "Contact us",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "subscribe": {
+        "heading": "Subscribe to our news letter to get latest updates and news",
+        "placeholder": "Enter Your Email",
+        "buttonText": "Subscribe",
+        "templateId": "template_p5q7u8p"
+    }
 }

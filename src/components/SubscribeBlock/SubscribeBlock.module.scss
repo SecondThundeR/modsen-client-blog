@@ -1,0 +1,16 @@
+.block {
+    width: 100%;
+    background-color: $subscribeBlockBackgroundColor;
+    padding: 80px 64px;
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block__controls {
+    width: 60%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}

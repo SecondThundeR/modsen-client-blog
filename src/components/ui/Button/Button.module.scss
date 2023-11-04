@@ -1,0 +1,40 @@
+$buttonPadding: 16px 48px;
+$buttonFontSize: 18px;
+$buttonFontWeight: 700;
+
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: $black;
+    padding: $buttonPadding;
+    font-family: $senFont;
+    font-size: $buttonFontSize;
+    font-weight: $buttonFontWeight;
+    transition: $transitionSetup;
+
+    &:active:enabled {
+        transform: $activeScale;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: $disabledOpacity;
+    }
+}
+
+.button__primary {
+    background-color: $yellow;
+
+    &:hover:enabled {
+        background-color: $yellowHover;
+    }
+}
+
+.button__regular {
+    background-color: $white;
+
+    &:hover:enabled {
+        background-color: $yellow;
+    }
+}

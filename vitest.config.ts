@@ -12,6 +12,11 @@ export default defineConfig({
       reporter: ["html", "text"],
       provider: "v8",
     },
+    css: {
+      modules: {
+        classNameStrategy: "non-scoped",
+      },
+    },
     setupFiles: "./setup.ts",
     include: ["**/?(*.){test,spec}.?(c|m)[jt]s?(x)"],
   },

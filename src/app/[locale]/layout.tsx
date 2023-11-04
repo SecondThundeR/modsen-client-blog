@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={locale}>
-      <body className={`${sen.className} ${inter.className}`}>{children}</body>
+      <body className={`${sen.variable} ${inter.variable}`}>{children}</body>
     </html>
   );
 }

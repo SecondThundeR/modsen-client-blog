@@ -1,4 +1,14 @@
 {
     "hello": "Hello, world!",
-    "button": "Button"
+    "button": "Button",
+    "header": {
+        "title": "Modsen Client Blog",
+        "links": {
+            "home": "Home",
+            "blog": "Blog",
+            "aboutUs": "About Us",
+            "contactUs": "Contact us"
+        },
+        "videoAboutUs": "Video about us"
+    }
 }

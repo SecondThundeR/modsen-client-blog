@@ -1,4 +1,14 @@
 {
     "hello": "Привет, мир!",
-    "button": "Кнопка"
+    "button": "Кнопка",
+    "header": {
+        "title": "Блог клиента Modsen",
+        "links": {
+            "home": "Главная",
+            "blog": "Блог",
+            "aboutUs": "О нас",
+            "contactUs": "Связаться с нами"
+        },
+        "videoAboutUs": "Видео о нас"
+    }
 }

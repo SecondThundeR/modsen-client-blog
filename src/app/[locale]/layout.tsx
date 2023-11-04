@@ -1,5 +1,6 @@
 import "@/styles/globals.scss";
 
+import { LayoutHeader } from "@/components";
 import { inter, sen } from "@/lib/fonts";
 
 export const metadata = {
@@ -9,7 +10,7 @@ export const metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "ru" }];
+  return [{ locale: "en" }, { locale: "ru" }] as const;
 }
 
 export default function RootLayout({
@@ -17,11 +18,13 @@ export default function RootLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
+} & PageLocaleParams) {
   return (
     <html lang={locale}>
-      <body className={`${sen.variable} ${inter.variable}`}>{children}</body>
+      <body className={`${sen.variable} ${inter.variable}`}>
+        <LayoutHeader locale={locale} />
+        {children}
+      </body>
     </html>
   );
 }

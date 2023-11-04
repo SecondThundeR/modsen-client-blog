@@ -13,5 +13,14 @@
         "aboutUs": "О нас",
         "contactUs": "Связаться с нами",
         "privacyPolicy": "Политика приватности"
+    },
+    "subscribe": {
+        "heading": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+        "placeholder": "Введите свою почту",
+        "buttonText": "Подписаться",
+        "templateId": "template_qkr6f2k"
+    },
+    "snackbar": {
+        "dismiss": "Закрыть"
     }
 }

@@ -2,18 +2,20 @@ import Link from "next/link";
 
 import { Body, Button, Heading, Navbar } from "@/components/ui";
 import { navbarVideoLink } from "@/constants/navbar";
-import { getNavbarLinks } from "@/lib/navbar";
+import { getLinks } from "@/lib/links";
 import { getDictionary } from "@/locale/get-dictionary";
 
-import { type LayoutNavbarProps } from "./interfaces";
-
-export default async function LayoutNavbar({ locale }: LayoutNavbarProps) {
-  const { title, links, videoAboutUs } = (await getDictionary(locale)).navbar;
-  const linksElements = getNavbarLinks(locale, links).map((link) => (
-    <Link key={link.text} href={link.href}>
-      <Body level={1}>{link.text}</Body>
-    </Link>
-  ));
+export default async function LayoutNavbar({
+  locale,
+}: PageLocaleParams["params"]) {
+  const { title, links, videoAboutUs } = await getDictionary(locale);
+  const linksElements = getLinks(locale, links, "navbar").map(
+    ({ id, href, text }) => (
+      <Link key={id} href={href}>
+        <Body level={1}>{text}</Body>
+      </Link>
+    ),
+  );
 
   return (
     <Navbar

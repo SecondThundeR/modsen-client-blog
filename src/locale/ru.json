@@ -1,18 +1,17 @@
 {
+    "title": "Блог клиентов Modsen",
+    "videoAboutUs": "Видео о нас",
     "hello": "Привет, мир!",
     "button": "Кнопка",
     "privacyPolicy": {
         "heading": "Политика приватности",
         "body": "Последнее обновление: 27 января 2022"
     },
-    "navbar": {
-        "title": "Блог клиента Modsen",
-        "links": {
-            "home": "Главная",
-            "blog": "Блог",
-            "aboutUs": "О нас",
-            "contactUs": "Связаться с нами"
-        },
-        "videoAboutUs": "Видео о нас"
+    "links": {
+        "home": "Главная",
+        "blog": "Блог",
+        "aboutUs": "О нас",
+        "contactUs": "Связаться с нами",
+        "privacyPolicy": "Политика приватности"
     }
 }

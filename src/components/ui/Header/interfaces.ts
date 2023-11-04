@@ -1,7 +1,3 @@
-import type { ReactNode } from "react";
+import { type PropsWithChildren } from "react";
 
-export interface HeaderProps {
-  titleSlot: ReactNode;
-  linksSlot: ReactNode;
-  controlsSlot: ReactNode;
-}
+export type HeaderProps = PropsWithChildren;

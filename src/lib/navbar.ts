@@ -1,9 +1,9 @@
 import { routes } from "@/constants/routes";
 import { type DictionaryType } from "@/locale/get-dictionary";
 
-export const getHeaderLinks = (
+export const getNavbarLinks = (
   locale: PageLocaleParams["params"]["locale"],
-  linksLocale: DictionaryType["header"]["links"],
+  linksLocale: DictionaryType["navbar"]["links"],
 ) => {
   const { home, blog, aboutUs, contactUs } = linksLocale;
 

@@ -1,4 +1,4 @@
-import { Body, Heading, Hero } from "@/components/ui";
+import { Body, Header, Heading } from "@/components/ui";
 import { getDictionary } from "@/locale/get-dictionary";
 
 export default async function PrivacyPolicy({
@@ -9,10 +9,10 @@ export default async function PrivacyPolicy({
 
   return (
     <main>
-      <Hero>
+      <Header>
         <Heading level={1}>{privacyPolicyDictionary.heading}</Heading>
         <Body level={1}>{privacyPolicyDictionary.body}</Body>
-      </Hero>
+      </Header>
     </main>
   );
 }

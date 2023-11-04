@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Body, Button } from "@/components/ui";
+import { Body, Display } from "@/components/ui";
 
 import Header from "./Header";
 
@@ -8,30 +8,18 @@ const meta = {
   title: "Components/Header",
   component: Header,
   argTypes: {
-    titleSlot: {
-      description: "Header title slot",
-      options: ["Regular", "None"],
+    children: {
+      description: "Header items",
+      options: ["Single", "Multiple", "None"],
       control: { type: "radio" },
       mapping: {
-        Regular: <Body>Title slot</Body>,
-        None: null,
-      },
-    },
-    linksSlot: {
-      description: "Header links slot",
-      options: ["Regular", "None"],
-      control: { type: "radio" },
-      mapping: {
-        Regular: <Body>Links slot</Body>,
-        None: null,
-      },
-    },
-    controlsSlot: {
-      description: "Header controls slot",
-      options: ["Regular", "None"],
-      control: { type: "radio" },
-      mapping: {
-        Regular: <Button>Controls slot</Button>,
+        Single: <Display>Display text</Display>,
+        Multiple: (
+          <>
+            <Display>Display text</Display>
+            <Body>Body text</Body>
+          </>
+        ),
         None: null,
       },
     },
@@ -42,10 +30,20 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Regular: Story = {
+export const Single: Story = {
   args: {
-    titleSlot: "Regular",
-    linksSlot: "Regular",
-    controlsSlot: "Regular",
+    children: "Single",
+  },
+};
+
+export const Multiple: Story = {
+  args: {
+    children: "Multiple",
+  },
+};
+
+export const None: Story = {
+  args: {
+    children: "None",
   },
 };

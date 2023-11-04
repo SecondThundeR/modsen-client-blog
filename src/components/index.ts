@@ -1,1 +1,1 @@
-export { default as LayoutHeader } from "./LayoutHeader/LayoutHeader";
+export { default as LayoutNavbar } from "./LayoutNavbar/LayoutNavbar";

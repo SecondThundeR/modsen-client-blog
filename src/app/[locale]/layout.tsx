@@ -1,6 +1,6 @@
 import "@/styles/globals.scss";
 
-import { LayoutHeader } from "@/components";
+import { LayoutNavbar } from "@/components";
 import { inter, sen } from "@/lib/fonts";
 
 export const metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${sen.variable} ${inter.variable}`}>
-        <LayoutHeader locale={locale} />
+        <LayoutNavbar locale={locale} />
         {children}
       </body>
     </html>

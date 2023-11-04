@@ -7,7 +7,7 @@ describe("Body", () => {
   test("should render body with level 1", () => {
     render(<Body level={1}>Body 01</Body>);
 
-    const body = screen.getByRole("paragraph", { name: /Body 01/i });
+    const body = screen.getByText(/Body 01/i);
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");
@@ -17,7 +17,7 @@ describe("Body", () => {
   test("should render body with level 2", () => {
     render(<Body level={2}>Body 02</Body>);
 
-    const body = screen.getByRole("paragraph", { name: /Body 02/i });
+    const body = screen.getByText(/Body 02/i);
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");

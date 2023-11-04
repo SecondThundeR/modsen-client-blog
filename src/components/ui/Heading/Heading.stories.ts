@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>;
 export const Heading1: Story = {
   args: {
     children: "Heading H1",
-    level: 1,
   },
 };
 
@@ -53,5 +52,12 @@ export const Heading6: Story = {
   args: {
     children: "Heading H6",
     level: 6,
+  },
+};
+
+export const HeadingWithInter: Story = {
+  args: {
+    children: "Heading H1",
+    font: "inter",
   },
 };

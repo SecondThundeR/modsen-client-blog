@@ -1,3 +1,5 @@
 import { type PropsWithChildren } from "react";
 
-export type DisplayProps = PropsWithChildren;
+export interface DisplayProps extends PropsWithChildren {
+  font?: FontsVariant;
+}

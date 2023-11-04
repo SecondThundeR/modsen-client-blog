@@ -3,10 +3,17 @@ $labelFontWeight: 500;
 
 .label {
     margin: 0;
-    color: $black;
-    font-family: $interFont;
+    color: inherit;
     font-style: $labelFontStyle;
     font-weight: $labelFontWeight;
     font-size: 14px;
     line-height: 20px;
+}
+
+.label__sen {
+    font-family: $senFont;
+}
+
+.label__inter {
+    font-family: $interFont;
 }

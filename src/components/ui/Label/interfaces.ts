@@ -1,3 +1,5 @@
 import { type PropsWithChildren } from "react";
 
-export type LabelProps = PropsWithChildren;
+export interface LabelProps extends PropsWithChildren {
+  font?: FontsVariant;
+}

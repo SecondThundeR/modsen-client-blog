@@ -3,10 +3,17 @@ $headingFontWeight: 700;
 
 .heading {
     margin: 0;
-    color: $black;
-    font-family: $senFont;
+    color: inherit;
     font-style: $headingFontStyle;
     font-weight: $headingFontWeight;
+}
+
+.heading__sen {
+    font-family: $senFont;
+}
+
+.heading__inter {
+    font-family: $interFont;
 }
 
 .heading__1 {

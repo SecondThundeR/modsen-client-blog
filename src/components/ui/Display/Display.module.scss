@@ -6,11 +6,18 @@ $displayLetterSpacing: -2px;
 
 .display {
     margin: 0;
-    color: $black;
+    color: inherit;
     line-height: $displayLineHeight;
-    font-family: $senFont;
     font-size: $displayFontSize;
     font-style: $displayFontStyle;
     font-weight: $displayFontWeight;
     letter-spacing: $displayLetterSpacing;
+}
+
+.display__sen {
+    font-family: $senFont;
+}
+
+.display__inter {
+    font-family: $interFont;
 }

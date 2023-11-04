@@ -4,10 +4,20 @@ import { createElement } from "react";
 import styles from "./Heading.module.scss";
 import { type HeadingProps } from "./interfaces";
 
-export default function Heading({ children, level }: HeadingProps) {
+export default function Heading({
+  children,
+  level = 1,
+  font = "sen",
+}: HeadingProps) {
   return createElement(
     `h${level}`,
-    { className: clsx(styles.heading, styles[`heading__${level}`]) },
+    {
+      className: clsx(
+        styles.heading,
+        styles[`heading__${font}`],
+        styles[`heading__${level}`],
+      ),
+    },
     children,
   );
 }

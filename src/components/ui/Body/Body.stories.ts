@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>;
 export const Body1: Story = {
   args: {
     children: "Body 01",
-    level: 1,
   },
 };
 
@@ -25,5 +24,12 @@ export const Body2: Story = {
   args: {
     children: "Body 02",
     level: 2,
+  },
+};
+
+export const BodyWithSen: Story = {
+  args: {
+    children: "Sen body",
+    font: "sen",
   },
 };

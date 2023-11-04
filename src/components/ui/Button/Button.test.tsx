@@ -34,4 +34,19 @@ describe("Button", () => {
 
     expect(onClick).toHaveBeenCalled();
   });
+
+  test("should not call onClick when disabled", () => {
+    const onClick = vi.fn();
+
+    render(
+      <Button onClick={onClick} disabled>
+        Button
+      </Button>,
+    );
+
+    const button = screen.getByRole("button", { name: /Button/i });
+    fireEvent.click(button);
+
+    expect(onClick).not.toHaveBeenCalled();
+  });
 });

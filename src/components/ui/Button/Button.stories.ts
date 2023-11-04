@@ -13,6 +13,11 @@ const meta = {
       description: "Button text",
       type: "string",
     },
+    disabled: {
+      description: "Button disabled state",
+      defaultValue: "false",
+      type: "boolean",
+    },
     variant: {
       description: "Button style variant",
       defaultValue: "primary",
@@ -24,6 +29,7 @@ const meta = {
   args: {
     children: "Button",
     variant: "primary",
+    disabled: false,
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -33,8 +39,21 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
 
+export const PrimaryDisabled: Story = {
+  args: {
+    disabled: true,
+  },
+};
+
 export const Regular: Story = {
   args: {
     variant: "regular",
+  },
+};
+
+export const RegularDisabled: Story = {
+  args: {
+    variant: "regular",
+    disabled: true,
   },
 };

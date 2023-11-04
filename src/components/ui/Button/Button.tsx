@@ -6,7 +6,7 @@ import type { ButtonProps } from "./interfaces";
 export default function Button({
   children,
   variant = "primary",
-  onClick,
+  ...props
 }: ButtonProps) {
   return (
     <button
@@ -14,7 +14,7 @@ export default function Button({
         [styles.button__primary!]: variant === "primary",
         [styles.button__regular!]: variant === "regular",
       })}
-      onClick={onClick}
+      {...props}
     >
       {children}
     </button>

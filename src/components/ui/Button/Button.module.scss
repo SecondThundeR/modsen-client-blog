@@ -13,15 +13,20 @@ $buttonFontWeight: 700;
     font-weight: $buttonFontWeight;
     transition: $transitionSetup;
 
-    &:active {
+    &:active:enabled {
         transform: $activeScale;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: $disabledOpacity;
     }
 }
 
 .button__primary {
     background-color: $yellow;
 
-    &:hover {
+    &:hover:enabled {
         background-color: $yellowHover;
     }
 }
@@ -29,7 +34,7 @@ $buttonFontWeight: 700;
 .button__regular {
     background-color: $white;
 
-    &:hover {
+    &:hover:enabled {
         background-color: $yellow;
     }
 }

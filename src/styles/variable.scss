@@ -13,4 +13,8 @@ $interFont: var(--inter-font);
 $senFont: var(--sen-font);
 
 $transitionSetup: all 0.3s;
-$activeScale: scale(0.95)
+$activeScale: scale(0.95);
+
+$subscribeBlockBackgroundColor: rgba(255, 255, 255, .05);
+
+$disabledOpacity: 0.6;

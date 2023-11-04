@@ -1,6 +1,10 @@
 {
     "hello": "Hello, world!",
     "button": "Button",
+    "privacyPolicy": {
+        "heading": "Privacy Policy",
+        "body": "Last Updated on 27th January 2022"
+    },
     "header": {
         "title": "Modsen Client Blog",
         "links": {

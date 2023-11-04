@@ -9,7 +9,14 @@ const meta = {
     layout: "centered",
   },
   argTypes: {
+    children: {
+      description: "Button text",
+      type: "string",
+    },
     variant: {
+      description: "Button style variant",
+      defaultValue: "primary",
+      type: "string",
       options: ["primary", "regular"],
       control: { type: "radio" },
     },

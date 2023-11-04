@@ -8,6 +8,28 @@ const meta = {
   parameters: {
     layout: "centered",
   },
+  argTypes: {
+    children: {
+      description: "Heading text",
+      type: "string",
+    },
+    level: {
+      description: "Heading size level",
+      type: "number",
+      defaultValue: 1,
+    },
+    font: {
+      description: "The font family",
+      type: "string",
+      defaultValue: "sen",
+      options: ["sen", "inter"],
+      control: { type: "radio" },
+    },
+  },
+  args: {
+    level: 1,
+    font: "sen",
+  },
   tags: ["autodocs"],
 } satisfies Meta<typeof Heading>;
 

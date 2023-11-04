@@ -8,6 +8,28 @@ const meta = {
   parameters: {
     layout: "centered",
   },
+  argTypes: {
+    children: {
+      description: "Body text",
+      type: "string",
+    },
+    level: {
+      description: "Body size level",
+      type: "number",
+      defaultValue: 1,
+    },
+    font: {
+      description: "The font family",
+      type: "string",
+      defaultValue: "inter",
+      options: ["sen", "inter"],
+      control: { type: "radio" },
+    },
+  },
+  args: {
+    level: 1,
+    font: "inter",
+  },
   tags: ["autodocs"],
 } satisfies Meta<typeof Body>;
 

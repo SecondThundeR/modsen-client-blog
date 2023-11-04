@@ -8,8 +8,22 @@ const meta = {
   parameters: {
     layout: "centered",
   },
+  argTypes: {
+    children: {
+      description: "Label text",
+      type: "string",
+    },
+    font: {
+      description: "The font family",
+      type: "string",
+      defaultValue: "inter",
+      options: ["sen", "inter"],
+      control: { type: "radio" },
+    },
+  },
   args: {
     children: "Label",
+    font: "inter",
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Label>;

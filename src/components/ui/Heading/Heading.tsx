@@ -1,0 +1,13 @@
+import clsx from "clsx";
+import { createElement } from "react";
+
+import styles from "./Heading.module.scss";
+import { type HeadingProps } from "./interfaces";
+
+export default function Heading({ children, level }: HeadingProps) {
+  return createElement(
+    `h${level}`,
+    { className: clsx(styles.heading, styles[`heading__${level}`]) },
+    children,
+  );
+}

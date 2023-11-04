@@ -1,43 +1,43 @@
-$titleFontStyle: normal;
-$titleFontWeight: 700;
+$headingFontStyle: normal;
+$headingFontWeight: 700;
 
-.title {
+.heading {
     margin: 0;
     color: $black;
     font-family: $senFont;
-    font-style: $titleFontStyle;
-    font-weight: $titleFontWeight;
+    font-style: $headingFontStyle;
+    font-weight: $headingFontWeight;
 }
 
-.title__1 {
+.heading__1 {
     font-size: 48px;
     line-height: 64px;
     letter-spacing: -2px;
 }
 
-.title__2 {
+.heading__2 {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
 }
 
-.title__3 {
+.heading__3 {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -1px;
 }
 
-.title__4 {
+.heading__4 {
     font-size: 24px;
     line-height: 32px;
 }
 
-.title__5 {
+.heading__5 {
     font-size: 20px;
     line-height: 32px;
 }
 
-.title__6 {
+.heading__6 {
     font-size: 16px;
     line-height: 24px;
 }

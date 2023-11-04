@@ -8,16 +8,18 @@ export default function Snackbar({
   buttonText,
   onDismiss,
 }: SnackbarProps) {
+  if (!text) return null;
+
   return (
-    text && (
-      <Modal>
-        <div data-testid="snackbar-wrapper" className={styles.snackbar}>
-          <Heading level={5}>{text}</Heading>
+    <Modal>
+      <div className={styles.snackbar}>
+        <Heading level={5}>{text}</Heading>
+        {onDismiss && (
           <Button variant="regular" onClick={onDismiss}>
             {buttonText}
           </Button>
-        </div>
-      </Modal>
-    )
+        )}
+      </div>
+    </Modal>
   );
 }

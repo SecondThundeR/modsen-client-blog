@@ -1,0 +1,20 @@
+$bodyFontStyle: normal;
+$bodyFontWeight: 400;
+
+.body {
+    margin: 0;
+    color: $black;
+    font-family: $interFont;
+    font-style: $bodyFontStyle;
+    font-weight: $bodyFontWeight;
+}
+
+.body__1 {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.body__2 {
+    font-size: 14px;
+    line-height: 20px;
+}

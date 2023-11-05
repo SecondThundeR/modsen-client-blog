@@ -15,7 +15,7 @@ describe("Header", () => {
     const headerContent = screen.getByText(/Content/i);
 
     expect(headerContent).toBeInTheDocument();
-    expect(headerWrapper.nodeName.toLowerCase()).toEqual("div");
+    expect(headerWrapper.nodeName.toLowerCase()).toEqual("header");
     expect(headerWrapper.className).toEqual("header");
   });
 });

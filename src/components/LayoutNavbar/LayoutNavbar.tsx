@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Body, Button, Heading, Navbar } from "@/components/ui";
-import { navbarVideoLink } from "@/constants/navbar";
+import { modals } from "@/constants/modals";
 import { getLinks } from "@/lib/links";
 import { getDictionary } from "@/locale/get-dictionary";
 
@@ -26,7 +26,7 @@ export default async function LayoutNavbar({
       }
       linksSlot={linksElements}
       controlsSlot={
-        <Link href={navbarVideoLink} target="_blank">
+        <Link href={`?modal=${modals.aboutUs}`}>
           <Button variant="regular">{videoAboutUs}</Button>
         </Link>
       }

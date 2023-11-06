@@ -3,6 +3,9 @@
     "videoAboutUs": "Video about us",
     "hello": "Hello, world!",
     "button": "Button",
+    "modal": {
+        "close": "Close"
+    },
     "error": {
         "heading": "Something wrong happened",
         "button": "Try again"

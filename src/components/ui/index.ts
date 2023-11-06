@@ -7,5 +7,5 @@ export { default as Header } from "./Header/Header";
 export { default as Heading } from "./Heading/Heading";
 export { default as Input } from "./Input/Input";
 export { default as Label } from "./Label/Label";
-export { default as Modal } from "./Modal/Modal";
+export { default as ModalWrapper } from "./ModalWrapper/ModalWrapper";
 export { default as Navbar } from "./Navbar/Navbar";

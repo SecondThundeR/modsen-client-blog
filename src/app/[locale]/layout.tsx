@@ -1,7 +1,8 @@
 import "@/styles/globals.scss";
 
-import { LayoutFooter, LayoutNavbar } from "@/components";
+import { LayoutFooter, LayoutNavbar, ModalShell } from "@/components";
 import { inter, sen } from "@/lib/fonts";
+import { getDictionary } from "@/locale/get-dictionary";
 
 export const metadata = {
   title: "Modsen Client Blog",
@@ -13,18 +14,23 @@ export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "ru" }] as const;
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: {
   children: React.ReactNode;
 } & PageLocaleParams) {
+  const {
+    modal: { close },
+  } = await getDictionary(locale);
+
   return (
     <html lang={locale}>
       <body className={`${sen.variable} ${inter.variable}`}>
         <LayoutNavbar locale={locale} />
         {children}
         <LayoutFooter locale={locale} />
+        <ModalShell closeButtonText={close} />
       </body>
     </html>
   );

@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Display } from "@/components/ui";
 
-import ModalWrapper from "./ModalWrapper";
+import PageSection from "./PageSection";
 
 const meta = {
-  title: "Components/ModalWrapper",
-  component: ModalWrapper,
+  title: "Components/PageSection",
+  component: PageSection,
   argTypes: {
     children: {
-      description: "Modal wrapper items",
+      description: "Page section items",
       options: ["Single", "None"],
       control: { type: "radio" },
       mapping: {
@@ -19,7 +19,7 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof ModalWrapper>;
+} satisfies Meta<typeof PageSection>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

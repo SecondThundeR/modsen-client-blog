@@ -1,0 +1,10 @@
+.wrapper {
+    margin: 128px auto;
+    width: 50%;
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+        margin: 128px 0px;
+        padding: 0px 24px;
+    }
+}

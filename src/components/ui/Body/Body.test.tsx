@@ -33,4 +33,14 @@ describe("Body", () => {
     expect(body.nodeName.toLowerCase()).toEqual("p");
     expect(body.className).toEqual("body body__sen body__1");
   });
+
+  test("should render body with isSecondary property", () => {
+    render(<Body isSecondary>Secondary body</Body>);
+
+    const body = screen.getByText(/Secondary body/i);
+
+    expect(body).toBeInTheDocument();
+    expect(body.nodeName.toLowerCase()).toEqual("p");
+    expect(body.className).toEqual("body body__inter body__1 body__secondary");
+  });
 });

@@ -8,6 +8,10 @@ $bodyFontWeight: 400;
     font-weight: $bodyFontWeight;
 }
 
+.body__secondary {
+    color: $darkGray;
+}
+
 .body__inter {
     font-family: $interFont;
 }
@@ -19,9 +23,19 @@ $bodyFontWeight: 400;
 .body__1 {
     font-size: 16px;
     line-height: 28px;
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 .body__2 {
     font-size: 14px;
     line-height: 20px;
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

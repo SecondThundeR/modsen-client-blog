@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Display } from "@/components/ui";
 
-import ModalWrapper from "./ModalWrapper";
+import ArticleWrapper from "./ArticleWrapper";
 
 const meta = {
-  title: "Components/ModalWrapper",
-  component: ModalWrapper,
+  title: "Components/ArticleWrapper",
+  component: ArticleWrapper,
   argTypes: {
     children: {
-      description: "Modal wrapper items",
+      description: "Article wrapper items",
       options: ["Single", "None"],
       control: { type: "radio" },
       mapping: {
@@ -19,7 +19,7 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof ModalWrapper>;
+} satisfies Meta<typeof ArticleWrapper>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

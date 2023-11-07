@@ -18,6 +18,11 @@ const meta = {
       type: "number",
       defaultValue: 1,
     },
+    isSecondary: {
+      description: "Controls secondary variant of body (darker font color)",
+      type: "boolean",
+      defaultValue: false,
+    },
     font: {
       description: "The font family",
       type: "string",
@@ -29,6 +34,7 @@ const meta = {
   args: {
     level: 1,
     font: "inter",
+    isSecondary: false,
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Body>;
@@ -53,5 +59,12 @@ export const BodyWithSen: Story = {
   args: {
     children: "Sen body",
     font: "sen",
+  },
+};
+
+export const SecondaryBody: Story = {
+  args: {
+    children: "Secondary body",
+    isSecondary: true,
   },
 };

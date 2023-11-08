@@ -24,7 +24,41 @@
     "subscribe": {
         "heading": "Subscribe to our news letter to get latest updates and news",
         "placeholder": "Enter Your Email",
-        "buttonText": "Subscribe",
-        "templateId": "template_p5q7u8p"
+        "buttonText": "Subscribe"
+    },
+    "contactUs": {
+        "cap": "Contact us",
+        "heading": "Let’s Start a Conversation",
+        "block": {
+            "sectionHeader1": "Working hours",
+            "data1Heading1": "Monday To Friday",
+            "data1Heading2": "9:00 AM to 8:00 PM",
+            "data1Body": "Our Support Team is available 24/7",
+            "sectionHeader2": "Contact us",
+            "data2Heading": "020 7993 2905",
+            "data2Body": "hello@finsweet.com"
+        },
+        "alert": {
+            "error": {
+                "heading": "Error occurred",
+                "body": "Seems like we failed to send message. Try again or contact us by email or phone above"
+            },
+            "success": {
+                "heading": "Yay!",
+                "body": "We recieved your message and will reply to you as soon as possible"
+            }
+        },
+        "form": {
+            "name": "Full name",
+            "email": "Your email",
+            "query": {
+                "heading": "Query related",
+                "first": "Query 1",
+                "second": "Query 2",
+                "third": "Query 3"
+            },
+            "message": "Message",
+            "send": "Send message"
+        }
     }
 }

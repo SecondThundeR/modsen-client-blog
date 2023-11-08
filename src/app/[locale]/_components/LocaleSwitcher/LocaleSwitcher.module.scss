@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.activeLink {
+    cursor: default;
+    color: $yellow;
+}

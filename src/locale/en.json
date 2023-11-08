@@ -1,8 +1,6 @@
 {
     "title": "Modsen Client Blog",
-    "videoAboutUs": "Video about us",
-    "hello": "Hello, world!",
-    "button": "Button",
+    "headerVideoButton": "Video about us",
     "modal": {
         "close": "Close"
     },

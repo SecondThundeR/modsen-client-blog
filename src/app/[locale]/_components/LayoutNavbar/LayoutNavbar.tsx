@@ -8,7 +8,7 @@ import { getDictionary } from "@/locale/get-dictionary";
 export default async function LayoutNavbar({
   locale,
 }: PageLocaleParams["params"]) {
-  const { title, links, videoAboutUs } = await getDictionary(locale);
+  const { title, links, headerVideoButton } = await getDictionary(locale);
   const linksElements = getLinks(locale, links, "navbar").map(
     ({ id, href, text }) => (
       <Link key={id} href={href}>
@@ -27,7 +27,7 @@ export default async function LayoutNavbar({
       linksSlot={linksElements}
       controlsSlot={
         <Link href={`?modal=${modals.aboutUs}`}>
-          <Button variant="regular">{videoAboutUs}</Button>
+          <Button variant="regular">{headerVideoButton}</Button>
         </Link>
       }
     />

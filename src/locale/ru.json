@@ -1,8 +1,6 @@
 {
     "title": "Блог клиентов Modsen",
-    "videoAboutUs": "Видео о нас",
-    "hello": "Привет, мир!",
-    "button": "Кнопка",
+    "headerVideoButton": "Видео о нас",
     "modal": {
         "close": "Закрыть"
     },

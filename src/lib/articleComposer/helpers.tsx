@@ -4,23 +4,21 @@ import {
   type ArticleContentHeading,
 } from "@/types/article";
 
-export function renderHeading(item: ArticleContentHeading) {
-  const { type, data, level } = item;
-  const headingKey = `${type}-${level}-${data.slice(0, 20)}`;
+export function renderHeading(item: Omit<ArticleContentHeading, "type">) {
+  const { id, data, ...props } = item;
 
   return (
-    <Heading key={headingKey} level={level}>
+    <Heading key={id} {...props}>
       {data}
     </Heading>
   );
 }
 
-export function renderBody(item: ArticleContentBody) {
-  const { type, data, isSecondary } = item;
-  const bodyKey = `${type}-${isSecondary}-${data.slice(0, 20)}`;
+export function renderBody(item: Omit<ArticleContentBody, "type">) {
+  const { id, data, ...props } = item;
 
   return (
-    <Body key={bodyKey} isSecondary={isSecondary}>
+    <Body key={id} {...props}>
       {data}
     </Body>
   );

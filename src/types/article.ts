@@ -1,18 +1,28 @@
-export type ArticleContentHeading = {
+import { type ArticleProps } from "@/components/ui/Article/interfaces";
+import { type BodyProps } from "@/components/ui/Body/interfaces";
+import { type HeadingProps } from "@/components/ui/Heading/interfaces";
+
+export type ArticleContentBase = {
+  id: string;
+  data: string;
+};
+
+export interface ArticleContentHeading
+  extends ArticleContentBase,
+    Omit<HeadingProps, "children"> {
   type: "heading";
-  data: string;
-  level?: 1 | 2 | 3 | 4 | 5 | 6;
-};
-export type ArticleContentBody = {
+}
+
+export interface ArticleContentBody
+  extends ArticleContentBase,
+    Omit<BodyProps, "children"> {
   type: "body";
-  data: string;
-  isSecondary?: boolean;
-};
+}
 
 export type ArticleContent = ArticleContentHeading | ArticleContentBody;
 
 export type ArticleData = {
   id: string;
-  gap?: "small" | "regular" | "large";
+  gap?: ArticleProps["gapVariant"];
   content: ArticleContent[];
 };

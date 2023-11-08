@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, Heading, Input } from "@/components/ui";
+import { Input } from "@/components/form";
+import { Button, Heading } from "@/components/ui";
 import { useSendSubscribeMail } from "@/hooks/useSendSubscribeMail";
 
 import { type SubscribeBlockProps } from "./interfaces";
@@ -10,13 +11,12 @@ export default function SubscribeBlock({
   heading,
   placeholder,
   buttonText,
-  templateId,
 }: SubscribeBlockProps) {
   const {
     email,
     isLoading,
     handlers: { onChange, onEmailSend },
-  } = useSendSubscribeMail(templateId);
+  } = useSendSubscribeMail();
   const isButtonDisabled = email === "" || isLoading;
 
   return (

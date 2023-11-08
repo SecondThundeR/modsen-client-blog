@@ -9,7 +9,7 @@ import {
 import { env } from "@/env.mjs";
 import { SubscribeSchema } from "@/schemas/subscribeSchema";
 
-export function useSendSubscribeMail(templateId: string) {
+export function useSendSubscribeMail() {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -42,13 +42,15 @@ export function useSendSubscribeMail(templateId: string) {
       emailjs
         .send(
           env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-          templateId,
+          env.NEXT_PUBLIC_EMAILJS_SUBSCRIBE_TEMPLATE_ID,
           templateParams,
           env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
         )
         .then(
           (result) => {
             console.log(result.text);
+            const isSent = result.text === "OK";
+            if (isSent) setEmail("");
           },
           (error) => {
             console.error(error);
@@ -58,7 +60,7 @@ export function useSendSubscribeMail(templateId: string) {
           setIsLoading(false);
         });
     },
-    [email, templateId],
+    [email],
   );
 
   return {

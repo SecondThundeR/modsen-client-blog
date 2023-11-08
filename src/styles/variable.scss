@@ -8,6 +8,8 @@ $mediumGray: #6D6E76;
 $lightGray: #F4F4F4;
 $lavender: #F4F0F8;
 $lightYellow: #FBF6EA;
+$alertSuccess: #367E18;
+$alertError: #DF2E38;
 
 $interFont: var(--inter-font);
 $senFont: var(--sen-font);
@@ -21,3 +23,18 @@ $modalWrapperBackgroundColor: rgba(0, 0, 0, 0.7);
 $disabledOpacity: 0.6;
 
 $breakpoint-mobile: 768px;
+
+$selectDropdownIcon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M2 2L6 6L10 2' stroke='black' stroke-width='2' stroke-linecap='square'/></svg>");
+
+@mixin formElementWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@mixin formErrorMessage {
+    margin: 0;
+    color: red;
+    font-size: 12px;
+}

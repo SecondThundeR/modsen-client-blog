@@ -6,14 +6,16 @@ import type { ButtonProps } from "./interfaces";
 export default function Button({
   children,
   variant = "primary",
+  size = "regular",
   ...props
 }: ButtonProps) {
   return (
     <button
-      className={clsx(styles.button, {
-        [styles.button__primary!]: variant === "primary",
-        [styles.button__regular!]: variant === "regular",
-      })}
+      className={clsx(
+        styles.button,
+        styles[`variant__${variant}`],
+        styles[`size__${size}`],
+      )}
       {...props}
     >
       {children}

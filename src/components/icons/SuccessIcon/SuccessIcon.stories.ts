@@ -1,12 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Input from "./Input";
+import SuccessIcon from "./SuccessIcon";
 
 const meta = {
-  title: "Components/Input",
-  component: Input,
+  title: "Icons/SuccessIcon",
+  component: SuccessIcon,
+  parameters: {
+    layout: "centered",
+  },
   tags: ["autodocs"],
-} satisfies Meta<typeof Input>;
+} satisfies Meta<typeof SuccessIcon>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

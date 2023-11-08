@@ -1,0 +1,30 @@
+$capWeightLevel1: 600;
+$capWeightLevel3: 900;
+
+.cap {
+    margin: 0;
+    color: inherit;
+    text-align: center;
+    font-family: $interFont;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+.cap__regular {
+    font-weight: 400;
+}
+
+.cap__semibold {
+    font-weight: 600;
+}
+
+.cap__bold {
+    font-weight: 700;
+}
+
+.cap__black {
+    font-weight: 900;
+}

@@ -1,5 +1,6 @@
 $buttonPadding: 16px 48px;
 $buttonFontSize: 18px;
+$buttonFontSizeLarge: 24px;
 $buttonFontWeight: 700;
 
 .button {
@@ -9,7 +10,6 @@ $buttonFontWeight: 700;
     color: $black;
     padding: $buttonPadding;
     font-family: $senFont;
-    font-size: $buttonFontSize;
     font-weight: $buttonFontWeight;
     transition: $transitionSetup;
 
@@ -23,7 +23,7 @@ $buttonFontWeight: 700;
     }
 }
 
-.button__primary {
+.variant__primary {
     background-color: $yellow;
 
     &:hover:enabled {
@@ -31,10 +31,18 @@ $buttonFontWeight: 700;
     }
 }
 
-.button__regular {
+.variant__regular {
     background-color: $white;
 
     &:hover:enabled {
         background-color: $yellow;
     }
+}
+
+.size__regular {
+    font-size: $buttonFontSize;
+}
+
+.size__large {
+    font-size: $buttonFontSizeLarge;
 }

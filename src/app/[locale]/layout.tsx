@@ -1,8 +1,9 @@
 import "@/styles/globals.scss";
 
-import { LayoutFooter, LayoutNavbar, ModalShell } from "@/components";
 import { inter, sen } from "@/lib/fonts";
 import { getDictionary } from "@/locale/get-dictionary";
+
+import { LayoutFooter, LayoutNavbar, ModalShell } from "./_components";
 
 export const metadata = {
   title: "Modsen Client Blog",

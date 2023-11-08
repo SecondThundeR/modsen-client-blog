@@ -2,6 +2,7 @@ import { type BodyProps } from "@/components/ui/Body/interfaces";
 import { type HeadingProps } from "@/components/ui/Heading/interfaces";
 
 export type ArticleContentBase = {
+  id: string;
   data: string;
 };
 

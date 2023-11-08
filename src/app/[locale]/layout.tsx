@@ -24,16 +24,29 @@ export default async function RootLayout({
   children: React.ReactNode;
 } & PageLocaleParams) {
   const {
+    title,
+    headerVideoButton,
+    links,
+    subscribe,
     modal: { close },
   } = await getDictionary(locale);
 
   return (
     <html lang={locale}>
       <body className={`${sen.variable} ${inter.variable}`}>
-        <LayoutNavbar locale={locale} />
+        <LayoutNavbar
+          locale={locale}
+          title={title}
+          headerVideoButton={headerVideoButton}
+          links={links}
+        />
         {children}
-        <LayoutFooter locale={locale} />
-        <ModalShell closeButtonText={close} />
+        <LayoutFooter
+          locale={locale}
+          title={title}
+          links={links}
+          subscribe={subscribe}
+        />
         <Suspense>
           <ModalShell closeButtonText={close} />
         </Suspense>

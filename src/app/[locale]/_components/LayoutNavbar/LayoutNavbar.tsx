@@ -3,12 +3,15 @@ import Link from "next/link";
 import { Body, Button, Heading, Navbar } from "@/components/ui";
 import { modals } from "@/constants/modals";
 import { getLinks } from "@/lib/links";
-import { getDictionary } from "@/locale/get-dictionary";
 
-export default async function LayoutNavbar({
+import { type LayoutNavbarProps } from "./interfaces";
+
+export default function LayoutNavbar({
   locale,
-}: PageLocaleParams["params"]) {
-  const { title, links, headerVideoButton } = await getDictionary(locale);
+  title,
+  headerVideoButton,
+  links,
+}: LayoutNavbarProps) {
   const linksElements = getLinks(locale, links, "navbar").map(
     ({ id, href, text }) => (
       <Link key={id} href={href}>

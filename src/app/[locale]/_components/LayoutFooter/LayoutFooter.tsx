@@ -3,14 +3,16 @@ import Link from "next/link";
 import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
 import { getLinks, socialLinks } from "@/lib/links";
-import { getDictionary } from "@/locale/get-dictionary";
 
 import { SubscribeBlock } from "../";
+import { type LayoutFooterProps } from "./interfaces";
 
-export default async function LayoutFooter({
+export default function LayoutFooter({
   locale,
-}: PageLocaleParams["params"]) {
-  const { title, links, subscribe } = await getDictionary(locale);
+  title,
+  links,
+  subscribe,
+}: LayoutFooterProps) {
   const linksElements = getLinks(locale, links, "footer").map(
     ({ id, href, text }) => (
       <Link key={id} href={href}>

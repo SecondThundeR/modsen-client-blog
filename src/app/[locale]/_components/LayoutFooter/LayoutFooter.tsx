@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-import { SubscribeBlock } from "@/components";
 import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
 import { getLinks, socialLinks } from "@/lib/links";
 import { getDictionary } from "@/locale/get-dictionary";
+
+import { SubscribeBlock } from "../";
 
 export default async function LayoutFooter({
   locale,

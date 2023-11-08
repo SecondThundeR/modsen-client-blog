@@ -18,10 +18,12 @@ const meta = {
       type: "number",
       defaultValue: 1,
     },
-    isSecondary: {
-      description: "Controls secondary variant of body (darker font color)",
-      type: "boolean",
-      defaultValue: false,
+    color: {
+      description: "Body color",
+      type: "string",
+      defaultValue: "inherit",
+      options: ["inherit", "mediumGray", "darkGray"],
+      control: { type: "radio" },
     },
     font: {
       description: "The font family",
@@ -30,10 +32,16 @@ const meta = {
       options: ["sen", "inter"],
       control: { type: "radio" },
     },
+    isSecondary: {
+      description: "Body secondary style",
+      type: "boolean",
+      defaultValue: false,
+    },
   },
   args: {
     level: 1,
     font: "inter",
+    color: "inherit",
     isSecondary: false,
   },
   tags: ["autodocs"],
@@ -59,6 +67,20 @@ export const BodyWithSen: Story = {
   args: {
     children: "Sen body",
     font: "sen",
+  },
+};
+
+export const MediumGrayBody: Story = {
+  args: {
+    children: "Medium gray body",
+    color: "mediumGray",
+  },
+};
+
+export const DarkGrayBody: Story = {
+  args: {
+    children: "Dark gray body",
+    color: "darkGray",
   },
 };
 

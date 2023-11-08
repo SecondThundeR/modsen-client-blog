@@ -25,10 +25,18 @@ const meta = {
       options: ["primary", "regular"],
       control: { type: "radio" },
     },
+    size: {
+      description: "Button size variant",
+      defaultValue: "regular",
+      type: "string",
+      options: ["regular", "large"],
+      control: { type: "radio" },
+    },
   },
   args: {
     children: "Button",
     variant: "primary",
+    size: "regular",
     disabled: false,
   },
   tags: ["autodocs"],
@@ -39,6 +47,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
 
+export const PrimaryLarge: Story = {
+  args: {
+    size: "large",
+  },
+};
+
 export const PrimaryDisabled: Story = {
   args: {
     disabled: true,
@@ -48,6 +62,13 @@ export const PrimaryDisabled: Story = {
 export const Regular: Story = {
   args: {
     variant: "regular",
+  },
+};
+
+export const RegularLarge: Story = {
+  args: {
+    variant: "regular",
+    size: "large",
   },
 };
 

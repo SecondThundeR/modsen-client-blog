@@ -7,6 +7,7 @@ export default function Body({
   children,
   level = 1,
   font = "inter",
+  color = "inherit",
   isSecondary = false,
 }: BodyProps) {
   return (
@@ -15,6 +16,7 @@ export default function Body({
         styles.body,
         styles[`body__${font}`],
         styles[`body__${level}`],
+        styles[`body__${color}`],
         {
           [styles.body__secondary!]: isSecondary,
         },

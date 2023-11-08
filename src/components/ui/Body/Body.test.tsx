@@ -11,7 +11,7 @@ describe("Body", () => {
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");
-    expect(body.className).toEqual("body body__inter body__1");
+    expect(body.className).toEqual("body body__inter body__1 body__inherit");
   });
 
   test("should render body with level 2", () => {
@@ -21,7 +21,7 @@ describe("Body", () => {
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");
-    expect(body.className).toEqual("body body__inter body__2");
+    expect(body.className).toEqual("body body__inter body__2 body__inherit");
   });
 
   test("should render body with sen font", () => {
@@ -31,7 +31,27 @@ describe("Body", () => {
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");
-    expect(body.className).toEqual("body body__sen body__1");
+    expect(body.className).toEqual("body body__sen body__1 body__inherit");
+  });
+
+  test("should render body with medium gray color", () => {
+    render(<Body color="mediumGray">Medium gray body</Body>);
+
+    const body = screen.getByText(/Medium gray body/i);
+
+    expect(body).toBeInTheDocument();
+    expect(body.nodeName.toLowerCase()).toEqual("p");
+    expect(body.className).toEqual("body body__inter body__1 body__mediumGray");
+  });
+
+  test("should render body with dark gray color", () => {
+    render(<Body color="darkGray">Dark gray body</Body>);
+
+    const body = screen.getByText(/Dark gray body/i);
+
+    expect(body).toBeInTheDocument();
+    expect(body.nodeName.toLowerCase()).toEqual("p");
+    expect(body.className).toEqual("body body__inter body__1 body__darkGray");
   });
 
   test("should render body with isSecondary property", () => {
@@ -41,6 +61,8 @@ describe("Body", () => {
 
     expect(body).toBeInTheDocument();
     expect(body.nodeName.toLowerCase()).toEqual("p");
-    expect(body.className).toEqual("body body__inter body__1 body__secondary");
+    expect(body.className).toEqual(
+      "body body__inter body__1 body__inherit body__secondary",
+    );
   });
 });

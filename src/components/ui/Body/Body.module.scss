@@ -3,12 +3,19 @@ $bodyFontWeight: 400;
 
 .body {
     margin: 0;
-    color: inherit;
     font-style: $bodyFontStyle;
     font-weight: $bodyFontWeight;
 }
 
-.body__secondary {
+.body__inherit {
+    color: inherit;
+}
+
+.body__mediumGray {
+    color: $mediumGray;
+}
+
+.body__darkGray {
     color: $darkGray;
 }
 
@@ -38,4 +45,8 @@ $bodyFontWeight: 400;
         font-size: 12px;
         line-height: 18px;
     }
+}
+
+.body__secondary {
+    opacity: 0.6;
 }

@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const config = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
-    prependData: `@import "@/styles/variable.scss";`,
+    prependData: `@import "@/styles/variable.scss";\n@import "@/styles/keyframes.scss";`,
   },
 };
 

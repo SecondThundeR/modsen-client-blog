@@ -1,6 +1,16 @@
+import dynamic from "next/dynamic";
+
 import { PageSection } from "@/components/ui";
 
-import { ContactUsMap } from "./_components";
+import { ContactUsMapSkeleton } from "./_components/skeletons";
+
+const LazyContactUsMap = dynamic(
+  () => import("./_components/ContactUsMap/ContactUsMap"),
+  {
+    ssr: false,
+    loading: () => <ContactUsMapSkeleton />,
+  },
+);
 
 export default function ContactUsLayout({
   children,
@@ -10,7 +20,7 @@ export default function ContactUsLayout({
   return (
     <main>
       <PageSection>{children}</PageSection>
-      <ContactUsMap />
+      <LazyContactUsMap />
     </main>
   );
 }

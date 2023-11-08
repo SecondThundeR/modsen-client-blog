@@ -1,11 +1,19 @@
 import "@/styles/globals.scss";
 
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 import { inter, sen } from "@/lib/fonts";
 import { getDictionary } from "@/locale/get-dictionary";
 
-import { LayoutFooter, LayoutNavbar, ModalShell } from "./_components";
+import { LayoutFooter, LayoutNavbar } from "./_components";
+
+const LazyModalShell = dynamic(
+  () => import("./_components/ModalShell/ModalShell"),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata = {
   title: "Modsen Client Blog",
@@ -48,7 +56,7 @@ export default async function RootLayout({
           subscribe={subscribe}
         />
         <Suspense>
-          <ModalShell closeButtonText={close} />
+          <LazyModalShell closeButtonText={close} />
         </Suspense>
       </body>
     </html>

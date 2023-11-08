@@ -13,7 +13,7 @@ export default function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
   const redirectedPathName = useLocaleSwitcher();
 
   return (
-    <div className={styles.wrapper}>
+    <>
       {i18n.locales.map((locale) => {
         const isCurrentLocale = locale === currentLocale;
         const linkHref = redirectedPathName(locale);
@@ -30,6 +30,6 @@ export default function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
           </Link>
         );
       })}
-    </div>
+    </>
   );
 }

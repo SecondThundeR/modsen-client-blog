@@ -13,3 +13,4 @@ export { default as Label } from "./Label/Label";
 export { default as ModalWrapper } from "./ModalWrapper/ModalWrapper";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as PageSection } from "./PageSection/PageSection";
+export { default as Spinner } from "./Spinner/Spinner";

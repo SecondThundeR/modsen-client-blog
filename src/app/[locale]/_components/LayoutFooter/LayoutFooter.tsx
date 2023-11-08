@@ -1,11 +1,28 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
 import { getLinks, socialLinks } from "@/lib/links";
 
-import { LocaleSwitcher, SubscribeBlock } from "../";
+import { LocaleSwitcherSkeleton, SubscribeBlockSkeleton } from "../skeletons";
 import { type LayoutFooterProps } from "./interfaces";
+
+const LazyLocaleSwitcher = dynamic(
+  () => import("../LocaleSwitcher/LocaleSwitcher"),
+  {
+    ssr: false,
+    loading: () => <LocaleSwitcherSkeleton />,
+  },
+);
+
+const LazySubscribeBlock = dynamic(
+  () => import("../SubscribeBlock/SubscribeBlock"),
+  {
+    ssr: false,
+    loading: () => <SubscribeBlockSkeleton />,
+  },
+);
 
 export default function LayoutFooter({
   locale,
@@ -19,7 +36,7 @@ export default function LayoutFooter({
         <Body level={1}>{text}</Body>
       </Link>
     )),
-    <LocaleSwitcher key="locale-switcher" currentLocale={locale} />,
+    <LazyLocaleSwitcher key="locale-switcher" currentLocale={locale} />,
   ];
   const socialElements = socialLinks.map(({ id, icon: Icon, href }) => (
     <Link key={id} href={href}>
@@ -35,7 +52,7 @@ export default function LayoutFooter({
         </Heading>
       }
       linksSlot={linksElements}
-      ctaSlot={<SubscribeBlock {...subscribe} />}
+      ctaSlot={<LazySubscribeBlock {...subscribe} />}
       contactInfoSlot={
         <>
           <Body>{address}</Body>

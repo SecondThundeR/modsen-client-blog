@@ -9,6 +9,19 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    backgrounds: {
+      default: 'white',
+      values: [
+        {
+          name: 'white',
+          value: '#fff',
+        },
+        {
+          name: 'black',
+          value: '#000',
+        },
+      ],
+    },
     nextjs: {
       appDirectory: true,
     },

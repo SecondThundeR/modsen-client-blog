@@ -1,5 +1,7 @@
 import "@/styles/globals.scss";
 
+import { Suspense } from "react";
+
 import { inter, sen } from "@/lib/fonts";
 import { getDictionary } from "@/locale/get-dictionary";
 
@@ -32,6 +34,9 @@ export default async function RootLayout({
         {children}
         <LayoutFooter locale={locale} />
         <ModalShell closeButtonText={close} />
+        <Suspense>
+          <ModalShell closeButtonText={close} />
+        </Suspense>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+import { type ArticleProps } from "@/components/ui/Article/interfaces";
 import { type BodyProps } from "@/components/ui/Body/interfaces";
 import { type HeadingProps } from "@/components/ui/Heading/interfaces";
 
@@ -22,6 +23,6 @@ export type ArticleContent = ArticleContentHeading | ArticleContentBody;
 
 export type ArticleData = {
   id: string;
-  gap?: "small" | "regular" | "large";
+  gap?: ArticleProps["gapVariant"];
   content: ArticleContent[];
 };

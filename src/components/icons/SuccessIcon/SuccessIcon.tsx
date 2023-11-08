@@ -2,7 +2,13 @@ import { type SVGProps } from "react";
 
 export default function SuccessIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={56} height={56} {...props}>
+    <svg
+      data-testid="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width={56}
+      height={56}
+      {...props}
+    >
       <title></title>
       <g fill="none" fillRule="nonzero">
         <path d="M0 0h56v56H0z" />

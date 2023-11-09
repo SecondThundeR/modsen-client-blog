@@ -1,6 +1,16 @@
 {
     "title": "Блог клиентов Modsen",
     "headerVideoButton": "Видео о нас",
+    "authorsGrid": {
+        "heading": "Список авторов",
+        "positions": {
+            "contentWriter": "Автор контента"
+        }
+    },
+    "joinUs": {
+        "heading": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+        "button": "Присоединиться сейчас"
+    },
     "modal": {
         "close": "Закрыть"
     },

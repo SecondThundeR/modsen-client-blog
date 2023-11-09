@@ -1,6 +1,16 @@
 {
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
+    "authorsGrid": {
+        "heading": "List of Authors",
+        "positions": {
+            "contentWriter": "Content Writer"
+        }
+    },
+    "joinUs": {
+        "heading": "Join our team to be a part of our story",
+        "button": "Join Now"
+    },
     "modal": {
         "close": "Close"
     },

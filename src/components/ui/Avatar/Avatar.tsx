@@ -6,12 +6,9 @@ import { type AvatarProps } from "./interfaces";
 export default function Avatar({ alt, ...props }: AvatarProps) {
   return (
     <Image
+      {...props}
       data-testid="avatar"
       className={styles.avatar}
-      {...props}
-      style={{
-        objectFit: "cover",
-      }}
       alt={alt}
     />
   );

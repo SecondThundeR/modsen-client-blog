@@ -1,4 +1,8 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin: 128px auto;
     width: 50%;
 
@@ -7,4 +11,14 @@
         margin: 128px 0px;
         padding: 0px 24px;
     }
+}
+
+.fullWidth {
+    margin: 0;
+    padding: 128px 16px;
+    width: 100%;
+}
+
+.wrapperGaps {
+    gap: 128px;
 }

@@ -1,3 +1,6 @@
 import { type PropsWithChildren } from "react";
 
-export type PageSectionProps = PropsWithChildren;
+export interface PageSectionProps extends PropsWithChildren {
+  fullWidth?: boolean;
+  hasGaps?: boolean;
+}

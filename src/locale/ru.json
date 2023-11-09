@@ -1,6 +1,15 @@
 {
     "title": "Блог клиентов Modsen",
     "headerVideoButton": "Видео о нас",
+    "categoryGrid": {
+        "heading": "Выберите категорию",
+        "categories": {
+            "business": "Бизнес",
+            "startup": "Стартап",
+            "economy": "Экономика",
+            "technology": "Технологии"
+        }
+    },
     "authorsGrid": {
         "heading": "Список авторов",
         "positions": {

@@ -1,6 +1,15 @@
 {
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
+    "categoryGrid": {
+        "heading": "Choose A Category",
+        "categories": {
+            "business": "Business",
+            "startup": "Startup",
+            "economy": "Economy",
+            "technology": "Technology"
+        }
+    },
     "authorsGrid": {
         "heading": "List of Authors",
         "positions": {

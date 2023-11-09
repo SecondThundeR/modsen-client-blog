@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-mobile) {
+       flex-direction: column;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background-color: transparent;
+    border: 1px solid $categoryCardBorderColor;
+    transition: $transitionSetup;
+
+    &:hover {
+        color: $black;
+        background-color: $yellow;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background-color: $lightYellow;
+    border-radius: 12px;
+    object-fit: scale-down;
+}

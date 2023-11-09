@@ -7,6 +7,10 @@
             "contentWriter": "Content Writer"
         }
     },
+    "featuredIn": {
+        "heading": "Featured in",
+        "body": "We are"
+    },
     "joinUs": {
         "heading": "Join our team to be a part of our story",
         "button": "Join Now"

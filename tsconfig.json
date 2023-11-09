@@ -22,12 +22,12 @@
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
+      "public/*": [
+        "./public/*"
+      ],
       "@/*": [
         "./src/*"
       ],
-      "@/styles/*": [
-        "./src/styles/*"
-      ]
     },
     "plugins": [
       {

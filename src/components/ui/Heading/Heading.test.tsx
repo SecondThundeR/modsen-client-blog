@@ -11,7 +11,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h1");
-    expect(heading.className).toEqual("heading heading__sen heading__1");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__1 heading__inherit",
+    );
   });
 
   test("should render heading with inter font", () => {
@@ -21,7 +23,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h1");
-    expect(heading.className).toEqual("heading heading__inter heading__1");
+    expect(heading.className).toEqual(
+      "heading heading__inter heading__1 heading__inherit",
+    );
   });
 
   test("should render heading with level 2", () => {
@@ -31,7 +35,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h2");
-    expect(heading.className).toEqual("heading heading__sen heading__2");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__2 heading__inherit",
+    );
   });
 
   test("should render heading with level 3", () => {
@@ -41,7 +47,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h3");
-    expect(heading.className).toEqual("heading heading__sen heading__3");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__3 heading__inherit",
+    );
   });
 
   test("should render heading with level 4", () => {
@@ -51,7 +59,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h4");
-    expect(heading.className).toEqual("heading heading__sen heading__4");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__4 heading__inherit",
+    );
   });
 
   test("should render heading with level 5", () => {
@@ -61,7 +71,9 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h5");
-    expect(heading.className).toEqual("heading heading__sen heading__5");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__5 heading__inherit",
+    );
   });
 
   test("should render heading with level 6", () => {
@@ -71,6 +83,32 @@ describe("Heading", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading.nodeName.toLowerCase()).toEqual("h6");
-    expect(heading.className).toEqual("heading heading__sen heading__6");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__6 heading__inherit",
+    );
+  });
+
+  test("should render heading with medium gray color", () => {
+    render(<Heading color="mediumGray">Medium gray heading</Heading>);
+
+    const heading = screen.getByText(/Medium gray heading/i);
+
+    expect(heading).toBeInTheDocument();
+    expect(heading.nodeName.toLowerCase()).toEqual("h1");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__1 heading__mediumGray",
+    );
+  });
+
+  test("should render heading with dark gray color", () => {
+    render(<Heading color="darkGray">Dark gray heading</Heading>);
+
+    const heading = screen.getByText(/Dark gray heading/i);
+
+    expect(heading).toBeInTheDocument();
+    expect(heading.nodeName.toLowerCase()).toEqual("h1");
+    expect(heading.className).toEqual(
+      "heading heading__sen heading__1 heading__darkGray",
+    );
   });
 });

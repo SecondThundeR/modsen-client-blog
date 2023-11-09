@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -31,10 +32,12 @@
     "react-dom": "^18.2.0",
     "react-map-gl": "^7.1.6",
     "server-only": "^0.0.1",
+    "sharp": "^0.32.6",
     "zod": "^3.22.4",
     "zod-formik-adapter": "^1.2.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.0.1",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",

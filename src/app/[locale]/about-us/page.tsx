@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <main>
       <Header>
-        <Heading level={1}>About us page</Heading>
+        <Heading>About us page</Heading>
       </Header>
     </main>
   );

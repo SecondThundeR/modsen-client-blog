@@ -15,7 +15,7 @@ export default function LayoutNavbar({
   const linksElements = getLinks(locale, links, "navbar").map(
     ({ id, href, text }) => (
       <Link key={id} href={href}>
-        <Body level={1}>{text}</Body>
+        <Body>{text}</Body>
       </Link>
     ),
   );

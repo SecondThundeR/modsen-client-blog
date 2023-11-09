@@ -9,6 +9,9 @@ export default function Avatar({ alt, ...props }: AvatarProps) {
       data-testid="avatar"
       className={styles.avatar}
       {...props}
+      style={{
+        objectFit: "cover",
+      }}
       alt={alt}
     />
   );

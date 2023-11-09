@@ -1,0 +1,22 @@
+@mixin wrapperBase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    @include wrapperBase;
+    width: 35%;
+    text-align: center;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-mobile) {
+       width: 100%
+    }
+}
+
+.textWrapper {
+    @include wrapperBase;
+    gap: 16px;
+}

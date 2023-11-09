@@ -1,11 +1,15 @@
-import { Header, Heading } from "@/components/ui";
+import { PageSection } from "@/components/ui";
 
-export default function Home() {
+import { AuthorsGrid, FeaturedInBlock, JoinUsBlock } from "./_components";
+
+export default function Home({ params: { locale } }: PageLocaleParams) {
   return (
     <main>
-      <Header>
-        <Heading level={1}>Main page</Heading>
-      </Header>
+      <PageSection fullWidth hasGaps>
+        <AuthorsGrid locale={locale} />
+        <FeaturedInBlock locale={locale} />
+        <JoinUsBlock locale={locale} />
+      </PageSection>
     </main>
   );
 }

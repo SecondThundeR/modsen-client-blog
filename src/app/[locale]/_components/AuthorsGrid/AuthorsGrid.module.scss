@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.unstyledLink {
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+.grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-mobile) {
+       flex-direction: column;
+    }
+}

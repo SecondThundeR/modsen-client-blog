@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Avatar, Body, Card, Heading, Socials } from "@/components/ui";
+import { Avatar, Body, Heading, Socials } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
 import { getDictionary } from "@/locale/get-dictionary";
@@ -16,7 +16,7 @@ export default async function AuthorsGrid({
   const authorsElements = authors
     .slice(0, 4)
     .map(({ id, image, companyHandle, name, positionId, socials }) => (
-      <Card key={id}>
+      <div className={styles.card} key={id}>
         <Avatar
           src={image}
           width={128}
@@ -32,7 +32,7 @@ export default async function AuthorsGrid({
           </Body>
         </div>
         <Socials customLinks={socials} />
-      </Card>
+      </div>
     ));
 
   return (

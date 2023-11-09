@@ -5,7 +5,6 @@ export { default as Avatar } from "./Avatar/Avatar";
 export { default as Body } from "./Body/Body";
 export { default as Button } from "./Button/Button";
 export { default as Cap } from "./Cap/Cap";
-export { default as Card } from "./Card/Card";
 export { default as Display } from "./Display/Display";
 export { default as ErrorWrapper } from "./ErrorWrapper/ErrorWrapper";
 export { default as Footer } from "./Footer/Footer";

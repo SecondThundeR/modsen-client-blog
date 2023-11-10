@@ -7,7 +7,7 @@ import styles from "./withLazyLoad.module.scss";
 
 export const withLazyLoad = <P extends object>(
   WrappedComponent: ComponentType<P>,
-  threshold = 1,
+  threshold = 0.7,
 ): React.FC<P> => {
   const displayName =
     WrappedComponent.displayName ?? WrappedComponent.name ?? "Component";

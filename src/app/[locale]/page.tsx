@@ -21,6 +21,12 @@ const LazyFeaturedInBlock = dynamic(
     ssr: false,
   },
 );
+const LazyTestimonialsBlock = dynamic(
+  () => import("./_components/TestimonialsBlock/TestimonialsBlock"),
+  {
+    ssr: false,
+  },
+);
 const LazyJoinUsBlock = dynamic(
   () => import("./_components/JoinUsBlock/JoinUsBlock"),
   {
@@ -31,7 +37,8 @@ const LazyJoinUsBlock = dynamic(
 export default async function Home({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
 
-  const { categoryGrid, authorsGrid, featuredIn, joinUs } = dictionary;
+  const { categoryGrid, authorsGrid, featuredIn, joinUs, testimonials } =
+    dictionary;
 
   return (
     <main>
@@ -39,6 +46,7 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
         <LazyCategoriesGrid locale={locale} dictionary={categoryGrid} />
         <LazyAuthorsGrid locale={locale} dictionary={authorsGrid} />
         <LazyFeaturedInBlock dictionary={featuredIn} />
+        <LazyTestimonialsBlock dictionary={testimonials} />
         <LazyJoinUsBlock locale={locale} dictionary={joinUs} />
       </PageSection>
     </main>

@@ -20,6 +20,10 @@
         "heading": "Featured in",
         "body": "We are"
     },
+    "testimonials": {
+        "cap": "Testimonials",
+        "heading": "What people say about our blog"
+    },
     "joinUs": {
         "heading": "Join our team to be a part of our story",
         "button": "Join Now"

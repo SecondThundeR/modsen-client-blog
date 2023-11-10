@@ -10,6 +10,7 @@ export default function Avatar({ alt, ...props }: AvatarProps) {
       data-testid="avatar"
       className={styles.avatar}
       alt={alt}
+      priority
     />
   );
 }

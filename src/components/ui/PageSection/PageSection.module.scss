@@ -17,6 +17,10 @@
     margin: 0;
     padding: 128px 80px;
     width: 100%;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 128px 36px;
+    }
 }
 
 .wrapperGaps {

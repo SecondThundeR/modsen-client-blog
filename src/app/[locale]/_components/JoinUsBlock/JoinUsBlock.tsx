@@ -1,16 +1,16 @@
+"use client";
+
 import Link from "next/link";
 
 import { Body, Button, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
-import { getDictionary } from "@/locale/get-dictionary";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
+import { type JoinUsBlockProps } from "./interfaces";
 import styles from "./JoinUsBlock.module.scss";
 
-export default async function JoinUsBlock({
-  locale,
-}: PageLocaleParams["params"]) {
-  const dictionary = await getDictionary(locale);
-  const { heading, button } = dictionary.joinUs;
+function JoinUsBlock({ locale, dictionary }: JoinUsBlockProps) {
+  const { heading, button } = dictionary;
 
   return (
     <div className={styles.wrapper}>
@@ -27,3 +27,5 @@ export default async function JoinUsBlock({
     </div>
   );
 }
+
+export default withLazyLoad(JoinUsBlock);

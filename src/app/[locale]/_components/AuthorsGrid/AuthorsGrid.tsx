@@ -1,17 +1,17 @@
+"use client";
+
 import Link from "next/link";
 
 import { Avatar, Body, Heading, Socials } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
-import { getDictionary } from "@/locale/get-dictionary";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
 import styles from "./AuthorsGrid.module.scss";
+import { type AuthorsGridProps } from "./interfaces";
 
-export default async function AuthorsGrid({
-  locale,
-}: PageLocaleParams["params"]) {
-  const dictionary = await getDictionary(locale);
-  const { heading, positions } = dictionary.authorsGrid;
+function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
+  const { heading, positions } = dictionary;
 
   const authorsElements = authors
     .slice(0, 4)
@@ -42,3 +42,5 @@ export default async function AuthorsGrid({
     </div>
   );
 }
+
+export default withLazyLoad(AuthorsGrid);

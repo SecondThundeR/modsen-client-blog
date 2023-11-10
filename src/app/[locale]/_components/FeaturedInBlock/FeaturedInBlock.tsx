@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import logo1 from "public/assets/featuredin/logo1.png";
 import logo2 from "public/assets/featuredin/logo2.png";
@@ -6,15 +8,13 @@ import logo4 from "public/assets/featuredin/logo4.png";
 import logo5 from "public/assets/featuredin/logo5.png";
 
 import { Body, Heading } from "@/components/ui";
-import { getDictionary } from "@/locale/get-dictionary";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
 import styles from "./FeaturedInBlock.module.scss";
+import { type FeaturedInBlockProps } from "./interfaces";
 
-export default async function FeaturedInBlock({
-  locale,
-}: PageLocaleParams["params"]) {
-  const dictionary = await getDictionary(locale);
-  const { heading, body } = dictionary.featuredIn;
+function FeaturedInBlock({ dictionary }: FeaturedInBlockProps) {
+  const { heading, body } = dictionary;
 
   return (
     <div className={styles.wrapper}>
@@ -32,3 +32,5 @@ export default async function FeaturedInBlock({
     </div>
   );
 }
+
+export default withLazyLoad(FeaturedInBlock);

@@ -1,18 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { Body, Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
-import { getDictionary } from "@/locale/get-dictionary";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
 import styles from "./CategoriesGrid.module.scss";
+import { type CategoriesGridProps } from "./interfaces";
 
-export default async function CategoriesGrid({
-  locale,
-}: PageLocaleParams["params"]) {
-  const dictionary = await getDictionary(locale);
-  const { heading, categories: categoriesLocale } = dictionary.categoryGrid;
+function CategoriesGrid({ locale, dictionary }: CategoriesGridProps) {
+  const { heading, categories: categoriesLocale } = dictionary;
 
   const categoriesElements = categories.map(({ id, icon }) => (
     <Link
@@ -37,3 +37,5 @@ export default async function CategoriesGrid({
     </div>
   );
 }
+
+export default withLazyLoad(CategoriesGrid);

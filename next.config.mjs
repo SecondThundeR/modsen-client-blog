@@ -6,9 +6,10 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const isAnalyze = process.env.ANALYZE === "true";
 
 const withBundleAnalyzer = NextBundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
+  enabled: isAnalyze,
 });
 
 /** @type {import("next").NextConfig} */
@@ -19,4 +20,6 @@ const config = {
   },
 };
 
-export default withBundleAnalyzer(config);
+const exportConfig = isAnalyze ? withBundleAnalyzer(config) : config;
+
+export default exportConfig;

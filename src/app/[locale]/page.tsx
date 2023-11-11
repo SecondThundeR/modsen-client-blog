@@ -1,50 +1,18 @@
-import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
 import { PageSection } from "@/components/ui";
 import { getDictionary } from "@/locale/get-dictionary";
 
-const LazyAboutUsBlock = dynamic(
-  () => import("./_components/AboutUsBlock/AboutUsBlock"),
-  {
-    ssr: false,
-  },
-);
-const LazyCategoriesGrid = dynamic(
-  () => import("./_components/CategoriesGrid/CategoriesGrid"),
-  {
-    ssr: false,
-  },
-);
-const LazyWhyWeStartedBlock = dynamic(
-  () => import("./_components/WhyWeStartedBlock/WhyWeStartedBlock"),
-  {
-    ssr: false,
-  },
-);
-const LazyAuthorsGrid = dynamic(
-  () => import("./_components/AuthorsGrid/AuthorsGrid"),
-  {
-    ssr: false,
-  },
-);
-const LazyFeaturedInBlock = dynamic(
-  () => import("./_components/FeaturedInBlock/FeaturedInBlock"),
-  {
-    ssr: false,
-  },
-);
-const LazyTestimonialsBlock = dynamic(
-  () => import("./_components/TestimonialsBlock/TestimonialsBlock"),
-  {
-    ssr: false,
-  },
-);
-const LazyJoinUsBlock = dynamic(
-  () => import("./_components/JoinUsBlock/JoinUsBlock"),
-  {
-    ssr: false,
-  },
-);
+import {
+  AboutUsBlock,
+  AuthorsGrid,
+  CategoriesGrid,
+  FeaturedInBlock,
+  JoinUsBlock,
+  TestimonialsBlock,
+  WhyWeStartedBlock,
+} from "./_components";
+import { MainPageSkeleton } from "./_components/skeletons";
 
 export default async function Home({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
@@ -62,13 +30,15 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
   return (
     <main>
       <PageSection fullWidth hasGaps>
-        <LazyAboutUsBlock locale={locale} dictionary={aboutUsBlock} />
-        <LazyCategoriesGrid locale={locale} dictionary={categoryGrid} />
-        <LazyWhyWeStartedBlock locale={locale} dictionary={whyWeStartedBlock} />
-        <LazyAuthorsGrid locale={locale} dictionary={authorsGrid} />
-        <LazyFeaturedInBlock dictionary={featuredIn} />
-        <LazyTestimonialsBlock dictionary={testimonials} />
-        <LazyJoinUsBlock locale={locale} dictionary={joinUs} />
+        <Suspense fallback={<MainPageSkeleton />}>
+          <AboutUsBlock locale={locale} dictionary={aboutUsBlock} />
+          <CategoriesGrid locale={locale} dictionary={categoryGrid} />
+          <WhyWeStartedBlock locale={locale} dictionary={whyWeStartedBlock} />
+          <AuthorsGrid locale={locale} dictionary={authorsGrid} />
+          <FeaturedInBlock dictionary={featuredIn} />
+          <TestimonialsBlock dictionary={testimonials} />
+          <JoinUsBlock locale={locale} dictionary={joinUs} />
+        </Suspense>
       </PageSection>
     </main>
   );

@@ -22,7 +22,7 @@ function TestimonialsBlock({
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
-        <Cap>{cap}</Cap>
+        <Cap weight="semibold">{cap}</Cap>
         <div>
           <Heading level={2}>{heading}</Heading>
           <Body>

@@ -5,14 +5,9 @@ import Link from "next/link";
 import { Body, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
-import { type DictionaryType } from "@/locale/get-dictionary";
 
 import styles from "./AboutUsBlock.module.scss";
-
-interface AboutUsBlockProps {
-  locale: PageLocaleParams["params"]["locale"];
-  dictionary: DictionaryType["aboutUsBlock"];
-}
+import { type AboutUsBlockProps } from "./interfaces";
 
 function AboutUsBlock({ locale, dictionary }: AboutUsBlockProps) {
   const { cap, heading, capMission, headingMission, readMore } = dictionary;

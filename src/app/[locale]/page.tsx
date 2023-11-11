@@ -15,6 +15,12 @@ const LazyCategoriesGrid = dynamic(
     ssr: false,
   },
 );
+const LazyWhyWeStartedBlock = dynamic(
+  () => import("./_components/WhyWeStartedBlock/WhyWeStartedBlock"),
+  {
+    ssr: false,
+  },
+);
 const LazyAuthorsGrid = dynamic(
   () => import("./_components/AuthorsGrid/AuthorsGrid"),
   {
@@ -46,6 +52,7 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
   const {
     aboutUsBlock,
     categoryGrid,
+    whyWeStartedBlock,
     authorsGrid,
     featuredIn,
     joinUs,
@@ -57,6 +64,7 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
       <PageSection fullWidth hasGaps>
         <LazyAboutUsBlock locale={locale} dictionary={aboutUsBlock} />
         <LazyCategoriesGrid locale={locale} dictionary={categoryGrid} />
+        <LazyWhyWeStartedBlock locale={locale} dictionary={whyWeStartedBlock} />
         <LazyAuthorsGrid locale={locale} dictionary={authorsGrid} />
         <LazyFeaturedInBlock dictionary={featuredIn} />
         <LazyTestimonialsBlock dictionary={testimonials} />

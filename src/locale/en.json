@@ -17,6 +17,11 @@
             "technology": "Technology"
         }
     },
+    "whyWeStartedBlock": {
+        "cap": "Why we started",
+        "heading": "It started out as a simple idea and evolved into our passion",
+        "button": "Discover our story >"
+    },
     "authorsGrid": {
         "heading": "List of Authors",
         "positions": {

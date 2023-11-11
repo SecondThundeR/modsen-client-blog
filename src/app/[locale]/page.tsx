@@ -3,6 +3,12 @@ import dynamic from "next/dynamic";
 import { PageSection } from "@/components/ui";
 import { getDictionary } from "@/locale/get-dictionary";
 
+const LazyAboutUsBlock = dynamic(
+  () => import("./_components/AboutUsBlock/AboutUsBlock"),
+  {
+    ssr: false,
+  },
+);
 const LazyCategoriesGrid = dynamic(
   () => import("./_components/CategoriesGrid/CategoriesGrid"),
   {
@@ -37,12 +43,19 @@ const LazyJoinUsBlock = dynamic(
 export default async function Home({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
 
-  const { categoryGrid, authorsGrid, featuredIn, joinUs, testimonials } =
-    dictionary;
+  const {
+    aboutUsBlock,
+    categoryGrid,
+    authorsGrid,
+    featuredIn,
+    joinUs,
+    testimonials,
+  } = dictionary;
 
   return (
     <main>
       <PageSection fullWidth hasGaps>
+        <LazyAboutUsBlock locale={locale} dictionary={aboutUsBlock} />
         <LazyCategoriesGrid locale={locale} dictionary={categoryGrid} />
         <LazyAuthorsGrid locale={locale} dictionary={authorsGrid} />
         <LazyFeaturedInBlock dictionary={featuredIn} />

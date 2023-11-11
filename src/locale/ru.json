@@ -1,6 +1,13 @@
 {
     "title": "Блог клиентов Modsen",
     "headerVideoButton": "Видео о нас",
+    "aboutUsBlock": {
+        "cap": "О нас",
+        "heading": "Мы - сообщество авторов контента, которые делятся своими знаниями",
+        "capMission": "Наша миссия",
+        "headingMission": "Создание ценного контента для креативщиков по всему миру",
+        "readMore": "Узнать больше >"
+    },
     "categoryGrid": {
         "heading": "Выберите категорию",
         "categories": {

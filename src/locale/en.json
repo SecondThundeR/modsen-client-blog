@@ -1,6 +1,13 @@
 {
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
+    "aboutUsBlock": {
+        "cap": "About Us",
+        "heading": "We are a community of content writers who share their learnings",
+        "capMission": "Our Mission",
+        "headingMission": "Creating valuable content for creatives all around the world",
+        "readMore": "Read More >"
+    },
     "categoryGrid": {
         "heading": "Choose A Category",
         "categories": {

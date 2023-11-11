@@ -22,7 +22,9 @@ function CategoriesGrid({ locale, dictionary }: CategoriesGridProps) {
     >
       <Image className={styles.icon} src={icon} alt={`${id} icon`} />
       <div>
-        <Heading level={3}>{categoriesLocale[id]}</Heading>
+        <Heading level={3}>
+          {(categoriesLocale as Record<string, string>)[id]}
+        </Heading>
         <Body color="mediumGray">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         </Body>

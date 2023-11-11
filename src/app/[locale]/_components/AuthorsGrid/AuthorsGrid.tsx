@@ -28,7 +28,7 @@ function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
             <Heading level={3}>{name}</Heading>
           </Link>
           <Body level={2}>
-            {positions[positionId]} {companyHandle}
+            {(positions as Record<string, string>)[positionId]} {companyHandle}
           </Body>
         </div>
         <Socials customLinks={socials} />

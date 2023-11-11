@@ -1,3 +1,11 @@
+import { posts } from "@/constants/data/posts";
+
+export function generateStaticParams() {
+  return posts.map((post) => ({
+    id: post.id,
+  }));
+}
+
 export default function BlogPost({
   params: { id },
 }: {

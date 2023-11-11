@@ -20,4 +20,6 @@ export const categories = [
     id: "technology",
     icon: techIcon,
   },
-] as const;
+];
+
+export type Category = (typeof categories)[number];

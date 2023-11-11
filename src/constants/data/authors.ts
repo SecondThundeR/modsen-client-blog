@@ -1,3 +1,4 @@
+import andrewJohnsonImage from "public/assets/authors/andrew-johnson.jpeg";
 import dianneRussellImage from "public/assets/authors/dianne-russel.png";
 import floydMilesImage from "public/assets/authors/floyd-miles.png";
 import jennyWilsonImage from "public/assets/authors/jenny-wilson.png";
@@ -56,4 +57,19 @@ export const authors = [
       linkedin: "https://www.linkedin.com/",
     },
   },
-] as const;
+  {
+    id: "andrew-johnson",
+    name: "Andrew Johnson",
+    image: andrewJohnsonImage,
+    positionId: "contentWriter",
+    companyHandle: "@Company",
+    socials: {
+      facebook: "https://www.facebook.com/",
+      twitter: "https://twitter.com/",
+      instagram: "https://www.instagram.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  },
+];
+
+export type Author = (typeof authors)[number];

@@ -8,16 +8,20 @@ import {
   AuthorsGrid,
   CategoriesGrid,
   FeaturedInBlock,
+  HomeHero,
   JoinUsBlock,
   TestimonialsBlock,
   WhyWeStartedBlock,
 } from "./_components";
 import { MainPageSkeleton } from "./_components/skeletons";
 
+const CURRENT_HERO_POST_ID = "step-by-step";
+
 export default async function Home({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
 
   const {
+    heroPostBlock,
     aboutUsBlock,
     categoryGrid,
     whyWeStartedBlock,
@@ -29,6 +33,12 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
 
   return (
     <main>
+      <HomeHero
+        locale={locale}
+        heroPostId={CURRENT_HERO_POST_ID}
+        dictionary={heroPostBlock}
+        categories={categoryGrid.categories}
+      />
       <PageSection fullWidth hasGaps>
         <Suspense fallback={<MainPageSkeleton />}>
           <AboutUsBlock locale={locale} dictionary={aboutUsBlock} />

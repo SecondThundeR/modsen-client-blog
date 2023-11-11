@@ -1,6 +1,11 @@
 {
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
+    "heroPostBlock": {
+        "cap": "Posted on",
+        "body": "By",
+        "button": "Read more >"
+    },
     "aboutUsBlock": {
         "cap": "About Us",
         "heading": "We are a community of content writers who share their learnings",

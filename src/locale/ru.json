@@ -75,6 +75,10 @@
         "placeholder": "Введите свою почту",
         "buttonText": "Подписаться"
     },
+    "aboutUsPage": {
+        "teamHeading": "Наша команда креативщиков",
+        "startedHeading": "Почему мы создали этот блог"
+    },
     "contactUs": {
         "cap": "Связаться с нами",
         "heading": "Давайте начнем беседу",

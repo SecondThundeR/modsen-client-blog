@@ -75,6 +75,10 @@
         "placeholder": "Enter Your Email",
         "buttonText": "Subscribe"
     },
+    "aboutUsPage": {
+        "teamHeading": "Our team of creatives",
+        "startedHeading": "Why we started this Blog"
+    },
     "contactUs": {
         "cap": "Contact us",
         "heading": "Let’s Start a Conversation",

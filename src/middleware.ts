@@ -8,16 +8,12 @@ import { i18n } from "./locale/i18n-config";
 function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
-
   const locales = i18n.locales as unknown as string[];
-
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
     locales,
   );
 
-  const locale = matchLocale(languages, locales, i18n.defaultLocale);
-
-  return locale;
+  return matchLocale(languages, locales, i18n.defaultLocale);
 }
 
 export function middleware(request: NextRequest) {

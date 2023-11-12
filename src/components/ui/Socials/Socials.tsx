@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { socialLinks } from "@/lib/links";
+import { socialLinks } from "@/constants/links";
 
 import { type SocialsProps } from "./interfaces";
 import styles from "./Socials.module.scss";

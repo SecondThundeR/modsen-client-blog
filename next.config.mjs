@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const isAnalyze = process.env.ANALYZE === "true";
 
 const withBundleAnalyzer = NextBundleAnalyzer({
-  enabled: isAnalyze,
+  enabled: true,
 });
 
 /** @type {import("next").NextConfig} */

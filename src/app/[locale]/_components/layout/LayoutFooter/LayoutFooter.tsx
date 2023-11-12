@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
-import { getLinks, socialLinks } from "@/lib/links";
+import { socialLinks } from "@/constants/links";
+import { getLinks } from "@/lib/links";
 
 import {
   LocaleSwitcherSkeleton,

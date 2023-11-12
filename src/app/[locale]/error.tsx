@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect } from "react";
 
-import { Body, Button, ErrorWrapper, Heading } from "@/components/ui";
+import { Body, Button, ErrorWrapper, Heading, Spinner } from "@/components/ui";
 import { useDictionary } from "@/locale/use-dictionary";
 
 export default function Error({ error, reset }: ErrorPageProps) {
@@ -15,9 +15,15 @@ export default function Error({ error, reset }: ErrorPageProps) {
 
   return (
     <ErrorWrapper>
-      <Heading>{dictionary?.error.heading}</Heading>
-      <Body>{error.message}</Body>
-      <Button onClick={onReset}>{dictionary?.error.button}</Button>
+      {!dictionary ? (
+        <Spinner color="black" />
+      ) : (
+        <>
+          <Heading>{dictionary.error.heading}</Heading>
+          <Body>{error.message}</Body>
+          <Button onClick={onReset}>{dictionary.error.button}</Button>
+        </>
+      )}
     </ErrorWrapper>
   );
 }

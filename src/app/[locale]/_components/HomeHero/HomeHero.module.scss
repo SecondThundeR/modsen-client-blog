@@ -1,0 +1,48 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding-top: 128px;
+    padding-bottom: 192px;
+    padding-left: 82px;
+    padding-right: 82px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: $heroGradientColor, url('/assets/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $white;
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

@@ -25,7 +25,6 @@ export default function ContactForm({
   alertLocale,
 }: ContactFormProps) {
   const { sentStatus, onSend } = useSendContactUsMail();
-  const { error, success } = alertLocale;
   const queryRelatedOptions = useMemo(() => {
     const { heading, first, second, third } = formLocale.query;
     return [
@@ -52,6 +51,7 @@ export default function ContactForm({
       },
     ];
   }, [formLocale.query]);
+  const { error, success } = alertLocale;
 
   const onSubmit: FormikSubmitType = useCallback(
     async (values, { resetForm, validateForm }) => {

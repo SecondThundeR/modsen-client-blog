@@ -1,0 +1,46 @@
+"use client";
+
+import Link from "next/link";
+
+import { Avatar, Body, Heading, Socials } from "@/components/ui";
+import { authors } from "@/constants/data/authors";
+import { routes } from "@/constants/routes";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+
+import styles from "./AuthorsGrid.module.scss";
+import { type AuthorsGridProps } from "./interfaces";
+
+function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
+  const { heading, positions } = dictionary;
+
+  const authorsElements = authors
+    .slice(0, 4)
+    .map(({ id, image, companyHandle, name, positionId, socials }) => (
+      <div className={styles.card} key={id}>
+        <Avatar
+          src={image}
+          width={128}
+          height={128}
+          alt={`${name} avatar image`}
+        />
+        <div>
+          <Link href={`${locale}${routes.author}/${id}`}>
+            <Heading level={3}>{name}</Heading>
+          </Link>
+          <Body level={2}>
+            {(positions as Record<string, string>)[positionId]} {companyHandle}
+          </Body>
+        </div>
+        <Socials customLinks={socials} />
+      </div>
+    ));
+
+  return (
+    <div className={styles.wrapper}>
+      <Heading level={2}>{heading}</Heading>
+      <div className={styles.grid}>{authorsElements}</div>
+    </div>
+  );
+}
+
+export default withLazyLoad(AuthorsGrid);

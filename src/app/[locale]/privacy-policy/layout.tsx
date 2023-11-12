@@ -13,8 +13,8 @@ export default async function PrivacyPolicyLayout({
   return (
     <main>
       <Header>
-        <Heading level={1}>{privacyPolicyDictionary.heading}</Heading>
-        <Body level={1}>{privacyPolicyDictionary.body}</Body>
+        <Heading>{privacyPolicyDictionary.heading}</Heading>
+        <Body>{privacyPolicyDictionary.body}</Body>
       </Header>
       <PageSection>{children}</PageSection>
     </main>

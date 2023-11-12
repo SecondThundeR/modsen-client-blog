@@ -11,6 +11,13 @@ export default defineConfig({
     coverage: {
       reporter: ["html", "text"],
       provider: "v8",
+      exclude: [
+        "**/constants/**",
+        "**/lib/**",
+        "**/locale/**",
+        "**/schemas/**",
+        "**/styles/**",
+      ],
     },
     css: {
       modules: {
@@ -23,6 +30,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      public: path.resolve(__dirname, "./public"),
     },
   },
 });

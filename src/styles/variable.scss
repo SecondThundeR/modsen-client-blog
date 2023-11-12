@@ -20,10 +20,16 @@ $activeScale: scale(0.95);
 $subscribeBlockBackgroundColor: rgba(255, 255, 255, .05);
 $modalWrapperBackgroundColor: rgba(0, 0, 0, 0.7);
 $mapWrapperBackgroundColor: #EFE9E1;
+$categoryCardBorderColor: rgba(110, 111, 119, 0.3);
+$featuredCardBorderColor: rgba(110, 111, 119, 0.1);
+$heroGradientColor: radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
 
 $disabledOpacity: 0.6;
 
 $breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-large: 1280px;
+$breakpoint-extra-large: 1536px;
 $mapHeight: 400px;
 
 $selectDropdownIcon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M2 2L6 6L10 2' stroke='black' stroke-width='2' stroke-linecap='square'/></svg>");

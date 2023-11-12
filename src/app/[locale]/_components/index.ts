@@ -1,5 +1,9 @@
-export { default as LayoutFooter } from "./LayoutFooter/LayoutFooter";
-export { default as LayoutNavbar } from "./LayoutNavbar/LayoutNavbar";
-export { default as LocaleSwitcher } from "./LocaleSwitcher/LocaleSwitcher";
-export { default as ModalShell } from "./ModalShell/ModalShell";
-export { default as SubscribeBlock } from "./SubscribeBlock/SubscribeBlock";
+export { default as AboutUsBlock } from "./AboutUsBlock/AboutUsBlock";
+export { default as AuthorsGrid } from "./AuthorsGrid/AuthorsGrid";
+export { default as CategoriesGrid } from "./CategoriesGrid/CategoriesGrid";
+export { default as FeaturedInBlock } from "./FeaturedInBlock/FeaturedInBlock";
+export { default as HomeHero } from "./HomeHero/HomeHero";
+export { default as JoinUsBlock } from "./JoinUsBlock/JoinUsBlock";
+export { default as PostsBlock } from "./PostsBlock/PostsBlock";
+export { default as TestimonialsBlock } from "./TestimonialsBlock/TestimonialsBlock";
+export { default as WhyWeStartedBlock } from "./WhyWeStartedBlock/WhyWeStartedBlock";

@@ -1,0 +1,102 @@
+@mixin columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    height: 490px;
+    gap: 96px;
+    padding: 80px 112px;
+    background-color: $lightYellow;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 48px;
+        height: 650px;
+        padding: 48px 52px;
+    }
+}
+
+.header {
+    @include columnFlex;
+    flex: 1;
+    align-items: flex-start;
+    gap: 12px;
+
+    &>div {
+        @include columnFlex;
+        gap: 16px;
+    }
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    border: 1px solid $mediumGray;
+    opacity: 0.4;
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+.testimonialWrapper {
+    @include columnFlex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.testimonialFooter {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.authorWrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.authorDetails {
+    @include columnFlex;
+}
+
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: $breakpoint-mobile) {
+        justify-content: center;
+    }
+}
+
+.button {
+    padding: 16px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $black;
+    transition: $transitionSetup;
+
+    &:hover {
+        padding: 20px;
+        background-color: $black;
+        color: $white;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        &:hover {
+            padding: 16px;
+        }
+    }
+}

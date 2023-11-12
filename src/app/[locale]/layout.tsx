@@ -6,10 +6,10 @@ import { Suspense } from "react";
 import { inter, sen } from "@/lib/fonts";
 import { getDictionary } from "@/locale/get-dictionary";
 
-import { LayoutFooter, LayoutNavbar } from "./_components";
+import { LayoutFooter, LayoutNavbar } from "./_components/layout";
 
 const LazyModalShell = dynamic(
-  () => import("./_components/ModalShell/ModalShell"),
+  () => import("./_components/layout/ModalShell/ModalShell"),
   {
     ssr: false,
   },

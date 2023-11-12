@@ -11,6 +11,10 @@ $capWeightLevel3: 900;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 3px;
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+    }
 }
 
 .cap__regular {

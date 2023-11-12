@@ -3,9 +3,13 @@ import Link from "next/link";
 
 import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
-import { getLinks, socialLinks } from "@/lib/links";
+import { socialLinks } from "@/constants/links";
+import { getLinks } from "@/lib/links";
 
-import { LocaleSwitcherSkeleton, SubscribeBlockSkeleton } from "../skeletons";
+import {
+  LocaleSwitcherSkeleton,
+  SubscribeBlockSkeleton,
+} from "../../skeletons";
 import { type LayoutFooterProps } from "./interfaces";
 
 const LazyLocaleSwitcher = dynamic(
@@ -33,7 +37,7 @@ export default function LayoutFooter({
   const linksElements = [
     ...getLinks(locale, links, "footer").map(({ id, href, text }) => (
       <Link key={id} href={href}>
-        <Body level={1}>{text}</Body>
+        <Body>{text}</Body>
       </Link>
     )),
     <LazyLocaleSwitcher key="locale-switcher" currentLocale={locale} />,

@@ -1,15 +1,12 @@
-"use client";
-
 import Link from "next/link";
 
 import { Body, Button, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
 import { type JoinUsBlockProps } from "./interfaces";
 import styles from "./JoinUsBlock.module.scss";
 
-function JoinUsBlock({ locale, dictionary }: JoinUsBlockProps) {
+export default function JoinUsBlock({ locale, dictionary }: JoinUsBlockProps) {
   const { heading, button } = dictionary;
 
   return (
@@ -27,5 +24,3 @@ function JoinUsBlock({ locale, dictionary }: JoinUsBlockProps) {
     </div>
   );
 }
-
-export default withLazyLoad(JoinUsBlock);

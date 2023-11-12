@@ -5,11 +5,11 @@ import { getDictionary } from "@/locale/get-dictionary";
 
 import {
   AboutUsBlock,
-  AuthorsGrid,
   CategoriesGrid,
   FeaturedInBlock,
   HomeHero,
-  JoinUsBlock,
+  LazyAuthorsGrid,
+  LazyJoinUsBlock,
   PostsBlock,
   TestimonialsBlock,
   WhyWeStartedBlock,
@@ -54,10 +54,10 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
           <AboutUsBlock locale={locale} dictionary={aboutUsBlock} />
           <CategoriesGrid locale={locale} dictionary={categoryGrid} />
           <WhyWeStartedBlock locale={locale} dictionary={whyWeStartedBlock} />
-          <AuthorsGrid locale={locale} dictionary={authorsGrid} />
+          <LazyAuthorsGrid locale={locale} dictionary={authorsGrid} />
           <FeaturedInBlock dictionary={featuredIn} />
           <TestimonialsBlock dictionary={testimonials} />
-          <JoinUsBlock locale={locale} dictionary={joinUs} />
+          <LazyJoinUsBlock locale={locale} dictionary={joinUs} />
         </Suspense>
       </PageSection>
     </main>

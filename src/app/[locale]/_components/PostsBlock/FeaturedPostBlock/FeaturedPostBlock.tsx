@@ -18,7 +18,7 @@ export default function FeaturedPostBlock({
   buttonString,
 }: FeaturedPostBlockProps) {
   const { id, name, createdAt, authorId } = findPostByID(postId)!;
-  const author = findAuthorByID(authorId)!;
+  const author = findAuthorByID(authorId, false)!;
 
   const authorLink = author && (
     <AuthorLink

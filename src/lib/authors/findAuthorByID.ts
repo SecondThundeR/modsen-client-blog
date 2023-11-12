@@ -16,10 +16,12 @@ export function findAuthorByID(authorId: string, includeSocials = true) {
   if (!author) return undefined;
   if (includeSocials) return author;
 
-  const { socials, ...rest } = author;
-  console.log(
-    `[LOG] Omitted socials for "${authorId}": ${JSON.stringify(socials)}`,
-  );
-
-  return rest;
+  const { id, name, image, positionId, companyHandle } = author;
+  return {
+    id,
+    name,
+    image,
+    positionId,
+    companyHandle,
+  };
 }

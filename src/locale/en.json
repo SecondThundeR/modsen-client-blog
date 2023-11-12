@@ -6,6 +6,13 @@
         "body": "By",
         "button": "Read more >"
     },
+    "postsBlock": {
+        "featured": "Featured Post",
+        "body": "By",
+        "all": "All Posts",
+        "view": "View all",
+        "button": "Read more >"
+    },
     "aboutUsBlock": {
         "cap": "About Us",
         "heading": "We are a community of content writers who share their learnings",

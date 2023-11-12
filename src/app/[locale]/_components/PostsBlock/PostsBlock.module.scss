@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-extra-large) {
+        flex-direction: column;
+    }
+}
+
+.subwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.link {
+    color: $purple;
+}
+
+
+.all__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.all__posts {
+    display: flex;
+    flex-direction: column;
+}

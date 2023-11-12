@@ -1,6 +1,7 @@
 export { default as Alert } from "./Alert/Alert";
 export { default as Article } from "./Article/Article";
 export { default as ArticleWrapper } from "./ArticleWrapper/ArticleWrapper";
+export { default as AuthorLink } from "./AuthorLink/AuthorLink";
 export { default as Avatar } from "./Avatar/Avatar";
 export { default as Body } from "./Body/Body";
 export { default as Button } from "./Button/Button";

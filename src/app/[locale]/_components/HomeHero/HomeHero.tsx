@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { Body, Button, Cap, Heading } from "@/components/ui";
+import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { getFormattedDate } from "@/lib/date";
@@ -27,13 +27,12 @@ export default function HomeHero({
   const localeCategory = categories[categoryId];
 
   const authorLink = author && (
-    <>
-      {body}{" "}
-      <Link href={`/${locale}${routes.author}/${author.id}`}>
-        {author.name}
-      </Link>
-      {" | "}
-    </>
+    <AuthorLink
+      id={author.id}
+      name={author.name}
+      locale={locale}
+      bodyString={body}
+    />
   );
 
   return (

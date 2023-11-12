@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 128px;
 
     margin: 128px auto;
     width: 50%;
@@ -21,8 +22,4 @@
     @media (max-width: $breakpoint-mobile) {
         padding: 128px 36px;
     }
-}
-
-.wrapperGaps {
-    gap: 128px;
 }

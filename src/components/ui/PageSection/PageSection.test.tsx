@@ -31,30 +31,4 @@ describe("PageSection", () => {
     expect(pageSection.nodeName.toLowerCase()).toEqual("section");
     expect(pageSection.className).toEqual("wrapper fullWidth");
   });
-
-  test("should render page section with gaps", () => {
-    render(
-      <PageSection hasGaps>
-        <p>Content</p>
-      </PageSection>,
-    );
-
-    const pageSection = screen.getByTestId("page-section");
-
-    expect(pageSection.nodeName.toLowerCase()).toEqual("section");
-    expect(pageSection.className).toEqual("wrapper wrapperGaps");
-  });
-
-  test("should render page section with gaps and full width", () => {
-    render(
-      <PageSection fullWidth hasGaps>
-        <p>Content</p>
-      </PageSection>,
-    );
-
-    const pageSection = screen.getByTestId("page-section");
-
-    expect(pageSection.nodeName.toLowerCase()).toEqual("section");
-    expect(pageSection.className).toEqual("wrapper fullWidth wrapperGaps");
-  });
 });

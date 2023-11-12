@@ -43,7 +43,7 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
         dictionary={heroPostBlock}
         categories={categoryGrid.categories}
       />
-      <PageSection fullWidth hasGaps>
+      <PageSection fullWidth>
         <Suspense fallback={<MainPageSkeleton />}>
           <PostsBlock
             locale={locale}

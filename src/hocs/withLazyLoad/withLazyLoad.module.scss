@@ -16,6 +16,11 @@ $lazyWrapperTransition: all 0.8s ease;
     transform: translateY(60px);
 }
 
+.wrapper__no_transform {
+    transform: translateY(0px);
+
+}
+
 .isVisible {
     opacity: 1;
     transform: translateY(0px);

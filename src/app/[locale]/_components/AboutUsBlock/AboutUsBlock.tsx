@@ -31,7 +31,7 @@ function AboutUsBlock({ locale, dictionary }: AboutUsBlockProps) {
             </Body>
             <Link
               className={styles.element__link}
-              href={`${locale}${routes.aboutUs}`}
+              href={`/${locale}${routes.aboutUs}`}
             >
               {readMore}
             </Link>

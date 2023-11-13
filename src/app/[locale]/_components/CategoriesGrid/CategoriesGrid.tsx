@@ -18,7 +18,7 @@ function CategoriesGrid({ locale, dictionary }: CategoriesGridProps) {
     <Link
       key={id}
       className={styles.card}
-      href={`${locale}${routes.category}/${id}`}
+      href={`/${locale}${routes.category}/${id}`}
     >
       <Image className={styles.icon} src={icon} alt={`${id} icon`} />
       <div>

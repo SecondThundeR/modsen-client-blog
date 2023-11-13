@@ -15,7 +15,7 @@ export default function AllPostBlock({
   bodyString,
 }: AllPostBlockProps) {
   const { id, name, createdAt, authorId } = findPostByID(postId)!;
-  const author = findAuthorByID(authorId)!;
+  const author = findAuthorByID(authorId, false)!;
 
   const authorLink = author && (
     <AuthorLink

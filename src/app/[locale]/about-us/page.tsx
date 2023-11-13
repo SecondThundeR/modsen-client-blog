@@ -1,11 +1,36 @@
-import { Header, Heading } from "@/components/ui";
+import { getDictionary } from "@/locale/get-dictionary";
 
-export default function AboutUs() {
+import { AuthorsGrid, JoinUsBlock } from "../_components";
+import { AboutUsHeader, StartedBlock, TeamBlock } from "./_components";
+
+export default async function AboutUs({
+  params: { locale },
+}: PageLocaleParams) {
+  const dictionary = await getDictionary(locale);
+
+  const {
+    joinUs,
+    authorsGrid,
+    aboutUsPage: {
+      teamHeading,
+      startedHeading,
+      header,
+      overview,
+      missionVision,
+    },
+  } = dictionary;
+
   return (
-    <main>
-      <Header>
-        <Heading>About us page</Heading>
-      </Header>
-    </main>
+    <>
+      <AboutUsHeader
+        headerDictionary={header}
+        overviewDictionary={overview}
+        missionVisionDictionary={missionVision}
+      />
+      <TeamBlock headingString={teamHeading} />
+      <StartedBlock headingString={startedHeading} />
+      <AuthorsGrid locale={locale} dictionary={authorsGrid} extended />
+      <JoinUsBlock locale={locale} dictionary={joinUs} />
+    </>
   );
 }

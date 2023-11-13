@@ -1,20 +1,22 @@
-"use client";
-
 import Link from "next/link";
 
 import { Avatar, Body, Heading, Socials } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 
 import styles from "./AuthorsGrid.module.scss";
 import { type AuthorsGridProps } from "./interfaces";
 
-function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
+export default function AuthorsGrid({
+  locale,
+  dictionary,
+  extended = false,
+}: AuthorsGridProps) {
   const { heading, positions } = dictionary;
+  const extendedSliceElements = extended ? 8 : 4;
 
   const authorsElements = authors
-    .slice(0, 4)
+    .slice(0, extendedSliceElements)
     .map(({ id, image, companyHandle, name, positionId, socials }) => (
       <div className={styles.card} key={id}>
         <Avatar
@@ -24,7 +26,7 @@ function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
           alt={`${name} avatar image`}
         />
         <div>
-          <Link href={`${locale}${routes.author}/${id}`}>
+          <Link href={`/${locale}${routes.author}/${id}`}>
             <Heading level={3}>{name}</Heading>
           </Link>
           <Body level={2}>
@@ -42,5 +44,3 @@ function AuthorsGrid({ locale, dictionary }: AuthorsGridProps) {
     </div>
   );
 }
-
-export default withLazyLoad(AuthorsGrid);

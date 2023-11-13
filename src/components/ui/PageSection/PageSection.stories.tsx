@@ -8,6 +8,11 @@ const meta = {
   title: "Components/PageSection",
   component: PageSection,
   argTypes: {
+    fullWidth: {
+      description: "Setting that controls wrapper width",
+      type: "boolean",
+      defaultValue: false,
+    },
     children: {
       description: "Page section items",
       options: ["Single", "None"],

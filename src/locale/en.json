@@ -94,6 +94,14 @@
             "heading": "We are a team of content writers who share their learnings"
         }
     },
+    "authorPage": {
+        "header": {
+            "headingStart": "Hey there, I'm",
+            "headingEnd": "and welcome to my Blog"
+        },
+        "postsHeading": "My Posts",
+        "noPostsHeading": "Currently, I don't have any posts! Come back later"
+    },
     "contactUs": {
         "cap": "Contact us",
         "heading": "Let’s Start a Conversation",

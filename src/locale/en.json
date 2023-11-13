@@ -77,7 +77,22 @@
     },
     "aboutUsPage": {
         "teamHeading": "Our team of creatives",
-        "startedHeading": "Why we started this Blog"
+        "startedHeading": "Why we started this Blog",
+        "missionVision": {
+            "cap1": "Our Mission",
+            "cap2": "Our Vision",
+            "heading1": "Creating valuable content for creatives all around the world",
+            "heading2": "A platform that empowers individuals to improve"
+        },
+        "overview": {
+            "blogs": "Blogs Published",
+            "views": "Views on Finsweet",
+            "total": "Total active Users"
+        },
+        "header": {
+            "cap": "About Us",
+            "heading": "We are a team of content writers who share their learnings"
+        }
     },
     "contactUs": {
         "cap": "Contact us",

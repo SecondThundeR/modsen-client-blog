@@ -1,7 +1,7 @@
 import { getDictionary } from "@/locale/get-dictionary";
 
 import { AuthorsGrid, JoinUsBlock } from "../_components";
-import { StartedBlock, TeamBlock } from "./_components";
+import { AboutUsHeader, StartedBlock, TeamBlock } from "./_components";
 
 export default async function AboutUs({
   params: { locale },
@@ -11,11 +11,22 @@ export default async function AboutUs({
   const {
     joinUs,
     authorsGrid,
-    aboutUsPage: { teamHeading, startedHeading },
+    aboutUsPage: {
+      teamHeading,
+      startedHeading,
+      header,
+      overview,
+      missionVision,
+    },
   } = dictionary;
 
   return (
     <>
+      <AboutUsHeader
+        headerDictionary={header}
+        overviewDictionary={overview}
+        missionVisionDictionary={missionVision}
+      />
       <TeamBlock headingString={teamHeading} />
       <StartedBlock headingString={startedHeading} />
       <AuthorsGrid locale={locale} dictionary={authorsGrid} extended />

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
+import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { getFormattedDate } from "@/lib/date";
 import { findPostByID } from "@/lib/posts/findPostByID";
@@ -11,7 +12,7 @@ import { findPostByID } from "@/lib/posts/findPostByID";
 import styles from "./HomeHero.module.scss";
 import { type HomeHeroProps } from "./interfaces";
 
-export default function HomeHero({
+function HomeHero({
   locale,
   heroPostId,
   dictionary,
@@ -62,3 +63,5 @@ export default function HomeHero({
     </div>
   );
 }
+
+export default withLazyLoad(HomeHero);

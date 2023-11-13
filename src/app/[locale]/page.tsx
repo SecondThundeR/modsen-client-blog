@@ -37,14 +37,14 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
 
   return (
     <main>
-      <HomeHero
-        locale={locale}
-        heroPostId={CURRENT_HERO_POST_ID}
-        dictionary={heroPostBlock}
-        categories={categoryGrid.categories}
-      />
-      <PageSection fullWidth>
-        <Suspense fallback={<MainPageSkeleton />}>
+      <Suspense fallback={<MainPageSkeleton />}>
+        <HomeHero
+          locale={locale}
+          heroPostId={CURRENT_HERO_POST_ID}
+          dictionary={heroPostBlock}
+          categories={categoryGrid.categories}
+        />
+        <PageSection fullWidth>
           <PostsBlock
             locale={locale}
             dictionary={postsBlock}
@@ -58,8 +58,8 @@ export default async function Home({ params: { locale } }: PageLocaleParams) {
           <FeaturedInBlock dictionary={featuredIn} />
           <TestimonialsBlock dictionary={testimonials} />
           <LazyJoinUsBlock locale={locale} dictionary={joinUs} />
-        </Suspense>
-      </PageSection>
+        </PageSection>
+      </Suspense>
     </main>
   );
 }

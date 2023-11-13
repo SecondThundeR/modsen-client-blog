@@ -52,4 +52,4 @@ function PostsBlock({
   );
 }
 
-export default withLazyLoad(PostsBlock, 0.2);
+export default withLazyLoad(PostsBlock, 0.3);

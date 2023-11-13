@@ -52,4 +52,6 @@ function PostsBlock({
   );
 }
 
-export default withLazyLoad(PostsBlock, 0.3);
+export default withLazyLoad(PostsBlock, {
+  threshold: 0.3,
+});

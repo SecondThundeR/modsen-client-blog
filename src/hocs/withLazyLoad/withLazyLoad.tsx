@@ -7,8 +7,12 @@ import styles from "./withLazyLoad.module.scss";
 
 export const withLazyLoad = <P extends object>(
   WrappedComponent: ComponentType<P>,
-  threshold = 0.6,
+  options?: {
+    threshold?: number;
+    hasTransformY?: boolean;
+  },
 ): React.FC<P> => {
+  const { threshold = 0.6, hasTransformY = true } = options ?? {};
   const displayName =
     WrappedComponent.displayName ?? WrappedComponent.name ?? "Component";
 
@@ -20,6 +24,7 @@ export const withLazyLoad = <P extends object>(
         ref={ref}
         className={clsx(styles.wrapper, {
           [styles.isVisible!]: hasLoaded,
+          [styles.transform!]: hasTransformY,
         })}
       >
         <WrappedComponent {...props} />

@@ -13,10 +13,13 @@ $lazyWrapperTransition: all 0.8s ease;
     height: 100%;
     opacity: 0;
     transition: $lazyWrapperTransition;
-    transform: translateY(60px);
 }
 
 .isVisible {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.transform {
+    transform: translateY(60px);
 }

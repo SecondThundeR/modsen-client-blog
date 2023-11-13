@@ -9,12 +9,21 @@ export default function Select({
   errorMessage,
   ...props
 }: SelectProps) {
+  const disabledValues = options
+    .filter((option) => option.isDisabled)
+    .map((option) => option.value);
+  const isSelectedDisabled =
+    props.value !== undefined
+      ? disabledValues.includes(String(props.value))
+      : false;
+
   return (
     <div data-testid="select-wrapper">
       <select
         data-testid="select"
         className={clsx(styles.select, {
           [styles.full_padding!]: fullPadding,
+          [styles.disabledOption!]: isSelectedDisabled,
         })}
         {...props}
       >

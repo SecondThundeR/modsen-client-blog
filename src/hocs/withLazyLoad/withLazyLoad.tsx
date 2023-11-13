@@ -23,8 +23,8 @@ export const withLazyLoad = <P extends object>(
       <div
         ref={ref}
         className={clsx(styles.wrapper, {
+          [styles.wrapper__no_transform!]: !hasTransformY,
           [styles.isVisible!]: hasLoaded,
-          [styles.transform!]: hasTransformY,
         })}
       >
         <WrappedComponent {...props} />

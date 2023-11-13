@@ -22,8 +22,8 @@ export default function Select({
       <select
         data-testid="select"
         className={clsx(styles.select, {
+          [styles.select__disabled!]: isSelectedDisabled,
           [styles.full_padding!]: fullPadding,
-          [styles.disabledOption!]: isSelectedDisabled,
         })}
         {...props}
       >

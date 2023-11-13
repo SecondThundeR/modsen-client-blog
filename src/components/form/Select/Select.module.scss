@@ -27,6 +27,10 @@
     }
 }
 
+.select__disabled {
+    color: $mediumGray;
+}
+
 .errorMessage {
     @include formErrorMessage;
 }

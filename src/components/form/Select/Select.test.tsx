@@ -12,6 +12,15 @@ describe("Select", () => {
     },
   ];
 
+  const disabledOption = [
+    {
+      id: "test",
+      name: "test",
+      value: "test",
+      isDisabled: true,
+    },
+  ];
+
   test("should render select", () => {
     render(<Select options={defaultOptions} />);
 
@@ -40,5 +49,15 @@ describe("Select", () => {
     expect(errorMessage.textContent).toEqual("Hello!");
     expect(errorMessage.nodeName.toLowerCase()).toEqual("span");
     expect(errorMessage.className).toEqual("errorMessage");
+  });
+
+  test("should render disabled select with another class", () => {
+    render(<Select value="test" options={disabledOption} />);
+
+    const select = screen.getByTestId("select");
+
+    expect(select).toBeInTheDocument();
+    expect(select.nodeName.toLowerCase()).toEqual("select");
+    expect(select.className).toEqual("select select__disabled");
   });
 });

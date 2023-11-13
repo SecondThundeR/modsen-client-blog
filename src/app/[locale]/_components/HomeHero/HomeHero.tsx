@@ -64,4 +64,6 @@ function HomeHero({
   );
 }
 
-export default withLazyLoad(HomeHero);
+export default withLazyLoad(HomeHero, {
+  hasTransformY: false,
+});

@@ -26,7 +26,7 @@ export default function AuthorsGrid({
           alt={`${name} avatar image`}
         />
         <div>
-          <Link href={`${locale}${routes.author}/${id}`}>
+          <Link href={`/${locale}${routes.author}/${id}`}>
             <Heading level={3}>{name}</Heading>
           </Link>
           <Body level={2}>

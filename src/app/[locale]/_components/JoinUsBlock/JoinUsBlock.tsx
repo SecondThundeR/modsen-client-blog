@@ -18,7 +18,7 @@ export default function JoinUsBlock({ locale, dictionary }: JoinUsBlockProps) {
           eiusmod tempor incididunt.
         </Body>
       </div>
-      <Link href={`${locale}${routes.contactUs}`}>
+      <Link href={`/${locale}${routes.contactUs}`}>
         <Button>{button}</Button>
       </Link>
     </div>

@@ -30,7 +30,7 @@ function WhyWeStartedBlock({ locale, dictionary }: WhyWeStartedBlockProps) {
               </Body>
             </div>
           </div>
-          <Link href={`${locale}${routes.aboutUs}`}>
+          <Link href={`/${locale}${routes.aboutUs}`}>
             <Button>{button}</Button>
           </Link>
         </div>

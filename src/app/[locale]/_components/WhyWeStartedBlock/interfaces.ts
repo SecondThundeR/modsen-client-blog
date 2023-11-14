@@ -1,6 +1,7 @@
 import { type DictionaryType } from "@/locale/get-dictionary";
+import { type Locale } from "@/locale/i18n-config";
 
 export interface WhyWeStartedBlockProps {
-  locale: PageLocaleParams["params"]["locale"];
+  locale: Locale;
   dictionary: DictionaryType["whyWeStartedBlock"];
 }

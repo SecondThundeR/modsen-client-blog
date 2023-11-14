@@ -1,17 +1,13 @@
 {
     "title": "Блог клиентов Modsen",
     "headerVideoButton": "Видео о нас",
-    "heroPostBlock": {
-        "cap": "Опубликовано в",
-        "body": "Автор:",
-        "button": "Узнать подробнее >"
-    },
+    "postedOn": "Опубликовано в",
+    "authorPrefix": "Автор:",
+    "readMore": "Узнать подробнее >",
     "postsBlock": {
         "featured": "Избранный пост",
-        "body": "Автор:",
         "all": "Все посты",
-        "view": "Посмотреть все",
-        "button": "Узнать подробнее >"
+        "view": "Посмотреть все"
     },
     "blogHome": {
         "allPostsHeading": "Все посты",
@@ -19,9 +15,7 @@
         "categoriesHeading": "Все категории"
     },
     "blogPost": {
-        "readNextHeading": "Что читать дальше",
-        "postedOn": "Опубликовано",
-        "authorStart": "Автор:"
+        "readNextHeading": "Что читать дальше"
     },
     "aboutUsBlock": {
         "cap": "О нас",
@@ -30,25 +24,25 @@
         "headingMission": "Создание ценного контента для креативщиков по всему миру",
         "readMore": "Узнать больше >"
     },
+    "categories": {
+        "business": "Бизнес",
+        "startup": "Стартап",
+        "economy": "Экономика",
+        "technology": "Технологии"
+    },
     "categoryGrid": {
-        "heading": "Выберите категорию",
-        "categories": {
-            "business": "Бизнес",
-            "startup": "Стартап",
-            "economy": "Экономика",
-            "technology": "Технологии"
-        }
+        "heading": "Выберите категорию"
     },
     "whyWeStartedBlock": {
         "cap": "Почему мы начали",
         "heading": "Это начиналось как простая идея и превратилось в нашу страсть",
         "button": "Откройте для себя нашу историю >"
     },
+    "positions": {
+        "contentWriter": "Автор контента"
+    },
     "authorsGrid": {
-        "heading": "Список авторов",
-        "positions": {
-            "contentWriter": "Автор контента"
-        }
+        "heading": "Список авторов"
     },
     "featuredIn": {
         "heading": "Рассказывают",

@@ -13,14 +13,14 @@ import styles from "./PostCard.module.scss";
 export default function PostCard({
   locale,
   post: { id, name, authorId, createdAt },
-  authorStartString,
+  authorPrefixString,
 }: PostCardProps) {
   const authorData = findAuthorByID(authorId, false);
   const authorString = authorData && (
     <AuthorLink
       {...authorData}
       locale={locale}
-      bodyString={authorStartString}
+      bodyString={authorPrefixString}
       color="purple"
     />
   );

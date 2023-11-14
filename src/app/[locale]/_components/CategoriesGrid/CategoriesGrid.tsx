@@ -11,8 +11,12 @@ import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 import styles from "./CategoriesGrid.module.scss";
 import { type CategoriesGridProps } from "./interfaces";
 
-function CategoriesGrid({ locale, dictionary }: CategoriesGridProps) {
-  const { heading, categories: categoriesLocale } = dictionary;
+function CategoriesGrid({
+  locale,
+  dictionary,
+  categoriesLocale,
+}: CategoriesGridProps) {
+  const { heading } = dictionary;
 
   const categoriesElements = categories.map(({ id, icon }) => (
     <Link
@@ -22,9 +26,7 @@ function CategoriesGrid({ locale, dictionary }: CategoriesGridProps) {
     >
       <Image className={styles.icon} src={icon} alt={`${id} icon`} />
       <div>
-        <Heading level={3}>
-          {(categoriesLocale as Record<string, string>)[id]}
-        </Heading>
+        <Heading level={3}>{categoriesLocale[id]}</Heading>
         <Body color="mediumGray">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         </Body>

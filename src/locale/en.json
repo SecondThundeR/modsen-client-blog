@@ -1,17 +1,13 @@
 {
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
-    "heroPostBlock": {
-        "cap": "Posted on",
-        "body": "By",
-        "button": "Read more >"
-    },
+    "postedOn": "Posted on",
+    "authorPrefix": "By",
+    "readMore": "Read more >",
     "postsBlock": {
         "featured": "Featured Post",
-        "body": "By",
         "all": "All Posts",
-        "view": "View all",
-        "button": "Read more >"
+        "view": "View all"
     },
     "blogHome": {
         "allPostsHeading": "All posts",
@@ -19,9 +15,7 @@
         "categoriesHeading": "All categories"
     },
     "blogPost": {
-        "readNextHeading": "What to read next",
-        "postedOn": "Posted on",
-        "authorStart": "By"
+        "readNextHeading": "What to read next"
     },
     "aboutUsBlock": {
         "cap": "About Us",
@@ -30,25 +24,25 @@
         "headingMission": "Creating valuable content for creatives all around the world",
         "readMore": "Read More >"
     },
+    "categories": {
+        "business": "Business",
+        "startup": "Startup",
+        "economy": "Economy",
+        "technology": "Technology"
+    },
     "categoryGrid": {
-        "heading": "Choose A Category",
-        "categories": {
-            "business": "Business",
-            "startup": "Startup",
-            "economy": "Economy",
-            "technology": "Technology"
-        }
+        "heading": "Choose A Category"
     },
     "whyWeStartedBlock": {
         "cap": "Why we started",
         "heading": "It started out as a simple idea and evolved into our passion",
         "button": "Discover our story >"
     },
+    "positions": {
+        "contentWriter": "Content Writer"
+    },
     "authorsGrid": {
-        "heading": "List of Authors",
-        "positions": {
-            "contentWriter": "Content Writer"
-        }
+        "heading": "List of Authors"
     },
     "featuredIn": {
         "heading": "Featured in",

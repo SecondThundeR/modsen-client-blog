@@ -36,8 +36,10 @@ export default async function BlogPost({
   const dictionary = await getDictionary(locale);
   const {
     joinUs,
-    blogPost: { postedOn, readNextHeading, authorStart },
-    categoryGrid: { categories },
+    authorPrefix,
+    postedOn,
+    blogPost: { readNextHeading },
+    categories,
   } = dictionary;
 
   return (
@@ -57,7 +59,7 @@ export default async function BlogPost({
         excludePostId={post.id}
         categoryId={post.categoryId}
         headingString={readNextHeading}
-        authorStartString={authorStart}
+        authorPrefixString={authorPrefix}
       />
       <JoinUsBlock locale={locale} dictionary={joinUs} />
     </>

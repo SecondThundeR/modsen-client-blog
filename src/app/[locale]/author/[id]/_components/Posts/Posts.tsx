@@ -27,9 +27,7 @@ export default function Posts({
           className={styles.categoryLink}
           href={`/${locale}${routes.category}/${categoryId}`}
         >
-          <Cap weight="semibold">
-            {(categoriesDictionary as Record<string, string>)[categoryId]}
-          </Cap>
+          <Cap weight="semibold">{categoriesDictionary[categoryId]}</Cap>
         </Link>
         <div className={styles.content__details}>
           <Link href={`/${locale}${routes.blog}/${id}`}>

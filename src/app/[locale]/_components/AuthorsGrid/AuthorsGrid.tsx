@@ -9,10 +9,10 @@ import { type AuthorsGridProps } from "./interfaces";
 
 export default function AuthorsGrid({
   locale,
-  dictionary,
+  headingString,
+  positions,
   extended = false,
 }: AuthorsGridProps) {
-  const { heading, positions } = dictionary;
   const extendedSliceElements = extended ? 8 : 4;
 
   const authorsElements = authors
@@ -30,7 +30,7 @@ export default function AuthorsGrid({
             <Heading level={3}>{name}</Heading>
           </Link>
           <Body level={2}>
-            {(positions as Record<string, string>)[positionId]} {companyHandle}
+            {positions[positionId]} {companyHandle}
           </Body>
         </div>
         <Socials customLinks={socials} />
@@ -39,7 +39,7 @@ export default function AuthorsGrid({
 
   return (
     <div className={styles.wrapper}>
-      <Heading level={2}>{heading}</Heading>
+      <Heading level={2}>{headingString}</Heading>
       <div className={styles.grid}>{authorsElements}</div>
     </div>
   );

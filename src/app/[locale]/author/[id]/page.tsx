@@ -26,7 +26,7 @@ export default async function Author({
 
   const dictionary = await getDictionary(locale);
   const {
-    categoryGrid: { categories },
+    categories,
     authorPage: { header, postsHeading, noPostsHeading },
   } = dictionary;
 

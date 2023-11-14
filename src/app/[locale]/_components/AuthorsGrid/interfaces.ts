@@ -1,7 +1,8 @@
-import { type DictionaryType } from "@/locale/get-dictionary";
+import { type Locale } from "@/locale/i18n-config";
 
 export interface AuthorsGridProps {
-  locale: PageLocaleParams["params"]["locale"];
-  dictionary: DictionaryType["authorsGrid"];
+  locale: Locale;
+  headingString: string;
+  positions: Record<string, string>;
   extended?: boolean;
 }

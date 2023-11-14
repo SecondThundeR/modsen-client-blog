@@ -15,11 +15,11 @@ import { type HomeHeroProps } from "./interfaces";
 function HomeHero({
   locale,
   heroPostId,
-  dictionary,
+  postedOnString,
+  authorPrefixString,
+  readMoreString,
   categories,
 }: HomeHeroProps) {
-  const { cap, body, button } = dictionary;
-
   const post = findPostByID(heroPostId);
   if (!post) return null;
 
@@ -32,7 +32,7 @@ function HomeHero({
       id={author.id}
       name={author.name}
       locale={locale}
-      bodyString={body}
+      bodyString={authorPrefixString}
     />
   );
 
@@ -41,7 +41,7 @@ function HomeHero({
       <div className={styles.content}>
         <div className={styles.data}>
           <Cap>
-            {cap} <strong>{localeCategory}</strong>
+            {postedOnString} <strong>{localeCategory}</strong>
           </Cap>
           <Heading>{name}</Heading>
           <div className={styles.details}>
@@ -57,7 +57,7 @@ function HomeHero({
           </div>
         </div>
         <Link href={`/${locale}${routes.blog}/${id}`}>
-          <Button>{button}</Button>
+          <Button>{readMoreString}</Button>
         </Link>
       </div>
     </div>

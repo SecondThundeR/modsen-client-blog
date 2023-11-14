@@ -5,15 +5,11 @@ import { Avatar, Body, Cap, Heading } from "@/components/ui";
 import { testimonials } from "@/constants/data/testimonials";
 import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
 import { useTestimonialsCarousel } from "@/hooks/useTestimonialsCarousel";
-import { type DictionaryType } from "@/locale/get-dictionary";
 
+import { type TestimonialsBlockProps } from "./interfaces";
 import styles from "./TestimonialsBlock.module.scss";
 
-function TestimonialsBlock({
-  dictionary,
-}: {
-  dictionary: DictionaryType["testimonials"];
-}) {
+function TestimonialsBlock({ dictionary }: TestimonialsBlockProps) {
   const { testimonial, onPrev, onNext } = useTestimonialsCarousel(testimonials);
 
   const { cap, heading } = dictionary;

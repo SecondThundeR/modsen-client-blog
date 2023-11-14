@@ -1,4 +1,7 @@
 import { type DictionaryType } from "@/locale/get-dictionary";
+import { type Locale } from "@/locale/i18n-config";
 
-export type LayoutFooterProps = PageLocaleParams["params"] &
-  Pick<DictionaryType, "title" | "links" | "subscribe">;
+export interface LayoutFooterProps
+  extends Pick<DictionaryType, "title" | "links" | "subscribe"> {
+  locale: Locale;
+}

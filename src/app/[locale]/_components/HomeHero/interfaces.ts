@@ -1,8 +1,8 @@
-import { type DictionaryType } from "@/locale/get-dictionary";
-
 export interface HomeHeroProps {
   locale: PageLocaleParams["params"]["locale"];
   heroPostId: string;
-  dictionary: DictionaryType["heroPostBlock"];
+  postedOnString: string;
+  authorPrefixString: string;
+  readMoreString: string;
   categories: Record<string, string>;
 }

@@ -1,6 +1,7 @@
 import { type DictionaryType } from "@/locale/get-dictionary";
+import { type Locale } from "@/locale/i18n-config";
 
 export interface JoinUsBlockProps {
-  locale: PageLocaleParams["params"]["locale"];
+  locale: Locale;
   dictionary: DictionaryType["joinUs"];
 }

@@ -10,8 +10,8 @@ import styles from "./AllPostBlock.module.scss";
 import { type AllPostBlockProps } from "./interfaces";
 
 export default function AllPostBlock({
-  postId,
   locale,
+  postId,
   bodyString,
 }: AllPostBlockProps) {
   const { id, name, createdAt, authorId } = findPostByID(postId)!;

@@ -10,7 +10,7 @@ export default function SimilarPosts({
   excludePostId,
   categoryId,
   headingString,
-  authorStartString,
+  authorPrefixString,
 }: SimilarPostsProps) {
   const similarPosts = getPostsByCategoryID(categoryId).filter(
     (post) => post.id !== excludePostId,
@@ -25,7 +25,7 @@ export default function SimilarPosts({
           <PostCard
             key={post.id}
             locale={locale}
-            authorStartString={authorStartString}
+            authorPrefixString={authorPrefixString}
             post={post}
           />
         ))}

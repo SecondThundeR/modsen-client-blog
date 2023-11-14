@@ -18,6 +18,7 @@ export default async function AboutUs({
       overview,
       missionVision,
     },
+    positions,
   } = dictionary;
 
   return (
@@ -29,7 +30,12 @@ export default async function AboutUs({
       />
       <TeamBlock headingString={teamHeading} />
       <StartedBlock headingString={startedHeading} />
-      <AuthorsGrid locale={locale} dictionary={authorsGrid} extended />
+      <AuthorsGrid
+        locale={locale}
+        headingString={authorsGrid.heading}
+        positions={positions}
+        extended
+      />
       <JoinUsBlock locale={locale} dictionary={joinUs} />
     </>
   );

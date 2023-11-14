@@ -12,8 +12,8 @@ import styles from "./FeaturedPostBlock.module.scss";
 import { type FeaturedPostBlockProps } from "./interfaces";
 
 export default function FeaturedPostBlock({
-  postId,
   locale,
+  postId,
   bodyString,
   buttonString,
 }: FeaturedPostBlockProps) {

@@ -14,20 +14,22 @@ import styles from "./PostsBlock.module.scss";
 function PostsBlock({
   locale,
   dictionary,
+  authorPrefixString,
+  readMoreString,
   featuredPostId,
   allPostsId,
 }: PostsBlockProps) {
-  const { all, body, button, featured, view } = dictionary;
+  const { all, featured, view } = dictionary;
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.subwrapper}>
         <Heading level={2}>{featured}</Heading>
         <FeaturedPostBlock
-          postId={featuredPostId}
           locale={locale}
-          bodyString={body}
-          buttonString={button}
+          postId={featuredPostId}
+          bodyString={authorPrefixString}
+          buttonString={readMoreString}
         />
       </div>
       <div className={styles.subwrapper}>
@@ -41,9 +43,9 @@ function PostsBlock({
           {[0, 1, 2, 3].map((i) => (
             <AllPostBlock
               key={`${allPostsId}-${i}`}
-              postId={allPostsId}
               locale={locale}
-              bodyString={body}
+              postId={allPostsId}
+              bodyString={authorPrefixString}
             />
           ))}
         </div>

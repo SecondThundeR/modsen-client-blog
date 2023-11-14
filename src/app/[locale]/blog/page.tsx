@@ -26,9 +26,11 @@ export default async function Blog({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
   const {
     joinUs,
-    categoryGrid: { categories },
+    categories,
     blogHome: { categoriesHeading, allPostsHeading, allPostsNull },
-    postsBlock: { featured, body, button },
+    authorPrefix,
+    readMore,
+    postsBlock: { featured },
   } = dictionary;
 
   return (
@@ -37,8 +39,8 @@ export default async function Blog({ params: { locale } }: PageLocaleParams) {
         locale={locale}
         postId={FEATURED_POST_ID}
         capString={featured}
-        authorBodyString={body}
-        buttonString={button}
+        authorBodyString={authorPrefix}
+        buttonString={readMore}
       />
       <PageSection fullWidth>
         <PostsListContainer>

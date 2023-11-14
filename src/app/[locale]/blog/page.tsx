@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 import { PageSection } from "@/components/ui";
@@ -8,12 +9,16 @@ import { JoinUsBlock } from "../_components";
 import {
   CategoriesSelect,
   FeaturedPostHeader,
-  PostsList,
   PostsListContainer,
   PostsListHeader,
 } from "./_components";
+import { PostsListSkeleton } from "./_components/skeletons";
 
 const FEATURED_POST_ID = "step-by-step";
+
+const LazyPostsList = dynamic(
+  () => import("./_components/PostsList/PostsList"),
+);
 
 export default async function Blog({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
@@ -36,8 +41,8 @@ export default async function Blog({ params: { locale } }: PageLocaleParams) {
       <PageSection fullWidth>
         <PostsListContainer>
           <PostsListHeader headingString={allPostsHeading} />
-          <Suspense fallback={null}>
-            <PostsList
+          <Suspense fallback={<PostsListSkeleton />}>
+            <LazyPostsList
               locale={locale}
               categoriesLocale={categories}
               noPostsHeading={allPostsNull}

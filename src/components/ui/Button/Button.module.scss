@@ -3,6 +3,15 @@ $buttonFontSize: 18px;
 $buttonFontSizeLarge: 24px;
 $buttonFontWeight: 700;
 
+.unstyled {
+    all: unset;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
 .button {
     border: none;
     outline: none;

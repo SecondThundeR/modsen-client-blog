@@ -26,6 +26,15 @@ describe("Button", () => {
     expect(button.className).toEqual("button variant__regular size__large");
   });
 
+  test("should render button with unstyled prop", () => {
+    render(<Button unstyled>Button</Button>);
+
+    const button = screen.getByRole("button", { name: /Button/i });
+
+    expect(button).toBeInTheDocument();
+    expect(button.className).toEqual("unstyled");
+  });
+
   test("should call onClick", () => {
     const onClick = vi.fn();
 

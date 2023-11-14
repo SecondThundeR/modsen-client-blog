@@ -13,6 +13,11 @@ const meta = {
       description: "Button text",
       type: "string",
     },
+    unstyled: {
+      description: "Removes styles for button, except cursor styles",
+      type: "boolean",
+      defaultValue: false,
+    },
     disabled: {
       description: "Button disabled state",
       defaultValue: "false",
@@ -38,6 +43,7 @@ const meta = {
     variant: "primary",
     size: "regular",
     disabled: false,
+    unstyled: false,
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -46,6 +52,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
+
+export const PrimaryUnstyled: Story = {
+  args: {
+    unstyled: true,
+  },
+};
 
 export const PrimaryLarge: Story = {
   args: {

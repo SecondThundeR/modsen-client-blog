@@ -5,19 +5,21 @@ import type { ButtonProps } from "./interfaces";
 
 export default function Button({
   children,
+  unstyled = false,
   variant = "primary",
   size = "regular",
   ...props
 }: ButtonProps) {
-  return (
-    <button
-      className={clsx(
+  const classes = unstyled
+    ? styles.unstyled
+    : clsx(
         styles.button,
         styles[`variant__${variant}`],
         styles[`size__${size}`],
-      )}
-      {...props}
-    >
+      );
+
+  return (
+    <button className={classes} {...props}>
       {children}
     </button>
   );

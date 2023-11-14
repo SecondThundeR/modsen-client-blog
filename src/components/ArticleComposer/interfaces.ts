@@ -1,5 +1,8 @@
 import { type ArticleData } from "@/types/article";
 
-export interface ArticleComposerProps {
+import { type ArticleWrapperProps } from "../ui/ArticleWrapper/interfaces";
+
+export interface ArticleComposerProps
+  extends Omit<ArticleWrapperProps, "children"> {
   articleData: ArticleData[];
 }

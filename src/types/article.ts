@@ -1,6 +1,7 @@
 import { type ArticleProps } from "@/components/ui/Article/interfaces";
 import { type BodyProps } from "@/components/ui/Body/interfaces";
 import { type HeadingProps } from "@/components/ui/Heading/interfaces";
+import { type ListProps } from "@/components/ui/List/interfaces";
 
 export type ArticleContentBase = {
   id: string;
@@ -19,7 +20,16 @@ export interface ArticleContentBody
   type: "body";
 }
 
-export type ArticleContent = ArticleContentHeading | ArticleContentBody;
+export interface ArticleContentList
+  extends Omit<ArticleContentBase, "data">,
+    ListProps {
+  type: "list";
+}
+
+export type ArticleContent =
+  | ArticleContentHeading
+  | ArticleContentBody
+  | ArticleContentList;
 
 export type ArticleData = {
   id: string;

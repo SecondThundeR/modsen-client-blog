@@ -13,6 +13,16 @@
         "view": "View all",
         "button": "Read more >"
     },
+    "blogHome": {
+        "allPostsHeading": "All posts",
+        "allPostsNull": "There are no posts :c",
+        "categoriesHeading": "All categories"
+    },
+    "blogPost": {
+        "readNextHeading": "What to read next",
+        "postedOn": "Posted on",
+        "authorStart": "By"
+    },
     "aboutUsBlock": {
         "cap": "About Us",
         "heading": "We are a community of content writers who share their learnings",

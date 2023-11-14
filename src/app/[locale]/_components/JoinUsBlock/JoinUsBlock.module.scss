@@ -11,6 +11,10 @@
     text-align: center;
     gap: 32px;
 
+    @media (max-width: $breakpoint-large) {
+        width: 50%
+     }
+
     @media (max-width: $breakpoint-mobile) {
        width: 100%
     }

@@ -8,6 +8,11 @@ const meta = {
   title: "Components/ArticleWrapper",
   component: ArticleWrapper,
   argTypes: {
+    isNarrow: {
+      description: "Controls width of wrapper",
+      type: "boolean",
+      defaultValue: false,
+    },
     children: {
       description: "Article wrapper items",
       options: ["Single", "None"],
@@ -17,6 +22,9 @@ const meta = {
         None: null,
       },
     },
+  },
+  args: {
+    isNarrow: false,
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof ArticleWrapper>;

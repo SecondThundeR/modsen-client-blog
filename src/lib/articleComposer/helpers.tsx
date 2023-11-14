@@ -1,7 +1,9 @@
 import { Body, Heading } from "@/components/ui";
+import List from "@/components/ui/List/List";
 import {
   type ArticleContentBody,
   type ArticleContentHeading,
+  type ArticleContentList,
 } from "@/types/article";
 
 export function renderHeading(item: Omit<ArticleContentHeading, "type">) {
@@ -22,4 +24,10 @@ export function renderBody(item: Omit<ArticleContentBody, "type">) {
       {data}
     </Body>
   );
+}
+
+export function renderList(item: Omit<ArticleContentList, "type">) {
+  const { id, ...props } = item;
+
+  return <List key={id} {...props} />;
 }

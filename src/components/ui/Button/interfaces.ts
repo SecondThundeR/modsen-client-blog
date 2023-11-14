@@ -9,6 +9,7 @@ export interface ButtonProps
       "onClick" | "type" | "disabled"
     >,
     PropsWithChildren {
+  unstyled?: boolean;
   variant?: ButtonVariants;
   size?: ButtonSizes;
 }

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, test } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 
 import Select from "./Select";
 
@@ -52,7 +52,10 @@ describe("Select", () => {
   });
 
   test("should render disabled select with another class", () => {
-    render(<Select value="test" options={disabledOption} />);
+    const onChangeMock = vi.fn();
+    render(
+      <Select value="test" options={disabledOption} onChange={onChangeMock} />,
+    );
 
     const select = screen.getByTestId("select");
 

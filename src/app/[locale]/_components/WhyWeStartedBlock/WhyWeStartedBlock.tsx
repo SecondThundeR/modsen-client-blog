@@ -15,7 +15,7 @@ function WhyWeStartedBlock({ locale, dictionary }: WhyWeStartedBlockProps) {
   const { cap, heading, button } = dictionary;
   return (
     <div className={styles.container}>
-      <Image className={styles.image} src={whyWeStartedImage} alt="" />
+      <Image className={styles.image} src={whyWeStartedImage} alt="" priority />
       <div className={styles.block}>
         <div className={styles.block__content}>
           <div className={styles.block__text}>

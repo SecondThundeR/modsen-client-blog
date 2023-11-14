@@ -32,7 +32,7 @@ export default function FeaturedPostBlock({
 
   return (
     <div className={styles.wrapper}>
-      <Image className={styles.image} src={featuredPost} alt="" />
+      <Image className={styles.image} src={featuredPost} alt="" priority />
       <div className={styles.details}>
         <Body>
           {authorLink}

@@ -13,6 +13,11 @@
         "view": "Посмотреть все",
         "button": "Узнать подробнее >"
     },
+    "blogHome": {
+        "allPostsHeading": "Все посты",
+        "allPostsNull": "Нет постов :c",
+        "categoriesHeading": "Все категории"
+    },
     "blogPost": {
         "readNextHeading": "Что читать дальше",
         "postedOn": "Опубликовано",

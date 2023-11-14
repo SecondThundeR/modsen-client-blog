@@ -1,7 +1,6 @@
 import "@/styles/globals.scss";
 
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
 
 import { inter, sen } from "@/lib/fonts";
 import { getDictionary } from "@/locale/get-dictionary";
@@ -55,9 +54,7 @@ export default async function RootLayout({
           links={links}
           subscribe={subscribe}
         />
-        <Suspense>
-          <LazyModalShell closeButtonText={close} />
-        </Suspense>
+        <LazyModalShell closeButtonText={close} />
       </body>
     </html>
   );

@@ -1,16 +1,19 @@
 import { Suspense } from "react";
 
-import { Header, Heading, PageSection } from "@/components/ui";
+import { PageSection } from "@/components/ui";
 import { posts } from "@/constants/data/posts";
 import { getDictionary } from "@/locale/get-dictionary";
 
 import { JoinUsBlock } from "../_components";
 import {
   CategoriesSelect,
+  FeaturedPostHeader,
   PostsList,
   PostsListContainer,
   PostsListHeader,
 } from "./_components";
+
+const FEATURED_POST_ID = "step-by-step";
 
 export default async function Blog({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
@@ -18,13 +21,18 @@ export default async function Blog({ params: { locale } }: PageLocaleParams) {
     joinUs,
     categoryGrid: { categories },
     blogHome: { categoriesHeading, allPostsHeading, allPostsNull },
+    postsBlock: { featured, body, button },
   } = dictionary;
 
   return (
     <main>
-      <Header>
-        <Heading>Blog page</Heading>
-      </Header>
+      <FeaturedPostHeader
+        locale={locale}
+        postId={FEATURED_POST_ID}
+        capString={featured}
+        authorBodyString={body}
+        buttonString={button}
+      />
       <PageSection fullWidth>
         <PostsListContainer>
           <PostsListHeader headingString={allPostsHeading} />

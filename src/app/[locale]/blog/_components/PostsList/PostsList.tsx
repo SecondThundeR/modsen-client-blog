@@ -5,10 +5,10 @@ import { useMemo } from "react";
 import { Heading } from "@/components/ui";
 import { usePageNavigation } from "@/hooks/usePageNavigation";
 
+import { PostsListCard } from "../../../_components";
 import PageButtons from "../PageButtons/PageButtons";
 import { type PostsListProps } from "./interfaces";
 import styles from "./PostsList.module.scss";
-import PostsListCard from "./PostsListCard/PostsListCard";
 
 function getArraySlice(page: number, elementsPerPage: number, maxSize: number) {
   if (page < 1) page = 1;

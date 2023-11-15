@@ -17,6 +17,17 @@
     "blogPost": {
         "readNextHeading": "What to read next"
     },
+    "categoriesPage": {
+        "categorySelectorHeading": "Categories",
+        "noPosts": "There are no posts for current category",
+        "capPrefix": "Blog >",
+        "allTagsHeading": "All Tags",
+        "noTags": "There are no tags for current search query",
+        "search": {
+            "placeholder": "Search for tags...",
+            "button": "Search"
+        }
+    },
     "aboutUsBlock": {
         "cap": "About Us",
         "heading": "We are a community of content writers who share their learnings",
@@ -29,6 +40,14 @@
         "startup": "Startup",
         "economy": "Economy",
         "technology": "Technology"
+    },
+    "tags": {
+        "business": "Business",
+        "technology": "Technology",
+        "life": "Life",
+        "screen": "Screen",
+        "experience": "Experience",
+        "marketing": "Marketing"
     },
     "categoryGrid": {
         "heading": "Choose A Category"

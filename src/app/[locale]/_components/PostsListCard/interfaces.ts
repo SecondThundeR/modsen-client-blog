@@ -3,6 +3,6 @@ import { type Locale } from "@/locale/i18n-config";
 
 export interface PostsListCardProps {
   locale: Locale;
-  post: Omit<Post, "authorId" | "createdAt">;
+  post: Omit<Post, "authorId" | "createdAt" | "tagsIds">;
   categoriesLocale: Record<string, string>;
 }

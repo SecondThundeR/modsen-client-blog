@@ -17,6 +17,17 @@
     "blogPost": {
         "readNextHeading": "Что читать дальше"
     },
+    "categoriesPage": {
+        "categorySelectorHeading": "Категории",
+        "noPosts": "Нет постов для текущей категории",
+        "capPrefix": "Блог >",
+        "allTagsHeading": "Все теги",
+        "noTags": "Для текущего поискового запроса нет тегов",
+        "search": {
+            "placeholder": "Поиск по тегам...",
+            "button": "Найти"
+        }
+    },
     "aboutUsBlock": {
         "cap": "О нас",
         "heading": "Мы - сообщество авторов контента, которые делятся своими знаниями",
@@ -29,6 +40,14 @@
         "startup": "Стартап",
         "economy": "Экономика",
         "technology": "Технологии"
+    },
+    "tags": {
+        "business": "Бизнес",
+        "technology": "Технология",
+        "life": "Жизнь",
+        "screen": "Экран",
+        "experience": "Опыт",
+        "marketing": "Маркетинг"
     },
     "categoryGrid": {
         "heading": "Выберите категорию"

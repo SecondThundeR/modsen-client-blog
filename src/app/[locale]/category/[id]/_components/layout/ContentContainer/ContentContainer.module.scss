@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 96px;
+
+    @media (max-width: $breakpoint-large) {
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+}

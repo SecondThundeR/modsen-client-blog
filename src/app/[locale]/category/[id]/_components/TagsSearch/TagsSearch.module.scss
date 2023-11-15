@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: $senFont;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: -0.21px;
+    border: 1px solid $gray;
+    padding: 16px 24px;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+
+    &:placeholder {
+        color: $mediumGray;
+    }
+}
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    background-color: $yellow;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.24px;
+    border: transparent;
+    transition: $transitionSetup;
+
+    &:hover {
+        background-color: $yellowHover;
+    }
+}

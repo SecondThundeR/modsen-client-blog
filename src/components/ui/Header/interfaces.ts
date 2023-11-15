@@ -1,3 +1,5 @@
 import { type PropsWithChildren } from "react";
 
-export type HeaderProps = PropsWithChildren;
+export interface HeaderProps extends PropsWithChildren {
+  gap?: "regular" | "large" | "extralarge";
+}

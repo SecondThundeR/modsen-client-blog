@@ -22,6 +22,7 @@
         "noPosts": "There are no posts for current category",
         "capPrefix": "Blog >",
         "allTagsHeading": "All Tags",
+        "noTags": "There are no tags for current search query",
         "search": {
             "placeholder": "Search for tags...",
             "button": "Search"

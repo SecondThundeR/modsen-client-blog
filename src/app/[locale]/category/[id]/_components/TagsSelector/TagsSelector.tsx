@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { useMemo } from "react";
 
-import { Heading } from "@/components/ui";
+import { Body, Heading } from "@/components/ui";
 import { tags } from "@/constants/data/tags";
 import { useTagsQuerySearch } from "@/hooks/useTagsQuerySearch";
 import { useTagsQuerySelect } from "@/hooks/useTagsQuerySelect";
@@ -13,6 +13,7 @@ import styles from "./TagsSelector.module.scss";
 
 export default function TagsSelector({
   headingString,
+  noTagsString,
   tagsLocale,
 }: TagsSelectorProps) {
   const { currentTags, onClick } = useTagsQuerySelect();
@@ -47,7 +48,13 @@ export default function TagsSelector({
   return (
     <div className={styles.wrapper}>
       <Heading level={2}>{headingString}</Heading>
-      <div className={styles.buttonsWrapper}>{buttons}</div>
+      <div className={styles.buttonsWrapper}>
+        {buttons.length > 0 ? (
+          buttons
+        ) : (
+          <Body color="mediumGray">{noTagsString}</Body>
+        )}
+      </div>
     </div>
   );
 }

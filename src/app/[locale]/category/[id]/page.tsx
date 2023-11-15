@@ -43,6 +43,7 @@ export default async function Category({
       categorySelectorHeading,
       noPosts,
       allTagsHeading,
+      noTags,
       search,
     },
   } = await getDictionary(locale);
@@ -66,7 +67,11 @@ export default async function Category({
           headingString={categorySelectorHeading}
           categoriesLocale={categories}
         />
-        <LazyTagsSelector headingString={allTagsHeading} tagsLocale={tags} />
+        <LazyTagsSelector
+          headingString={allTagsHeading}
+          noTagsString={noTags}
+          tagsLocale={tags}
+        />
       </SidebarWrapper>
     </ContentContainer>
   );

@@ -51,7 +51,12 @@ export default function FeaturedPostHeader({
           <Button>{buttonString}</Button>
         </Link>
       </div>
-      <Image className={styles.image} src={featuredPostPlaceholder} alt="" />
+      <Image
+        className={styles.image}
+        src={featuredPostPlaceholder}
+        alt=""
+        priority
+      />
     </div>
   );
 }

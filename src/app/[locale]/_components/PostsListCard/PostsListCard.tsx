@@ -16,7 +16,12 @@ export default function PostsListCard({
   const { id, name, categoryId } = post;
   return (
     <div className={styles.wrapper}>
-      <Image className={styles.image} src={postListCardPlaceholder} alt="" />
+      <Image
+        className={styles.image}
+        src={postListCardPlaceholder}
+        alt=""
+        priority
+      />
       <div className={styles.postDetails}>
         <Link
           className={styles.categoryLink}

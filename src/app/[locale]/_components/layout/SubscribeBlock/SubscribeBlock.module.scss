@@ -6,6 +6,14 @@
     gap: 64px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 36px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .block__controls {
@@ -13,4 +21,10 @@
     display: flex;
     gap: 24px;
     align-items: center;
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

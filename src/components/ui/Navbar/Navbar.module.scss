@@ -8,16 +8,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        padding: 18px;
+        gap: 12px;
+    }
 }
 
 .navbar__controls {
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 .navbar__links {
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 }

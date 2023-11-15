@@ -4,6 +4,10 @@
     gap: 42px;
     color: $white;
     background-color: $purple;
+
+    @media (max-width: $breakpoint-large) {
+        padding: 32px;
+    }
 }
 
 .section {

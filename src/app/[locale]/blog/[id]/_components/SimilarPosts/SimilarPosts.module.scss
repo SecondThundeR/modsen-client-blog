@@ -4,6 +4,10 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 64px;
+
+    @media (max-width: $breakpoint-tablet) {
+        gap: 24px;
+    }
 }
 
 .wrapper__posts {
@@ -14,6 +18,5 @@
     @media (max-width: $breakpoint-tablet) {
         display: flex;
         flex-direction: column;
-        gap: 16px;
     }
 }

@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 
 import { useLocaleSwitcher } from "@/app/[locale]/_hooks";
+import { Body } from "@/components/ui";
 import { i18n } from "@/locale/i18n-config";
 
 import { type LocaleSwitcherProps } from "./interfaces";
@@ -26,7 +27,7 @@ export default function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
             })}
             href={linkHref}
           >
-            {locale.toUpperCase()}
+            <Body>{locale.toUpperCase()}</Body>
           </Link>
         );
       })}

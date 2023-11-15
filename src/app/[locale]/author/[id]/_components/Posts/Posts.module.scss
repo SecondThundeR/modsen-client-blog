@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: $breakpoint-large) {
+        gap: 12px;
+    }
 }
 
 .content__details {

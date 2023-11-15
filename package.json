@@ -16,7 +16,7 @@
     "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "SKIP_ENV_VALIDATION=true storybook build"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

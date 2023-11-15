@@ -1,15 +1,27 @@
-import { Heading } from "@/components/ui";
+import dynamic from "next/dynamic";
+
 import { categories } from "@/constants/data/categories";
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
 import { getDictionary } from "@/locale/get-dictionary";
 
-import { PostsListCard } from "../../_components";
 import { CategoriesSelector } from "./_components";
 import {
   ContentContainer,
   PostsWrapper,
   SidebarWrapper,
 } from "./_components/layout";
+
+const LazyPostsList = dynamic(
+  () => import("./_components/PostsList/PostsList"),
+);
+
+const LazyTagsSearch = dynamic(
+  () => import("./_components/TagsSearch/TagsSearch"),
+);
+
+const LazyTagsSelector = dynamic(
+  () => import("./_components/TagsSelector/TagsSelector"),
+);
 
 export function generateStaticParams() {
   return categories.map((category) => ({
@@ -26,35 +38,35 @@ export default async function Category({
 }: CategoryPageParams) {
   const {
     categories,
-    categoriesPage: { categorySelectorHeading, noPosts },
+    tags,
+    categoriesPage: {
+      categorySelectorHeading,
+      noPosts,
+      allTagsHeading,
+      search,
+    },
   } = await getDictionary(locale);
   const posts = getPostsByCategoryID(id);
 
   return (
     <ContentContainer>
       <PostsWrapper>
-        {posts.length > 0 ? (
-          posts.map((post) => (
-            <PostsListCard
-              key={post.id}
-              locale={locale}
-              categoriesLocale={categories}
-              post={post}
-            />
-          ))
-        ) : (
-          <Heading level={2} color="mediumGray">
-            {noPosts}
-          </Heading>
-        )}
+        <LazyPostsList
+          locale={locale}
+          posts={posts}
+          noPostsHeading={noPosts}
+          categoriesLocale={categories}
+        />
       </PostsWrapper>
       <SidebarWrapper>
+        <LazyTagsSearch dictionary={search} />
         <CategoriesSelector
           locale={locale}
           currentCategoryId={id}
           headingString={categorySelectorHeading}
           categoriesLocale={categories}
         />
+        <LazyTagsSelector headingString={allTagsHeading} tagsLocale={tags} />
       </SidebarWrapper>
     </ContentContainer>
   );

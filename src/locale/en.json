@@ -20,7 +20,12 @@
     "categoriesPage": {
         "categorySelectorHeading": "Categories",
         "noPosts": "There are no posts for current category",
-        "capPrefix": "Blog >"
+        "capPrefix": "Blog >",
+        "allTagsHeading": "All Tags",
+        "search": {
+            "placeholder": "Search for tags...",
+            "button": "Search"
+        }
     },
     "aboutUsBlock": {
         "cap": "About Us",
@@ -34,6 +39,14 @@
         "startup": "Startup",
         "economy": "Economy",
         "technology": "Technology"
+    },
+    "tags": {
+        "business": "Business",
+        "technology": "Technology",
+        "life": "Life",
+        "screen": "Screen",
+        "experience": "Experience",
+        "marketing": "Marketing"
     },
     "categoryGrid": {
         "heading": "Choose A Category"

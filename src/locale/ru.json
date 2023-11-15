@@ -20,7 +20,12 @@
     "categoriesPage": {
         "categorySelectorHeading": "Категории",
         "noPosts": "Нет постов для текущей категории",
-        "capPrefix": "Блог >"
+        "capPrefix": "Блог >",
+        "allTagsHeading": "Все теги",
+        "search": {
+            "placeholder": "Поиск по тегам...",
+            "button": "Найти"
+        }
     },
     "aboutUsBlock": {
         "cap": "О нас",
@@ -34,6 +39,14 @@
         "startup": "Стартап",
         "economy": "Экономика",
         "technology": "Технологии"
+    },
+    "tags": {
+        "business": "Бизнес",
+        "technology": "Технология",
+        "life": "Жизнь",
+        "screen": "Экран",
+        "experience": "Опыт",
+        "marketing": "Маркетинг"
     },
     "categoryGrid": {
         "heading": "Выберите категорию"

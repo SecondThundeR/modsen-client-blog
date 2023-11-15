@@ -1,9 +1,9 @@
 import { type Post } from "@/constants/data/posts";
 import { type Locale } from "@/locale/i18n-config";
 
-export interface PostDetailsProps {
+export interface PostsListProps {
   locale: Locale;
-  post: Omit<Post, "id" | "tagsIds">;
-  postedOn: string;
+  posts: Post[];
   categoriesLocale: Record<string, string>;
+  noPostsHeading: string;
 }

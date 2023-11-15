@@ -8,6 +8,12 @@ const meta = {
   title: "Components/Header",
   component: Header,
   argTypes: {
+    gap: {
+      description: "Controls size of gap between elements",
+      options: ["regular", "large", "extralarge"],
+      control: { type: "radio" },
+      defaultValue: "regular",
+    },
     children: {
       description: "Header items",
       options: ["Single", "Multiple", "None"],
@@ -23,6 +29,9 @@ const meta = {
         None: null,
       },
     },
+  },
+  args: {
+    gap: "regular",
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Header>;

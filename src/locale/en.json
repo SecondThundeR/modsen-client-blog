@@ -17,6 +17,11 @@
     "blogPost": {
         "readNextHeading": "What to read next"
     },
+    "categoriesPage": {
+        "categorySelectorHeading": "Categories",
+        "noPosts": "There are no posts for current category",
+        "capPrefix": "Blog >"
+    },
     "aboutUsBlock": {
         "cap": "About Us",
         "heading": "We are a community of content writers who share their learnings",

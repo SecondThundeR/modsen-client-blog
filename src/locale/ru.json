@@ -17,6 +17,11 @@
     "blogPost": {
         "readNextHeading": "Что читать дальше"
     },
+    "categoriesPage": {
+        "categorySelectorHeading": "Категории",
+        "noPosts": "Нет постов для текущей категории",
+        "capPrefix": "Блог >"
+    },
     "aboutUsBlock": {
         "cap": "О нас",
         "heading": "Мы - сообщество авторов контента, которые делятся своими знаниями",

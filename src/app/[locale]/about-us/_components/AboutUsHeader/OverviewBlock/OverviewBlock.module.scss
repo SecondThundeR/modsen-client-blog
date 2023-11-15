@@ -1,0 +1,65 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px 112px 0px 112px;
+    width: 100%;
+    height: 500px;
+    background: url('/assets/aboutUs/header.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $breakpoint-large) {
+        padding: 16px 0px 0px 0px;
+        height: 600px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        height: 800px;
+    }
+}
+
+.stats {
+    width: fit-content;
+    display: flex;
+    gap: 64px;
+    padding: 32px 48px;
+    background-color: $yellow;
+
+    @media (max-width: $breakpoint-large) {
+        width: 100%;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+    }
+}
+
+.stats__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.pattern {
+    width: 80%;
+    display: flex;
+
+    @media (max-width: $breakpoint-large) {
+        display: none;
+    }
+}
+
+.pattern__purple {
+    height: 24px;
+    width: 100%;
+    flex: 1;
+    background-color: $purple;
+}
+
+.pattern__yellow {
+    height: 24px;
+    width: 100%;
+    flex: 2;
+    background-color: $yellow;
+}

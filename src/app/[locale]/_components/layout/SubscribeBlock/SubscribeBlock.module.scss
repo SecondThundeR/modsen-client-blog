@@ -1,0 +1,30 @@
+.block {
+    width: 100%;
+    background-color: $subscribeBlockBackgroundColor;
+    padding: 80px 64px;
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 36px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.block__controls {
+    width: 60%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

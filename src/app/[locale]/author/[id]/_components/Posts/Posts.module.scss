@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: $breakpoint-large) {
+        flex-direction: column;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: $breakpoint-large) {
+        gap: 12px;
+    }
+}
+
+.content__details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.categoryLink {
+    color: $purple;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+
+    @media (max-width: $breakpoint-large) {
+        width: 100%;
+    }
+}

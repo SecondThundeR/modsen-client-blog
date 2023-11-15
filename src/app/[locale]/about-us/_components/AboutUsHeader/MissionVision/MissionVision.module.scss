@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: $lavender;
+    padding: 128px 108px 64px 108px;
+
+    @media (max-width: $breakpoint-large) {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 42px 36px;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.details__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

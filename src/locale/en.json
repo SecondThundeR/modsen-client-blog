@@ -1,4 +1,163 @@
 {
-    "hello": "Hello, world!",
-    "button": "Button"
+    "title": "Modsen Client Blog",
+    "headerVideoButton": "Video about us",
+    "postedOn": "Posted on",
+    "authorPrefix": "By",
+    "readMore": "Read more >",
+    "postsBlock": {
+        "featured": "Featured Post",
+        "all": "All Posts",
+        "view": "View all"
+    },
+    "blogHome": {
+        "allPostsHeading": "All posts",
+        "allPostsNull": "There are no posts :c",
+        "categoriesHeading": "All categories"
+    },
+    "blogPost": {
+        "readNextHeading": "What to read next"
+    },
+    "categoriesPage": {
+        "categorySelectorHeading": "Categories",
+        "noPosts": "There are no posts for current category",
+        "capPrefix": "Blog >",
+        "allTagsHeading": "All Tags",
+        "noTags": "There are no tags for current search query",
+        "search": {
+            "placeholder": "Search for tags...",
+            "button": "Search"
+        }
+    },
+    "aboutUsBlock": {
+        "cap": "About Us",
+        "heading": "We are a community of content writers who share their learnings",
+        "capMission": "Our Mission",
+        "headingMission": "Creating valuable content for creatives all around the world",
+        "readMore": "Read More >"
+    },
+    "categories": {
+        "business": "Business",
+        "startup": "Startup",
+        "economy": "Economy",
+        "technology": "Technology"
+    },
+    "tags": {
+        "business": "Business",
+        "technology": "Technology",
+        "life": "Life",
+        "screen": "Screen",
+        "experience": "Experience",
+        "marketing": "Marketing"
+    },
+    "categoryGrid": {
+        "heading": "Choose A Category"
+    },
+    "whyWeStartedBlock": {
+        "cap": "Why we started",
+        "heading": "It started out as a simple idea and evolved into our passion",
+        "button": "Discover our story >"
+    },
+    "positions": {
+        "contentWriter": "Content Writer"
+    },
+    "authorsGrid": {
+        "heading": "List of Authors"
+    },
+    "featuredIn": {
+        "heading": "Featured in",
+        "body": "We are"
+    },
+    "testimonials": {
+        "cap": "Testimonials",
+        "heading": "What people say about our blog"
+    },
+    "joinUs": {
+        "heading": "Join our team to be a part of our story",
+        "button": "Join Now"
+    },
+    "modal": {
+        "close": "Close"
+    },
+    "error": {
+        "heading": "Something wrong happened",
+        "button": "Try again"
+    },
+    "privacyPolicy": {
+        "heading": "Privacy Policy",
+        "body": "Last Updated on 27th January 2022"
+    },
+    "links": {
+        "home": "Home",
+        "blog": "Blog",
+        "aboutUs": "About Us",
+        "contactUs": "Contact us",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "subscribe": {
+        "heading": "Subscribe to our news letter to get latest updates and news",
+        "placeholder": "Enter Your Email",
+        "buttonText": "Subscribe"
+    },
+    "aboutUsPage": {
+        "teamHeading": "Our team of creatives",
+        "startedHeading": "Why we started this Blog",
+        "missionVision": {
+            "cap1": "Our Mission",
+            "cap2": "Our Vision",
+            "heading1": "Creating valuable content for creatives all around the world",
+            "heading2": "A platform that empowers individuals to improve"
+        },
+        "overview": {
+            "blogs": "Blogs Published",
+            "views": "Views on Finsweet",
+            "total": "Total active Users"
+        },
+        "header": {
+            "cap": "About Us",
+            "heading": "We are a team of content writers who share their learnings"
+        }
+    },
+    "authorPage": {
+        "header": {
+            "headingStart": "Hey there, I'm",
+            "headingEnd": "and welcome to my Blog"
+        },
+        "postsHeading": "My Posts",
+        "noPostsHeading": "Currently, I don't have any posts! Come back later"
+    },
+    "contactUs": {
+        "cap": "Contact us",
+        "heading": "Let’s Start a Conversation",
+        "block": {
+            "sectionHeader1": "Working hours",
+            "data1Heading1": "Monday To Friday",
+            "data1Heading2": "9:00 AM to 8:00 PM",
+            "data1Body": "Our Support Team is available 24/7",
+            "sectionHeader2": "Contact us",
+            "data2Heading": "020 7993 2905",
+            "data2Body": "hello@finsweet.com"
+        },
+        "alert": {
+            "error": {
+                "heading": "Error occurred",
+                "body": "Seems like we failed to send message. Try again or contact us by email or phone above"
+            },
+            "success": {
+                "heading": "Yay!",
+                "body": "We recieved your message and will reply to you as soon as possible"
+            }
+        },
+        "form": {
+            "name": "Full name",
+            "email": "Your email",
+            "query": {
+                "heading": "Query related",
+                "first": "Query 1",
+                "second": "Query 2",
+                "third": "Query 3"
+            },
+            "message": "Message",
+            "send": "Send message"
+        }
+    }
 }

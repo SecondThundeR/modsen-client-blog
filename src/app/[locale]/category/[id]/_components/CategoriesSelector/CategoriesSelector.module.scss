@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background-color: $lightYellow;
+    border-radius: 12px;
+    object-fit: scale-down;
+}
+
+.card {
+    width: 100%;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background-color: transparent;
+    transition: $transitionSetup;
+    border: 1.5px solid $categoryCardBorderColor;
+
+    &:hover {
+        color: $black;
+        background-color: $yellow;
+        border: 1.5px solid transparent;
+    }
+}
+
+.card__active {
+    background-color: $yellow;
+    border: 1.5px solid transparent;
+}

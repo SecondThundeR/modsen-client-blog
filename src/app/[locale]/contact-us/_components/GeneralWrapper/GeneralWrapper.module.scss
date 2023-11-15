@@ -1,0 +1,34 @@
+@mixin columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+$sectionWrapperGap: 64px;
+$contactFormWrapperGap: 32px;
+$headerGap: 24px;
+$subHeaderGap: 12px;
+
+.wrapper__header {
+    @include columnFlex;
+
+    gap: $headerGap;
+    text-align: center;
+}
+
+.wrapper__subheader {
+    @include columnFlex;
+
+    gap: $subHeaderGap;
+}
+
+.wrapper__section-wrapper {
+    @include columnFlex;
+
+    gap: $sectionWrapperGap;
+}
+
+.wrapper__contact-form {
+    @include columnFlex;
+
+    gap: $contactFormWrapperGap;
+}

@@ -1,19 +1,18 @@
 import "@/styles/globals.scss";
 
-import { Inter, Sen } from "next/font/google";
+import dynamic from "next/dynamic";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
-  variable: "--font-inter",
-  display: "swap",
-});
-const sen = Sen({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-sen",
-  display: "swap",
-});
+import { inter, sen } from "@/lib/fonts";
+import { getDictionary } from "@/locale/get-dictionary";
+
+import { LayoutFooter, LayoutNavbar } from "./_components/layout";
+
+const LazyModalShell = dynamic(
+  () => import("./_components/layout/ModalShell/ModalShell"),
+  {
+    ssr: false,
+  },
+);
 
 export const metadata = {
   title: "Modsen Client Blog",
@@ -22,19 +21,41 @@ export const metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "ru" }];
+  return [{ locale: "en" }, { locale: "ru" }] as const;
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
+} & PageLocaleParams) {
+  const {
+    title,
+    headerVideoButton,
+    links,
+    subscribe,
+    modal: { close },
+  } = await getDictionary(locale);
+
   return (
     <html lang={locale}>
-      <body className={`${sen.className} ${inter.className}`}>{children}</body>
+      <body className={`${sen.variable} ${inter.variable}`}>
+        <LayoutNavbar
+          locale={locale}
+          title={title}
+          headerVideoButton={headerVideoButton}
+          links={links}
+        />
+        {children}
+        <LayoutFooter
+          locale={locale}
+          title={title}
+          links={links}
+          subscribe={subscribe}
+        />
+        <LazyModalShell closeButtonText={close} />
+      </body>
     </html>
   );
 }

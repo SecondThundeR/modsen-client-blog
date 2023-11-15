@@ -1,0 +1,42 @@
+.wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: $breakpoint-large) {
+        width: 100%;
+    }
+}
+
+.author {
+    display: flex;
+    gap: 16px;
+}
+
+.author__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author__link {
+    color: $purple;
+}
+
+.post__details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category__image {
+    width: 24px;
+    height: 24px;
+    object-fit: scale-down;
+}

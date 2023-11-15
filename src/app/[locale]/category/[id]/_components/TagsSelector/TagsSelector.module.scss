@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.tagButton {
+    cursor: pointer;
+    width: fit-content;
+    background-color: transparent;
+    border: 2px solid $mediumGray;
+    border-radius: 36px;
+    display: inline-flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    font-family: $senFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    transition: $transitionSetup;
+
+    &:hover {
+        background-color: $yellow;
+        border-color: transparent;
+    }
+}
+
+.tagButton__selected {
+    background-color: $yellow;
+    border-color: transparent;
+
+    &:hover {
+        background-color: $yellowHover;
+    }
+}

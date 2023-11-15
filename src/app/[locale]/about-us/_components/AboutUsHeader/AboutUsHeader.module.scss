@@ -1,0 +1,7 @@
+.wrapper {
+    margin-top: 250px;
+
+    @media (max-width: $breakpoint-large) {
+        margin-top: 0px;
+    }
+}

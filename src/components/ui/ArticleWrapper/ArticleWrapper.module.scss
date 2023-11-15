@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.wrapper__narrow {
+    width: 60%;
+
+    @media (max-width: $breakpoint-large) {
+        width: 100%;
+    }
+}

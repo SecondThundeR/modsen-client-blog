@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    color: $mediumGray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media (max-width: $breakpoint-mobile) {
+        justify-content: center;
+    }
+}

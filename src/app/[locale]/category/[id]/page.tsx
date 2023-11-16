@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
+import { findCategoryByID } from "@/lib/categories/findCategoryByID";
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
 import { getDictionary } from "@/locale/get-dictionary";
 
@@ -49,10 +50,11 @@ export default async function Category({
       search,
     },
   } = await getDictionary(locale);
-  const posts = getPostsByCategoryID(id);
-  if (posts === null) {
+  const isCategoryExists = findCategoryByID(id) !== undefined;
+  if (!isCategoryExists) {
     redirect(`/${locale}${routes.home}`);
   }
+  const posts = getPostsByCategoryID(id);
 
   return (
     <ContentContainer>

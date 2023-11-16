@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
+import { redirect } from "next/navigation";
 
 import { categories } from "@/constants/data/categories";
+import { routes } from "@/constants/routes";
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
 import { getDictionary } from "@/locale/get-dictionary";
 
@@ -48,6 +50,9 @@ export default async function Category({
     },
   } = await getDictionary(locale);
   const posts = getPostsByCategoryID(id);
+  if (posts === null) {
+    redirect(`/${locale}${routes.home}`);
+  }
 
   return (
     <ContentContainer>

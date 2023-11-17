@@ -19,9 +19,13 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: "pnpm"
+        registry-url: https://npm.pkg.github.com/
     - uses: pnpm/action-setup@v2
       with:
         version: 8
     - run: pnpm install --frozen-lockfile
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
     - run: SKIP_ENV_VALIDATION=true pnpm lint
     - run: pnpm test

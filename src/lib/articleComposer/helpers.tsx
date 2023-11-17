@@ -1,10 +1,8 @@
 import { Body, Heading } from "@/components/ui";
 import List from "@/components/ui/List";
-import {
-  type ArticleContentBody,
-  type ArticleContentHeading,
-  type ArticleContentList,
-} from "@/types/article";
+import { type ArticleContentBody } from "@/types/article/contentBody";
+import { type ArticleContentHeading } from "@/types/article/contentHeading";
+import { type ArticleContentList } from "@/types/article/contentList";
 
 export function renderHeading(item: Omit<ArticleContentHeading, "type">) {
   const { id, data, ...props } = item;

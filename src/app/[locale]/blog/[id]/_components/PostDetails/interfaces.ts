@@ -1,6 +1,5 @@
-import { type Locale } from "i18n-config";
-
 import { type Post } from "@/constants/data/posts";
+import { type Locale } from "@/types/locale";
 
 export interface PostDetailsProps {
   locale: Locale;

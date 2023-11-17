@@ -1,11 +1,11 @@
 import clsx from "clsx";
-import { type Locale } from "i18n-config";
 import Image from "next/image";
 import Link from "next/link";
 
 import { Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
+import { type Locale } from "@/types/locale";
 
 import styles from "./CategoriesSelector.module.scss";
 

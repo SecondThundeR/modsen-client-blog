@@ -1,6 +1,5 @@
-import { type Locale } from "i18n-config";
-
 import { type DictionaryType } from "@/types/dictionary";
+import { type Locale } from "@/types/locale";
 
 export interface PostsBlockProps {
   locale: Locale;

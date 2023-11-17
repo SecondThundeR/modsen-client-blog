@@ -1,8 +1,8 @@
-import { type Locale } from "i18n-config";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 import { type DictionaryType } from "@/types/dictionary";
+import { type Locale } from "@/types/locale";
 
 type DictionaryModule = {
   default: DictionaryType;

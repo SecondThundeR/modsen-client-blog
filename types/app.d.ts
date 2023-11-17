@@ -1,4 +1,4 @@
-import { type Locale } from "i18n-config";
+import { type Locale } from "@/types/locale";
 
 declare global {
   declare type PageLocaleParams = { params: { locale: Locale } };

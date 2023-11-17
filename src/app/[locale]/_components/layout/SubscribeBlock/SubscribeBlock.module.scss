@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-tablet) {
         padding: 36px;
         align-items: center;
         text-align: center;
@@ -22,8 +22,11 @@
     gap: 24px;
     align-items: center;
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-large) {
         width: 100%;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
         justify-content: center;
         flex-wrap: wrap;
     }

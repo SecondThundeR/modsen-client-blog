@@ -11,9 +11,9 @@
     background-color: $lightYellow;
 
     @media (max-width: $breakpoint-mobile) {
+        height: fit-content;
         flex-direction: column;
         gap: 48px;
-        height: 650px;
         padding: 48px 52px;
     }
 }
@@ -46,6 +46,10 @@
     @include columnFlex;
     justify-content: space-between;
     flex: 2;
+
+    @media (max-width: $breakpoint-mobile) {
+        gap: 96px
+    }
 }
 
 .testimonialFooter {

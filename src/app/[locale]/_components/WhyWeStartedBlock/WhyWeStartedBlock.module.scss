@@ -31,6 +31,10 @@
         position: relative;
         width: 100%;
     }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 24px 12px;
+    }
 }
 
 .block__content {

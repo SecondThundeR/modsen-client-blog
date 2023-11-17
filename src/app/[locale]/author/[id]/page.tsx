@@ -1,4 +1,5 @@
 import { PageSection } from "@secondthunder/modsen-client-blog-ui";
+import { type ResolvingMetadata } from "next";
 import { redirect } from "next/navigation";
 
 import { authors } from "@/constants/data/authors";
@@ -8,13 +9,40 @@ import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 
 import { AuthorHeader, Posts, PostsHeading } from "./_components";
 
+type AuthorPageParams = PageLocaleParams & { params: { id: string } };
+
+export async function generateMetadata(
+  { params }: AuthorPageParams,
+  parent: ResolvingMetadata,
+) {
+  const locale = params.locale;
+  const id = params.id;
+
+  const authorData = findAuthorByID(id);
+  if (!authorData) {
+    return {
+      title: (await parent).title,
+      description: (await parent).description,
+    };
+  }
+
+  const {
+    metadata: {
+      author: { description },
+    },
+  } = await getDictionary(locale);
+
+  return {
+    title: authorData.name,
+    description: `${description} "${authorData.name}"`,
+  };
+}
+
 export function generateStaticParams() {
   return authors.map((author) => ({
     id: author.id,
   }));
 }
-
-type AuthorPageParams = PageLocaleParams & { params: { id: string } };
 
 export default async function Author({
   params: { id, locale },

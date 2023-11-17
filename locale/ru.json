@@ -1,4 +1,36 @@
 {
+    "metadata": {
+        "root": {
+            "title": "Блог клиентов Modsen",
+            "description": "Тестовый блог на NextJS"
+        },
+        "aboutUs": {
+            "title": "О нас",
+            "description": "Больше информации о нашем блоге"
+        },
+        "blog": {
+            "title": "Посты блога",
+            "description": "Все наши блоги на одной странице!"
+        },
+        "blogPost": {
+            "description": "Узнайте подробнее о посте от"
+        },
+        "author": {
+            "description": "Все посты автора"
+        },
+        "category": {
+            "description1": "Все посты для категории",
+            "description2": ""
+        },
+        "contactUs": {
+            "title": "Связаться с нами",
+            "description": "Отправьте нам сообщение и мы ответим вам как можно быстрее"
+        },
+        "privacyPolicy": {
+            "title": "Политика приватности",
+            "description": "Текст политики приватности для блога клиентов Modsen"
+        }
+    },
     "title": "Блог клиентов Modsen",
     "headerVideoButton": "Видео о нас",
     "postedOn": "Опубликовано в",

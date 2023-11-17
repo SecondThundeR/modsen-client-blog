@@ -11,6 +11,18 @@ const LazyContactForm = dynamic(() => import("./_components/ContactForm"), {
   loading: () => <ContactFormSkeleton />,
 });
 
+export async function generateMetadata({ params }: PageLocaleParams) {
+  const locale = params.locale;
+  const {
+    metadata: { contactUs },
+  } = await getDictionary(locale);
+
+  return {
+    title: contactUs.title,
+    description: contactUs.description,
+  };
+}
+
 export default async function ContactUs({
   params: { locale },
 }: PageLocaleParams) {

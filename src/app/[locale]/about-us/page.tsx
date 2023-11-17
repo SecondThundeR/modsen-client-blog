@@ -3,6 +3,18 @@ import { getDictionary } from "@/helpers/getDictionary";
 import { AuthorsGrid, JoinUsBlock } from "../_components";
 import { AboutUsHeader, StartedBlock, TeamBlock } from "./_components";
 
+export async function generateMetadata({ params }: PageLocaleParams) {
+  const locale = params.locale;
+  const {
+    metadata: { aboutUs },
+  } = await getDictionary(locale);
+
+  return {
+    title: aboutUs.title,
+    description: aboutUs.description,
+  };
+}
+
 export default async function AboutUs({
   params: { locale },
 }: PageLocaleParams) {

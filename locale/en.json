@@ -1,4 +1,36 @@
 {
+    "metadata": {
+        "root": {
+            "title": "Modsen Client Blog",
+            "description": "Example blog on NextJS"
+        },
+        "aboutUs": {
+            "title": "About Us",
+            "description": "More information about our blog"
+        },
+        "blog": {
+            "title": "Blog Posts",
+            "description": "All our blogs on one page!"
+        },
+        "blogPost": {
+            "description": "Read more about this post from"
+        },
+        "author": {
+            "description": "All posts from"
+        },
+        "category": {
+            "description1": "All posts for",
+            "description2": "category"
+        },
+        "contactUs": {
+            "title": "Contact us",
+            "description": "Send us a message and we will answer you as quickly as possible"
+        },
+        "privacyPolicy": {
+            "title": "Privacy Policy",
+            "description": "Privacy policy text for Modsen Client Blog"
+        }
+    },
     "title": "Modsen Client Blog",
     "headerVideoButton": "Video about us",
     "postedOn": "Posted on",

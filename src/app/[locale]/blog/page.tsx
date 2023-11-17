@@ -19,6 +19,18 @@ const LazyPostsList = dynamic(() => import("./_components/PostsList"), {
   loading: () => <PostsListSkeleton />,
 });
 
+export async function generateMetadata({ params }: PageLocaleParams) {
+  const locale = params.locale;
+  const {
+    metadata: { blog },
+  } = await getDictionary(locale);
+
+  return {
+    title: blog.title,
+    description: blog.description,
+  };
+}
+
 export default async function Blog({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
   const {

@@ -1,3 +1,4 @@
+import { type ResolvingMetadata } from "next";
 import dynamic from "next/dynamic";
 import { redirect } from "next/navigation";
 
@@ -19,6 +20,33 @@ const LazyPostsList = dynamic(() => import("./_components/PostsList"));
 const LazyTagsSearch = dynamic(() => import("./_components/TagsSearch"));
 
 const LazyTagsSelector = dynamic(() => import("./_components/TagsSelector"));
+
+export async function generateMetadata(
+  { params }: CategoryPageParams,
+  parent: ResolvingMetadata,
+) {
+  const locale = params.locale;
+  const id = params.id;
+
+  const {
+    categories,
+    metadata: {
+      category: { description1, description2 },
+    },
+  } = await getDictionary(locale);
+  const currentCategory = (categories as Record<string, string>)[id];
+  if (!currentCategory) {
+    return {
+      title: (await parent).title,
+      description: (await parent).description,
+    };
+  }
+
+  return {
+    title: currentCategory,
+    description: `${description1} "${currentCategory}" ${description2}`,
+  };
+}
 
 export function generateStaticParams() {
   return categories.map((category) => ({

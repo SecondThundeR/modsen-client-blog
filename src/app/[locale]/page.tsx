@@ -20,6 +20,18 @@ const CURRENT_HERO_POST_ID = "step-by-step";
 const FEATURED_POST_ID = "lorem-ipsum";
 const ALL_POST_ID = "figma-design";
 
+export async function generateMetadata({ params }: PageLocaleParams) {
+  const locale = params.locale;
+  const {
+    metadata: { root },
+  } = await getDictionary(locale);
+
+  return {
+    title: root.title,
+    description: root.description,
+  };
+}
+
 export default async function Home({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);
 

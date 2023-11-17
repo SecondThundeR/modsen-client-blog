@@ -8,6 +8,10 @@ import { inter, sen } from "@/lib/fonts";
 
 import { LayoutFooter, LayoutNavbar } from "./_components/layout";
 
+type RootLayoutProps = {
+  children: React.ReactNode;
+} & PageLocaleParams;
+
 const LazyModalShell = dynamic(
   () => import("./_components/layout/ModalShell"),
   {
@@ -16,8 +20,6 @@ const LazyModalShell = dynamic(
 );
 
 export const metadata = {
-  title: "Modsen Client Blog",
-  description: "Blog app example",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -28,9 +30,7 @@ export function generateStaticParams() {
 export default async function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode;
-} & PageLocaleParams) {
+}: RootLayoutProps) {
   const {
     title,
     headerVideoButton,

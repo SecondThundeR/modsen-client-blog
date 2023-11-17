@@ -9,10 +9,10 @@ import {
 } from "@secondthunder/modsen-client-blog-ui";
 import { memo } from "react";
 
-import { Avatar } from "@/components/ui";
 import { testimonials } from "@/constants/data/testimonials";
 import { withLazyLoad } from "@/hocs/withLazyLoad";
 import { useTestimonialsCarousel } from "@/hooks/useTestimonialsCarousel";
+import { Avatar } from "@/ui";
 
 import { type TestimonialsBlockProps } from "./interfaces";
 import styles from "./TestimonialsBlock.module.scss";

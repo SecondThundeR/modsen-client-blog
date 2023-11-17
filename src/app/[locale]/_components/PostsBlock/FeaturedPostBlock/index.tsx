@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import featuredPost from "public/assets/featured-post.png";
 
-import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { findPostByID } from "@/lib/posts/findPostByID";
+import { AuthorLink } from "@/ui";
 
 import styles from "./FeaturedPostBlock.module.scss";
 import { type FeaturedPostBlockProps } from "./interfaces";

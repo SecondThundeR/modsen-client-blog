@@ -1,9 +1,9 @@
 import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { Avatar, Socials } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
+import { Avatar, Socials } from "@/ui";
 
 import styles from "./AuthorsGrid.module.scss";
 import { type AuthorsGridProps } from "./interfaces";

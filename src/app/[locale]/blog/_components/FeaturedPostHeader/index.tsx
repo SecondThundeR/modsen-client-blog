@@ -8,11 +8,11 @@ import Image from "next/image";
 import Link from "next/link";
 import featuredPostPlaceholder from "public/assets/blog/featured-post-placeholder.jpeg";
 
-import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { findPostByID } from "@/lib/posts/findPostByID";
+import { AuthorLink } from "@/ui";
 
 import styles from "./FeaturedPostHeader.module.scss";
 import { type FeaturedPostHeaderProps } from "./interfaces";

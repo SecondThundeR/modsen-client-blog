@@ -9,12 +9,12 @@ import {
 import Link from "next/link";
 import { memo } from "react";
 
-import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { withLazyLoad } from "@/hocs/withLazyLoad";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { findPostByID } from "@/lib/posts/findPostByID";
+import { AuthorLink } from "@/ui";
 
 import styles from "./HomeHero.module.scss";
 import { type HomeHeroProps } from "./interfaces";

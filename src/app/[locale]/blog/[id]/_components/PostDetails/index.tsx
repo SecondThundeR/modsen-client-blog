@@ -2,11 +2,11 @@ import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Avatar } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { findCategoryByID } from "@/lib/categories/findCategoryByID";
+import { Avatar } from "@/ui";
 
 import { type PostDetailsProps } from "./interfaces";
 import styles from "./PostDetails.module.scss";

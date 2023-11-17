@@ -1,11 +1,11 @@
 import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { findPostByID } from "@/lib/posts/findPostByID";
+import { AuthorLink } from "@/ui";
 
 import styles from "./AllPostBlock.module.scss";
 import { type AllPostBlockProps } from "./interfaces";

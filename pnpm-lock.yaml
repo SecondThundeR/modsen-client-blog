@@ -14,9 +14,6 @@ dependencies:
   '@t3-oss/env-nextjs':
     specifier: ^0.7.1
     version: 0.7.1(typescript@5.2.2)(zod@3.22.4)
-  '@types/mapbox-gl':
-    specifier: ^2.7.18
-    version: 2.7.18
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -88,6 +85,9 @@ devDependencies:
   '@types/eslint':
     specifier: ^8.44.7
     version: 8.44.7
+  '@types/mapbox-gl':
+    specifier: ^2.7.18
+    version: 2.7.18
   '@types/negotiator':
     specifier: ^0.6.3
     version: 0.6.3
@@ -4286,7 +4286,6 @@ packages:
 
   /@types/geojson@7946.0.13:
     resolution: {integrity: sha512-bmrNrgKMOhM3WsafmbGmC+6dsF2Z308vLFsQ3a/bT8X8Sv5clVYpPars/UPq+sAaJP+5OoLAYgwbkS5QEJdLUQ==}
-    dev: false
 
   /@types/graceful-fs@4.1.9:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
@@ -4341,7 +4340,6 @@ packages:
     resolution: {integrity: sha512-3Yq4v8IdigSs2oD70dRJuWY/6PoW9i6MyXOx8DvJNc6CuSXRMleVdNiFYa5E0w6tSCfL+b+cGau5Em09MIujtQ==}
     dependencies:
       '@types/geojson': 7946.0.13
-    dev: false
 
   /@types/mdx@2.0.10:
     resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}

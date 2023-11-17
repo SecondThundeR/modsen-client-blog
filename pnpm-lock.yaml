@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.5.2
     version: 0.5.2
   '@secondthunder/modsen-client-blog-ui':
-    specifier: ^1.2.0
-    version: 1.2.0(react@18.2.0)
+    specifier: ^1.2.1
+    version: 1.2.1(react@18.2.0)
   '@t3-oss/env-nextjs':
     specifier: ^0.7.1
     version: 0.7.1(typescript@5.2.2)(zod@3.22.4)
@@ -2857,8 +2857,8 @@ packages:
     resolution: {integrity: sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==}
     dev: true
 
-  /@secondthunder/modsen-client-blog-ui@1.2.0(react@18.2.0):
-    resolution: {integrity: sha512-lL3tZhYN4Nf+6FcSlySWUJnUSSPasJiAhhQcr47IHfEc71fD3LEe6X9m7BQcsSP4Tn5bmszgYulCV9xMOf34RA==, tarball: https://npm.pkg.github.com/download/@secondthunder/modsen-client-blog-ui/1.2.0/c9f1bc86cf15567c51a62e7f6f14cd48ecef8a34}
+  /@secondthunder/modsen-client-blog-ui@1.2.1(react@18.2.0):
+    resolution: {integrity: sha512-Z6CxhUbBlDCwFbNU92+PLS6r+EGk7GWXiMBRyaZAyqPR4X5zwtiaT5+shBGdQHgjil2TFK0KSdqaI05SyM4kGQ==, tarball: https://npm.pkg.github.com/download/@secondthunder/modsen-client-blog-ui/1.2.1/95254ecb3ff8d0f20fe9943c8ab52141efae9d27}
     peerDependencies:
       react: ^18.2.0
     dependencies:

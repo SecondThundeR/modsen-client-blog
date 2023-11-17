@@ -1,11 +1,11 @@
 import { routes } from "@/constants/routes";
 import { type DictionaryType } from "@/locale/get-dictionary";
 
-export const getLinks = (
+export function getLinks(
   locale: PageLocaleParams["params"]["locale"],
   linksLocale: DictionaryType["links"],
   parent: "navbar" | "footer",
-) => {
+) {
   const { home, blog, aboutUs, contactUs, privacyPolicy } = linksLocale;
 
   const baseLinks = [
@@ -42,4 +42,4 @@ export const getLinks = (
     ];
 
   return baseLinks;
-};
+}

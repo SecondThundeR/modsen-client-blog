@@ -4,8 +4,8 @@ import featuredPostPlaceholder from "public/assets/blog/featured-post-placeholde
 
 import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
+import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
-import { getFormattedDate } from "@/lib/date";
 import { findPostByID } from "@/lib/posts/findPostByID";
 
 import styles from "./FeaturedPostHeader.module.scss";

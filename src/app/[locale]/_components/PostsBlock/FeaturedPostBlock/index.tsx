@@ -4,8 +4,8 @@ import featuredPost from "public/assets/featured-post.png";
 
 import { AuthorLink, Body, Button, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
+import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
-import { getFormattedDate } from "@/lib/date";
 import { findPostByID } from "@/lib/posts/findPostByID";
 
 import styles from "./FeaturedPostBlock.module.scss";

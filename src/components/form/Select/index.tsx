@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import { isSelectedOptionDisabled } from "@/lib/select";
+import { isSelectedOptionDisabled } from "@/helpers/isSelectedOptionDisabled";
 
 import { type SelectProps } from "./interfaces";
 import styles from "./Select.module.scss";

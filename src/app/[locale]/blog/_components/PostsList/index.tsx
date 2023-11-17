@@ -3,8 +3,8 @@
 import { memo, useMemo } from "react";
 
 import { Heading } from "@/components/ui";
+import { getArraySlice } from "@/helpers/getArraySlice";
 import { usePageNavigation } from "@/hooks/usePageNavigation";
-import { getArraySlice } from "@/lib/pagination";
 
 import { PostsListCard } from "../../../_components";
 import PageButtons from "../PageButtons";

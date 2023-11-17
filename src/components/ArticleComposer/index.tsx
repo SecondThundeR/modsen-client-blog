@@ -1,9 +1,7 @@
 import { Article, ArticleWrapper } from "@/components/ui";
-import {
-  renderBody,
-  renderHeading,
-  renderList,
-} from "@/lib/articleComposer/helpers";
+import { renderBody } from "@/helpers/articleComposer/renderBody";
+import { renderHeading } from "@/helpers/articleComposer/renderHeading";
+import { renderList } from "@/helpers/articleComposer/renderList";
 
 import { type ArticleComposerProps } from "./interfaces";
 

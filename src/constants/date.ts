@@ -1,6 +1,6 @@
 import { type Locale } from "@/locale/i18n-config";
 
-const monthMap: Record<Locale, Record<number, string>> = {
+export const monthMap: Record<Locale, Record<number, string>> = {
   en: {
     0: "Jan",
     1: "Feb",
@@ -30,12 +30,3 @@ const monthMap: Record<Locale, Record<number, string>> = {
     11: "декабря",
   },
 };
-
-export function getFormattedDate(date: Date, locale: Locale) {
-  const monthText = monthMap[locale][date.getMonth()]!;
-
-  if (locale === "ru")
-    return `${date.getDate()} ${monthText} ${date.getFullYear()}`;
-
-  return `${monthText} ${date.getDate()}, ${date.getFullYear()}`;
-}

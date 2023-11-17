@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Body, Button, Heading, Navbar } from "@/components/ui";
 import { modals } from "@/constants/modals";
-import { getLinks } from "@/lib/links";
+import { getLinks } from "@/helpers/getLinks";
 
 import { type LayoutNavbarProps } from "./interfaces";
 

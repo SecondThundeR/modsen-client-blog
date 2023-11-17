@@ -4,8 +4,8 @@ import readNextPlaceholderImage from "public/assets/blog/post/read-next-placehol
 
 import { AuthorLink, Body, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
+import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
-import { getFormattedDate } from "@/lib/date";
 
 import { type PostCardProps } from "./interfaces";
 import styles from "./PostCard.module.scss";

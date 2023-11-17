@@ -1,5 +1,7 @@
 import clsx from "clsx";
 
+import { isSelectedOptionDisabled } from "@/lib/select";
+
 import { type SelectProps } from "./interfaces";
 import styles from "./Select.module.scss";
 
@@ -9,13 +11,10 @@ export default function Select({
   errorMessage,
   ...props
 }: SelectProps) {
-  const disabledValues = options
-    .filter((option) => option.isDisabled)
-    .map((option) => option.value);
-  const isSelectedDisabled =
-    props.value !== undefined
-      ? disabledValues.includes(String(props.value))
-      : false;
+  const isSelectedDisabled = isSelectedOptionDisabled(
+    options,
+    String(props.value),
+  );
 
   return (
     <div data-testid="select-wrapper">

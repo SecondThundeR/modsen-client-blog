@@ -1,8 +1,8 @@
+import { Heading } from "@secondthunder/modsen-client-blog-ui";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
 import { type Locale } from "@/types/locale";

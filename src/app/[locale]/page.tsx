@@ -1,6 +1,6 @@
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
 import { Suspense } from "react";
 
-import { PageSection } from "@/components/ui";
 import { getDictionary } from "@/helpers/getDictionary";
 
 import {

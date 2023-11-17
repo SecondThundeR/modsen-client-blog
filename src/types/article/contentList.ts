@@ -1,4 +1,4 @@
-import { type ListProps } from "@/components/ui/List/interfaces";
+import { type ListProps } from "@secondthunder/modsen-client-blog-ui";
 
 import { type ArticleContentBase } from "./contentBase";
 

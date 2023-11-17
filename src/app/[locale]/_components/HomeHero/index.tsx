@@ -1,9 +1,15 @@
 "use client";
 
+import {
+  Body,
+  Button,
+  Cap,
+  Heading,
+} from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 import { memo } from "react";
 
-import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
+import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { withLazyLoad } from "@/hocs/withLazyLoad";

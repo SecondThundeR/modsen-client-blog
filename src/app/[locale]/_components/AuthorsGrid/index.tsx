@@ -1,6 +1,7 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { Avatar, Body, Heading, Socials } from "@/components/ui";
+import { Avatar, Socials } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
 

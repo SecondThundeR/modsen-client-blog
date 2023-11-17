@@ -1,4 +1,4 @@
-import { Body, Cap, Heading } from "@/components/ui";
+import { Body, Cap, Heading } from "@secondthunder/modsen-client-blog-ui";
 
 import { type MissionVisionProps } from "./interfaces";
 import styles from "./MissionVision.module.scss";

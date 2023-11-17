@@ -1,6 +1,5 @@
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
 import dynamic from "next/dynamic";
-
-import { PageSection } from "@/components/ui";
 
 import { ContactUsMapSkeleton } from "./_components/skeletons";
 

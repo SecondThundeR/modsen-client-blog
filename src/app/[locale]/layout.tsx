@@ -1,4 +1,5 @@
 import "@/styles/globals.scss";
+import "@secondthunder/modsen-client-blog-ui/dist/index.css";
 
 import dynamic from "next/dynamic";
 

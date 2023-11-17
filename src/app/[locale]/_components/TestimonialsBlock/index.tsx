@@ -1,9 +1,15 @@
 "use client";
 
+import {
+  Body,
+  Cap,
+  Heading,
+  LeftArrowIcon,
+  RightArrowIcon,
+} from "@secondthunder/modsen-client-blog-ui";
 import { memo } from "react";
 
-import { LeftArrowIcon, RightArrowIcon } from "@/components/icons";
-import { Avatar, Body, Cap, Heading } from "@/components/ui";
+import { Avatar } from "@/components/ui";
 import { testimonials } from "@/constants/data/testimonials";
 import { withLazyLoad } from "@/hocs/withLazyLoad";
 import { useTestimonialsCarousel } from "@/hooks/useTestimonialsCarousel";

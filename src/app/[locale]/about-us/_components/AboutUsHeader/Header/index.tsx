@@ -1,4 +1,4 @@
-import { Body, Cap, Heading } from "@/components/ui";
+import { Body, Cap, Heading } from "@secondthunder/modsen-client-blog-ui";
 
 import styles from "./Header.module.scss";
 import { type HeaderProps } from "./interfaces";

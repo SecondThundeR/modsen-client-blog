@@ -1,6 +1,7 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { AuthorLink, Body, Heading } from "@/components/ui";
+import { AuthorLink } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { getFormattedDate } from "@/helpers/getFormattedDate";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";

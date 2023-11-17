@@ -1,6 +1,5 @@
+import { Body } from "@secondthunder/modsen-client-blog-ui";
 import { i18n } from "i18n-config";
-
-import { Body } from "@/components/ui";
 
 export default function LocaleSwitcherSkeleton() {
   return (

@@ -1,7 +1,7 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Body, Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
 

@@ -1,6 +1,7 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 
-import { Body, Heading, Socials } from "@/components/ui";
+import { Socials } from "@/components/ui";
 
 import styles from "./AuthorHeader.module.scss";
 import { type AuthorHeaderProps } from "./interfaces";

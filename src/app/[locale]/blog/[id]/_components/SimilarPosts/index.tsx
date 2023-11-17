@@ -1,4 +1,5 @@
-import { Heading } from "@/components/ui";
+import { Heading } from "@secondthunder/modsen-client-blog-ui";
+
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
 
 import { type SimilarPostsProps } from "./interfaces";

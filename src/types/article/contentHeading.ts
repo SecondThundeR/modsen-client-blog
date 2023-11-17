@@ -1,4 +1,4 @@
-import { type HeadingProps } from "@/components/ui/Heading/interfaces";
+import { type HeadingProps } from "@secondthunder/modsen-client-blog-ui";
 
 import { type ArticleContentBase } from "./contentBase";
 

@@ -1,4 +1,4 @@
-import { Spinner } from "@/components/ui";
+import { Spinner } from "@secondthunder/modsen-client-blog-ui";
 
 import styles from "./PostsListSkeleton.module.scss";
 

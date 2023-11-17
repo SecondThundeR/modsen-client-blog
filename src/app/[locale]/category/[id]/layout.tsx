@@ -1,4 +1,5 @@
-import { PageSection } from "@/components/ui";
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
+
 import { getDictionary } from "@/helpers/getDictionary";
 import { type Locale } from "@/types/locale";
 

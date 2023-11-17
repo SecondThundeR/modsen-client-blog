@@ -1,5 +1,6 @@
 "use client";
 
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 import logo1 from "public/assets/featuredin/logo1.png";
 import logo2 from "public/assets/featuredin/logo2.png";
@@ -8,7 +9,6 @@ import logo4 from "public/assets/featuredin/logo4.png";
 import logo5 from "public/assets/featuredin/logo5.png";
 import { memo } from "react";
 
-import { Body, Heading } from "@/components/ui";
 import { withLazyLoad } from "@/hocs/withLazyLoad";
 
 import styles from "./FeaturedInBlock.module.scss";

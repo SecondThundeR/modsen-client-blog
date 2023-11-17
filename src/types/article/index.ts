@@ -1,4 +1,4 @@
-import { type ArticleProps } from "@/components/ui/Article/interfaces";
+import { type ArticleProps } from "@secondthunder/modsen-client-blog-ui";
 
 import { type ArticleContent } from "./content";
 

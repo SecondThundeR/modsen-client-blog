@@ -1,7 +1,7 @@
+import { Body, Footer, Heading } from "@secondthunder/modsen-client-blog-ui";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import { Body, Footer, Heading } from "@/components/ui";
 import { address, emailAndPhone } from "@/constants/contactInfo";
 import { socialLinks } from "@/constants/links";
 import { getLinks } from "@/helpers/getLinks";

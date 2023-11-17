@@ -1,4 +1,4 @@
-import { Body, Display } from "@/components/ui";
+import { Body, Display } from "@secondthunder/modsen-client-blog-ui";
 
 import { type OverviewBlockProps } from "./interfaces";
 import styles from "./OverviewBlock.module.scss";

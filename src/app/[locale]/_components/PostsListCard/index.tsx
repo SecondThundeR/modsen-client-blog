@@ -1,8 +1,8 @@
+import { Body, Cap, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 import Link from "next/link";
 import postListCardPlaceholder from "public/assets/blog/posts-list-placeholder.jpeg";
 
-import { Body, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
 
 import { type PostsListCardProps } from "./interfaces";

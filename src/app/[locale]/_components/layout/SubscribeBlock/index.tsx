@@ -1,9 +1,8 @@
 "use client";
 
+import { Button, Heading, Input } from "@secondthunder/modsen-client-blog-ui";
 import { memo } from "react";
 
-import { Input } from "@/components/form";
-import { Button, Heading } from "@/components/ui";
 import { useSendSubscribeMail } from "@/hooks/useSendSubscribeMail";
 
 import { type SubscribeBlockProps } from "./interfaces";

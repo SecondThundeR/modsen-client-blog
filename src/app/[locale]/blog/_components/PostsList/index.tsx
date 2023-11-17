@@ -1,8 +1,8 @@
 "use client";
 
+import { Heading } from "@secondthunder/modsen-client-blog-ui";
 import { memo, useMemo } from "react";
 
-import { Heading } from "@/components/ui";
 import { getArraySlice } from "@/helpers/getArraySlice";
 import { usePageNavigation } from "@/hooks/usePageNavigation";
 

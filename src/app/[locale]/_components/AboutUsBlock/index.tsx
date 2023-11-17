@@ -1,9 +1,9 @@
 "use client";
 
+import { Body, Cap, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 import { memo } from "react";
 
-import { Body, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
 import { withLazyLoad } from "@/hocs/withLazyLoad";
 

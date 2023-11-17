@@ -27,7 +27,7 @@
     padding: 24px;
     background-color: transparent;
     transition: $transitionSetup;
-    border: 1.5px solid $categoryCardBorderColor;
+    border: 1.5px solid $categorySelectBorderColor;
 
     &:hover {
         color: $black;

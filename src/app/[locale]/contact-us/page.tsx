@@ -1,6 +1,6 @@
+import { Body, Cap, Heading } from "@secondthunder/modsen-client-blog-ui";
 import dynamic from "next/dynamic";
 
-import { Body, Cap, Heading } from "@/components/ui";
 import { getDictionary } from "@/helpers/getDictionary";
 
 import { ContactUsBlock, GeneralWrapper } from "./_components";

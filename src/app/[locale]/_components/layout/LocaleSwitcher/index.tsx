@@ -1,12 +1,12 @@
 "use client";
 
+import { Body } from "@secondthunder/modsen-client-blog-ui";
 import clsx from "clsx";
 import { i18n } from "i18n-config";
 import Link from "next/link";
 import { memo } from "react";
 
 import { useLocaleSwitcher } from "@/app/[locale]/_hooks";
-import { Body } from "@/components/ui";
 
 import { type LocaleSwitcherProps } from "./interfaces";
 import styles from "./LocaleSwitcher.module.scss";

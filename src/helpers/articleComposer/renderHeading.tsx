@@ -1,4 +1,5 @@
-import { Heading } from "@/components/ui";
+import { Heading } from "@secondthunder/modsen-client-blog-ui";
+
 import { type ArticleContentHeading } from "@/types/article/contentHeading";
 
 export function renderHeading(item: Omit<ArticleContentHeading, "type">) {

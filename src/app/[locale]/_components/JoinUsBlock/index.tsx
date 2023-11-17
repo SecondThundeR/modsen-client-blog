@@ -1,6 +1,6 @@
+import { Body, Button, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { Body, Button, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
 
 import { type JoinUsBlockProps } from "./interfaces";

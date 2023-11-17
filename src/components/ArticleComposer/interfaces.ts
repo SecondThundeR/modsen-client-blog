@@ -1,6 +1,6 @@
-import { type ArticleData } from "@/types/article";
+import { type ArticleWrapperProps } from "@secondthunder/modsen-client-blog-ui";
 
-import { type ArticleWrapperProps } from "../ui/ArticleWrapper/interfaces";
+import { type ArticleData } from "@/types/article";
 
 export interface ArticleComposerProps
   extends Omit<ArticleWrapperProps, "children"> {

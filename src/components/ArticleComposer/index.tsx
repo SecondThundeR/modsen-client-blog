@@ -1,4 +1,5 @@
-import { Article, ArticleWrapper } from "@/components/ui";
+import { Article, ArticleWrapper } from "@secondthunder/modsen-client-blog-ui";
+
 import { renderBody } from "@/helpers/articleComposer/renderBody";
 import { renderHeading } from "@/helpers/articleComposer/renderHeading";
 import { renderList } from "@/helpers/articleComposer/renderList";

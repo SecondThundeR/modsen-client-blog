@@ -1,4 +1,4 @@
-import { Alert, Body, Heading } from "@/components/ui";
+import { Alert, Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 
 import { type ContactFormAlertProps } from "./interfaces";
 

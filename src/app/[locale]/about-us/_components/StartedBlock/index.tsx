@@ -1,8 +1,7 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import clsx from "clsx";
 import Image from "next/image";
 import startedImage from "public/assets/aboutUs/started.jpeg";
-
-import { Body, Heading } from "@/components/ui";
 
 import { type StartedBlockProps } from "./interfaces";
 import styles from "./StartedBlock.module.scss";

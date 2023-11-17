@@ -1,4 +1,4 @@
-import { type BodyProps } from "@/components/ui/Body/interfaces";
+import { type BodyProps } from "@secondthunder/modsen-client-blog-ui";
 
 import { type ArticleContentBase } from "./contentBase";
 

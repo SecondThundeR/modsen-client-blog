@@ -1,9 +1,9 @@
 "use client";
 
+import { Heading } from "@secondthunder/modsen-client-blog-ui";
 import { memo, useMemo } from "react";
 
 import { PostsListCard } from "@/app/[locale]/_components";
-import { Heading } from "@/components/ui";
 import { useTagsQuerySelect } from "@/hooks/useTagsQuerySelect";
 
 import { type PostsListProps } from "./intefaces";

@@ -1,4 +1,4 @@
-import { Button, Heading } from "@/components/ui";
+import { Button, Heading } from "@secondthunder/modsen-client-blog-ui";
 
 import { type PageButtonsProps } from "./interfaces";
 import styles from "./PageButtons.module.scss";

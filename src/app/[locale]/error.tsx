@@ -1,8 +1,14 @@
 "use client";
 
+import {
+  Body,
+  Button,
+  ErrorWrapper,
+  Heading,
+  Spinner,
+} from "@secondthunder/modsen-client-blog-ui";
 import { memo, useCallback, useEffect } from "react";
 
-import { Body, Button, ErrorWrapper, Heading, Spinner } from "@/components/ui";
 import { useDictionary } from "@/hooks/useDictionary";
 
 function Error({ error, reset }: ErrorPageProps) {

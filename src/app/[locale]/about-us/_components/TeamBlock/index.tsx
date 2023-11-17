@@ -1,7 +1,6 @@
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import Image from "next/image";
 import teamImage from "public/assets/aboutUs/team.jpeg";
-
-import { Body, Heading } from "@/components/ui";
 
 import { type TeamBlockProps } from "./interfaces";
 import styles from "./TeamBlock.module.scss";

@@ -1,4 +1,4 @@
-import { Body, Heading } from "@/components/ui";
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 
 import styles from "./ContactUsBlock.module.scss";
 import { type ContactUsBlockProps } from "./interfaces";

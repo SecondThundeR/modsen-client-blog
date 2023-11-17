@@ -1,6 +1,6 @@
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
 import dynamic from "next/dynamic";
 
-import { PageSection } from "@/components/ui";
 import { posts } from "@/constants/data/posts";
 import { getDictionary } from "@/helpers/getDictionary";
 

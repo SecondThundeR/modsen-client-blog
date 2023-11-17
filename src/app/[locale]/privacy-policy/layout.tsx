@@ -1,4 +1,10 @@
-import { Body, Header, Heading, PageSection } from "@/components/ui";
+import {
+  Body,
+  Header,
+  Heading,
+  PageSection,
+} from "@secondthunder/modsen-client-blog-ui";
+
 import { getDictionary } from "@/helpers/getDictionary";
 
 export default async function PrivacyPolicyLayout({

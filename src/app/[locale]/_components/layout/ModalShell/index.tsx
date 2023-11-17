@@ -1,10 +1,10 @@
 "use client";
 
+import { Button, ModalWrapper } from "@secondthunder/modsen-client-blog-ui";
 import { useRouter, useSearchParams } from "next/navigation";
 import { memo, useCallback } from "react";
 import { createPortal } from "react-dom";
 
-import { Button, ModalWrapper } from "@/components/ui";
 import { modalData } from "@/constants/modalData";
 import { useMounted } from "@/hooks/useMounted";
 

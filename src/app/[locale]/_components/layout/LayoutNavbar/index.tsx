@@ -1,6 +1,11 @@
+import {
+  Body,
+  Button,
+  Heading,
+  Navbar,
+} from "@secondthunder/modsen-client-blog-ui";
 import Link from "next/link";
 
-import { Body, Button, Heading, Navbar } from "@/components/ui";
 import { modals } from "@/constants/modals";
 import { getLinks } from "@/helpers/getLinks";
 

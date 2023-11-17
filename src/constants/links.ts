@@ -3,7 +3,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
-} from "@/components/icons";
+} from "@secondthunder/modsen-client-blog-ui";
 
 export const socialLinks = [
   { id: "facebook", icon: FacebookIcon, href: "https://facebook.com/" },

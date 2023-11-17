@@ -1,6 +1,6 @@
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
 import { redirect } from "next/navigation";
 
-import { PageSection } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
 import { getDictionary } from "@/helpers/getDictionary";

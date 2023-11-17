@@ -1,4 +1,4 @@
-import { PageSection } from "@/components/ui";
+import { PageSection } from "@secondthunder/modsen-client-blog-ui";
 
 export default function AboutUsLayout({
   children,

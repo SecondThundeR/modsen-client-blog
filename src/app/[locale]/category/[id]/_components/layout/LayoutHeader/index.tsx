@@ -1,4 +1,9 @@
-import { Body, Cap, Display, Header } from "@/components/ui";
+import {
+  Body,
+  Cap,
+  Display,
+  Header,
+} from "@secondthunder/modsen-client-blog-ui";
 
 import { type LayoutHeaderProps } from "./interfaces";
 import styles from "./LayoutHeader.module.scss";

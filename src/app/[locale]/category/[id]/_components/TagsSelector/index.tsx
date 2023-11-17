@@ -1,9 +1,9 @@
 "use client";
 
+import { Body, Heading } from "@secondthunder/modsen-client-blog-ui";
 import clsx from "clsx";
 import { memo, useMemo } from "react";
 
-import { Body, Heading } from "@/components/ui";
 import { tags } from "@/constants/data/tags";
 import { useTagsQuerySearch } from "@/hooks/useTagsQuerySearch";
 import { useTagsQuerySelect } from "@/hooks/useTagsQuerySelect";

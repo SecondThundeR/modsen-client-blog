@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Body, Button } from "@/components/ui";
 
-import Navbar from "./Navbar";
+import Navbar from ".";
 
 const meta = {
   title: "Components/Navbar",

@@ -5,7 +5,7 @@ import { memo } from "react";
 
 import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
 import { getFormattedDate } from "@/lib/date";
 import { findPostByID } from "@/lib/posts/findPostByID";

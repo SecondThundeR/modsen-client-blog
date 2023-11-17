@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import testImage from "public/assets/authors/dianne-russel.png";
 
-import Avatar from "./Avatar";
+import Avatar from ".";
 
 const meta = {
   title: "Components/Avatar",

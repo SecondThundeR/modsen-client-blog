@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Display } from "@/components/ui";
 
-import ModalWrapper from "./ModalWrapper";
+import ModalWrapper from ".";
 
 const meta = {
   title: "Components/ModalWrapper",

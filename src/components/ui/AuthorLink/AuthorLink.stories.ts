@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import AuthorLink from "./AuthorLink";
+import AuthorLink from ".";
 
 const meta = {
   title: "Components/AuthorLink",

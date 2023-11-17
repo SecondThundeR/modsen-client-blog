@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Cap from "./Cap";
+import Cap from ".";
 
 const meta = {
   title: "Components/Cap",

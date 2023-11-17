@@ -1,5 +1,5 @@
 import { Body, Heading } from "@/components/ui";
-import List from "@/components/ui/List/List";
+import List from "@/components/ui/List";
 import {
   type ArticleContentBody,
   type ArticleContentHeading,

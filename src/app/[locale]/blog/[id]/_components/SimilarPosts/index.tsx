@@ -2,7 +2,7 @@ import { Heading } from "@/components/ui";
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
 
 import { type SimilarPostsProps } from "./interfaces";
-import PostCard from "./PostCard/PostCard";
+import PostCard from "./PostCard";
 import styles from "./SimilarPosts.module.scss";
 
 export default function SimilarPosts({

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import SuccessIcon from "./SuccessIcon";
+import SuccessIcon from ".";
 
 describe("SuccessIcon", () => {
   test("should render success icon", () => {

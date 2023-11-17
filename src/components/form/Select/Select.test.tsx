@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test, vi } from "vitest";
 
-import Select from "./Select";
+import Select from ".";
 
 describe("Select", () => {
   const defaultOptions = [

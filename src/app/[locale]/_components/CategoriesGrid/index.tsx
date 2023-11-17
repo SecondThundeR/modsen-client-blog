@@ -7,7 +7,7 @@ import { memo } from "react";
 import { Body, Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 
 import styles from "./CategoriesGrid.module.scss";
 import { type CategoriesGridProps } from "./interfaces";

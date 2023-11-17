@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import FacebookIcon from "./FacebookIcon";
+import FacebookIcon from ".";
 
 const meta = {
   title: "Icons/FacebookIcon",

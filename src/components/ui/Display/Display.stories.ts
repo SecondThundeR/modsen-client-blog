@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Display from "./Display";
+import Display from ".";
 
 const meta = {
   title: "Components/Display",

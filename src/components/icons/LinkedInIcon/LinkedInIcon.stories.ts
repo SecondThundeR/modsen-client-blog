@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import LinkedInIcon from "./LinkedInIcon";
+import LinkedInIcon from ".";
 
 const meta = {
   title: "Icons/LinkedInIcon",

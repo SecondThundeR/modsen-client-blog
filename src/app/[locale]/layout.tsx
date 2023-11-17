@@ -8,7 +8,7 @@ import { getDictionary } from "@/locale/get-dictionary";
 import { LayoutFooter, LayoutNavbar } from "./_components/layout";
 
 const LazyModalShell = dynamic(
-  () => import("./_components/layout/ModalShell/ModalShell"),
+  () => import("./_components/layout/ModalShell"),
   {
     ssr: false,
   },

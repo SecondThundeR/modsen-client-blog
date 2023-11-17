@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import List from "./List";
+import List from ".";
 
 describe("List", () => {
   test("should render avatar with content", () => {

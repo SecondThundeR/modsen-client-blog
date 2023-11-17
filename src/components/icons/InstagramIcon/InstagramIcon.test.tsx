@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import InstagramIcon from "./InstagramIcon";
+import InstagramIcon from ".";
 
 describe("InstagramIcon", () => {
   test("should render instagram icon", () => {

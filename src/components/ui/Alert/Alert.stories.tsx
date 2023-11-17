@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Body, Display } from "@/components/ui";
 
-import Alert from "./Alert";
+import Alert from ".";
 
 const meta = {
   title: "Components/Alert",

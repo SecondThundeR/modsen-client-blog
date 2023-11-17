@@ -5,7 +5,7 @@ import { memo } from "react";
 
 import { Body, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 
 import styles from "./AboutUsBlock.module.scss";
 import { type AboutUsBlockProps } from "./interfaces";

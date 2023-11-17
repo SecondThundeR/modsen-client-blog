@@ -9,7 +9,7 @@ import logo5 from "public/assets/featuredin/logo5.png";
 import { memo } from "react";
 
 import { Body, Heading } from "@/components/ui";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 
 import styles from "./FeaturedInBlock.module.scss";
 import { type FeaturedInBlockProps } from "./interfaces";

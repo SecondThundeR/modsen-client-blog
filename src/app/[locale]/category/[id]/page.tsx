@@ -14,17 +14,11 @@ import {
   SidebarWrapper,
 } from "./_components/layout";
 
-const LazyPostsList = dynamic(
-  () => import("./_components/PostsList/PostsList"),
-);
+const LazyPostsList = dynamic(() => import("./_components/PostsList"));
 
-const LazyTagsSearch = dynamic(
-  () => import("./_components/TagsSearch/TagsSearch"),
-);
+const LazyTagsSearch = dynamic(() => import("./_components/TagsSearch"));
 
-const LazyTagsSelector = dynamic(
-  () => import("./_components/TagsSelector/TagsSelector"),
-);
+const LazyTagsSelector = dynamic(() => import("./_components/TagsSelector"));
 
 export function generateStaticParams() {
   return categories.map((category) => ({

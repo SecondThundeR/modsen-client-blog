@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import ErrorWrapper from "./ErrorWrapper";
+import ErrorWrapper from ".";
 
 describe("ErrorWrapper", () => {
   test("should render error wrapper with content", () => {

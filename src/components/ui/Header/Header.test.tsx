@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Header from "./Header";
+import Header from ".";
 
 describe("Header", () => {
   test("should render header with content and regular gap", () => {

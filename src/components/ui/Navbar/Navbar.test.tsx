@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Navbar from "./Navbar";
+import Navbar from ".";
 
 describe("Navbar", () => {
   test("should render navbar with all slots", () => {

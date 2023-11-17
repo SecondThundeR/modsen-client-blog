@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Display } from "@/components/ui";
 
-import ArticleWrapper from "./ArticleWrapper";
+import ArticleWrapper from ".";
 
 const meta = {
   title: "Components/ArticleWrapper",

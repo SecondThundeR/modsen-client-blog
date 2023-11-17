@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Display from "./Display";
+import Display from ".";
 
 describe("Display", () => {
   test("should render display text with sen font by default", () => {

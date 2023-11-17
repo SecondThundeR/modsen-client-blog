@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import TwitterIcon from "./TwitterIcon";
+import TwitterIcon from ".";
 
 const meta = {
   title: "Icons/TwitterIcon",

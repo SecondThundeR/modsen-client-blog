@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Body, Display } from "@/components/ui";
 
-import PageSection from "./PageSection";
+import PageSection from ".";
 
 const meta = {
   title: "Components/PageSection",

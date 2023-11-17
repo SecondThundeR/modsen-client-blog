@@ -5,7 +5,7 @@ import { memo } from "react";
 import { LeftArrowIcon, RightArrowIcon } from "@/components/icons";
 import { Avatar, Body, Cap, Heading } from "@/components/ui";
 import { testimonials } from "@/constants/data/testimonials";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 import { useTestimonialsCarousel } from "@/hooks/useTestimonialsCarousel";
 
 import { type TestimonialsBlockProps } from "./interfaces";

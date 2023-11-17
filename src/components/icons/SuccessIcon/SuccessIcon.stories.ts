@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import SuccessIcon from "./SuccessIcon";
+import SuccessIcon from ".";
 
 const meta = {
   title: "Icons/SuccessIcon",

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import ModalWrapper from "./ModalWrapper";
+import ModalWrapper from ".";
 
 describe("ModalWrapper", () => {
   test("should render modal wrapper with content", () => {

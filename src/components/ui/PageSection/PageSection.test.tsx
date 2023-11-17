@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import PageSection from "./PageSection";
+import PageSection from ".";
 
 describe("PageSection", () => {
   test("should render page section with content", () => {

@@ -1,4 +1,4 @@
-import Heading from "../Heading/Heading";
+import Heading from "../Heading";
 import { type ListProps } from "./interfaces";
 import styles from "./List.module.scss";
 

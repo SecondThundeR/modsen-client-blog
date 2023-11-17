@@ -5,10 +5,10 @@ import { memo } from "react";
 
 import { Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 
-import AllPostBlock from "./AllPostBlock/AllPostBlock";
-import FeaturedPostBlock from "./FeaturedPostBlock/FeaturedPostBlock";
+import AllPostBlock from "./AllPostBlock";
+import FeaturedPostBlock from "./FeaturedPostBlock";
 import { type PostsBlockProps } from "./interfaces";
 import styles from "./PostsBlock.module.scss";
 

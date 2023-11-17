@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Body, Display } from "@/components/ui";
 
-import ErrorWrapper from "./ErrorWrapper";
+import ErrorWrapper from ".";
 
 const meta = {
   title: "Components/ErrorWrapper",

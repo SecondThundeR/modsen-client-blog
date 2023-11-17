@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import TextArea from "./TextArea";
+import TextArea from ".";
 
 describe("TextArea", () => {
   test("should render textarea", () => {

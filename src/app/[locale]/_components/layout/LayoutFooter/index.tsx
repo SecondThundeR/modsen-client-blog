@@ -12,21 +12,15 @@ import {
 } from "../../skeletons";
 import { type LayoutFooterProps } from "./interfaces";
 
-const LazyLocaleSwitcher = dynamic(
-  () => import("../LocaleSwitcher/LocaleSwitcher"),
-  {
-    ssr: false,
-    loading: () => <LocaleSwitcherSkeleton />,
-  },
-);
+const LazyLocaleSwitcher = dynamic(() => import("../LocaleSwitcher"), {
+  ssr: false,
+  loading: () => <LocaleSwitcherSkeleton />,
+});
 
-const LazySubscribeBlock = dynamic(
-  () => import("../SubscribeBlock/SubscribeBlock"),
-  {
-    ssr: false,
-    loading: () => <SubscribeBlockSkeleton />,
-  },
-);
+const LazySubscribeBlock = dynamic(() => import("../SubscribeBlock"), {
+  ssr: false,
+  loading: () => <SubscribeBlockSkeleton />,
+});
 
 export default function LayoutFooter({
   locale,

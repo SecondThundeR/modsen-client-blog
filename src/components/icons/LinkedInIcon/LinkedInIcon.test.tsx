@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import LinkedInIcon from "./LinkedInIcon";
+import LinkedInIcon from ".";
 
 describe("LinkedInIcon", () => {
   test("should render linkedin icon", () => {

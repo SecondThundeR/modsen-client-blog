@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import ErrorIcon from "./ErrorIcon";
+import ErrorIcon from ".";
 
 describe("ErrorIcon", () => {
   test("should render error icon", () => {

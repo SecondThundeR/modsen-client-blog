@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Alert from "./Alert";
+import Alert from ".";
 
 describe("Alert", () => {
   test("should render alert with content and success variant", () => {

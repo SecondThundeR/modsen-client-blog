@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import testImage from "public/assets/authors/dianne-russel.png";
 import { describe, expect, test } from "vitest";
 
-import Avatar from "./Avatar";
+import Avatar from ".";
 
 describe("Avatar", () => {
   test("should render avatar with content", () => {

@@ -15,12 +15,9 @@ import { PostsListSkeleton } from "./_components/skeletons";
 
 const FEATURED_POST_ID = "step-by-step";
 
-const LazyPostsList = dynamic(
-  () => import("./_components/PostsList/PostsList"),
-  {
-    loading: () => <PostsListSkeleton />,
-  },
-);
+const LazyPostsList = dynamic(() => import("./_components/PostsList"), {
+  loading: () => <PostsListSkeleton />,
+});
 
 export default async function Blog({ params: { locale } }: PageLocaleParams) {
   const dictionary = await getDictionary(locale);

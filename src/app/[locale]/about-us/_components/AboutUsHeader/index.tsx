@@ -1,8 +1,8 @@
 import styles from "./AboutUsHeader.module.scss";
-import Header from "./Header/Header";
+import Header from "./Header";
 import { type AboutUsHeaderProps } from "./interfaces";
-import MissionVision from "./MissionVision/MissionVision";
-import OverviewBlock from "./OverviewBlock/OverviewBlock";
+import MissionVision from "./MissionVision";
+import OverviewBlock from "./OverviewBlock";
 
 export default function AboutUsHeader({
   headerDictionary,

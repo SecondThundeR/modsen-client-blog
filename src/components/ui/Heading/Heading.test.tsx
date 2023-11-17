@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Heading from "./Heading";
+import Heading from ".";
 
 describe("Heading", () => {
   test("should render heading with level 1 and sen font by default", () => {

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import ArticleWrapper from "./ArticleWrapper";
+import ArticleWrapper from ".";
 
 describe("ArticleWrapper", () => {
   test("should render article wrapper with content", () => {

@@ -6,13 +6,10 @@ import { getDictionary } from "@/locale/get-dictionary";
 import { ContactUsBlock, GeneralWrapper } from "./_components";
 import { ContactFormSkeleton } from "./_components/skeletons";
 
-const LazyContactForm = dynamic(
-  () => import("./_components/ContactForm/ContactForm"),
-  {
-    ssr: false,
-    loading: () => <ContactFormSkeleton />,
-  },
-);
+const LazyContactForm = dynamic(() => import("./_components/ContactForm"), {
+  ssr: false,
+  loading: () => <ContactFormSkeleton />,
+});
 
 export default async function ContactUs({
   params: { locale },

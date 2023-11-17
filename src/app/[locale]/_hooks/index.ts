@@ -1,1 +1,1 @@
-export { default as useLocaleSwitcher } from "./useLocaleSwitcher/useLocaleSwitcher";
+export { default as useLocaleSwitcher } from "./useLocaleSwitcher";

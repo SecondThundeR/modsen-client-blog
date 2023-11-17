@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Socials from "./Socials";
+import Socials from ".";
 
 describe("Socials", () => {
   test("should render socials container", () => {

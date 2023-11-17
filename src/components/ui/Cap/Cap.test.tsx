@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Cap from "./Cap";
+import Cap from ".";
 
 describe("Cap", () => {
   test("should render cap with regular weight by default", () => {

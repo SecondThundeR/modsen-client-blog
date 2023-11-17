@@ -1,1 +1,1 @@
-export { default as PostsListSkeleton } from "./PostsListSkeleton/PostsListSkeleton";
+export { default as PostsListSkeleton } from "./PostsListSkeleton";

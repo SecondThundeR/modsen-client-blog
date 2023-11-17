@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Body from "./Body";
+import Body from ".";
 
 describe("Body", () => {
   test("should render body with level 1 by default", () => {

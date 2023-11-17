@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import FacebookIcon from "./FacebookIcon";
+import FacebookIcon from ".";
 
 describe("FacebookIcon", () => {
   test("should render facebook icon", () => {

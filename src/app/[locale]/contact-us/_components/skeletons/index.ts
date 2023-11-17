@@ -1,2 +1,2 @@
-export { default as ContactFormSkeleton } from "./ContactFormSkeleton/ContactFormSkeleton";
-export { default as ContactUsMapSkeleton } from "./ContactUsMapSkeleton/ContactUsMapSkeleton";
+export { default as ContactFormSkeleton } from "./ContactFormSkeleton";
+export { default as ContactUsMapSkeleton } from "./ContactUsMapSkeleton";

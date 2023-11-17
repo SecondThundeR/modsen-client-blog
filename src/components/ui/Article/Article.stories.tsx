@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Body, Display } from "@/components/ui";
 
-import Article from "./Article";
+import Article from ".";
 
 const meta = {
   title: "Components/Article",

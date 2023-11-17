@@ -7,7 +7,7 @@ import { usePageNavigation } from "@/hooks/usePageNavigation";
 import { getArraySlice } from "@/lib/pagination";
 
 import { PostsListCard } from "../../../_components";
-import PageButtons from "../PageButtons/PageButtons";
+import PageButtons from "../PageButtons";
 import { type PostsListProps } from "./interfaces";
 import styles from "./PostsList.module.scss";
 

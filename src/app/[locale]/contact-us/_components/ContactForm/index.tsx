@@ -13,7 +13,7 @@ import {
   type ContactUsSchemaType,
 } from "@/schemas/contactUsSchema";
 
-import { ContactFormAlert } from "../";
+import { ContactFormAlert } from "..";
 import styles from "./ContactForm.module.scss";
 import { type ContactFormProps } from "./interfaces";
 

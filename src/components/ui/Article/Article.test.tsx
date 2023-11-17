@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Article from "./Article";
+import Article from ".";
 
 describe("Article", () => {
   test("should render article with content and gap variant regular by default", () => {

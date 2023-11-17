@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import Spinner from "./Spinner";
+import Spinner from ".";
 
 describe("Spinner", () => {
   test("should render spinner with white color by default", () => {

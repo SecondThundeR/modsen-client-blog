@@ -2,9 +2,9 @@
 
 import { memo } from "react";
 
-import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
+import { withLazyLoad } from "@/hocs/withLazyLoad";
 
-import AuthorsGrid from "../AuthorsGrid/AuthorsGrid";
+import AuthorsGrid from "../AuthorsGrid";
 
 export default memo(
   withLazyLoad(AuthorsGrid, {

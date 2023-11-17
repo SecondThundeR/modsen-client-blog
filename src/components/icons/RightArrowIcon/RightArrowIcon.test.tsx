@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import RightArrowIcon from "./RightArrowIcon";
+import RightArrowIcon from ".";
 
 describe("RightArrowIcon", () => {
   test("should render right arrow icon", () => {

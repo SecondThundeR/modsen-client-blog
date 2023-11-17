@@ -1,13 +1,13 @@
 "use client";
 
+import { memo } from "react";
+
 import { useTagsQuerySearch } from "@/hooks/useTagsQuerySearch";
 
 import { type TagsSearchProps } from "./interfaces";
 import styles from "./TagsSearch.module.scss";
 
-export default function TagsSearch({
-  dictionary: { placeholder, button },
-}: TagsSearchProps) {
+function TagsSearch({ dictionary: { placeholder, button } }: TagsSearchProps) {
   const { currentSearchQuery, handleSearch } = useTagsQuerySearch();
 
   return (
@@ -25,3 +25,5 @@ export default function TagsSearch({
     </form>
   );
 }
+
+export default memo(TagsSearch);

@@ -1,27 +1,17 @@
 "use client";
 
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 
 import { Heading } from "@/components/ui";
 import { usePageNavigation } from "@/hooks/usePageNavigation";
+import { getArraySlice } from "@/lib/pagination";
 
 import { PostsListCard } from "../../../_components";
 import PageButtons from "../PageButtons/PageButtons";
 import { type PostsListProps } from "./interfaces";
 import styles from "./PostsList.module.scss";
 
-function getArraySlice(page: number, elementsPerPage: number, maxSize: number) {
-  if (page < 1) page = 1;
-  const startSlice = elementsPerPage * (page - 1);
-  const endSlice = elementsPerPage * page;
-
-  return {
-    start: startSlice,
-    end: endSlice >= maxSize ? maxSize : endSlice,
-  };
-}
-
-export default function PostsList({
+function PostsList({
   locale,
   noPostsHeading,
   categoriesLocale,
@@ -59,3 +49,5 @@ export default function PostsList({
     </div>
   );
 }
+
+export default memo(PostsList);

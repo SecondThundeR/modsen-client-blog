@@ -1,5 +1,7 @@
 "use client";
 
+import { memo } from "react";
+
 import { LeftArrowIcon, RightArrowIcon } from "@/components/icons";
 import { Avatar, Body, Cap, Heading } from "@/components/ui";
 import { testimonials } from "@/constants/data/testimonials";
@@ -57,4 +59,4 @@ function TestimonialsBlock({ dictionary }: TestimonialsBlockProps) {
   );
 }
 
-export default withLazyLoad(TestimonialsBlock);
+export default memo(withLazyLoad(TestimonialsBlock));

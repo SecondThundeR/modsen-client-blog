@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useEffect } from "react";
+import { memo, useCallback, useEffect } from "react";
 
 import { Body, Button, ErrorWrapper, Heading, Spinner } from "@/components/ui";
 import { useDictionary } from "@/locale/use-dictionary";
 
-export default function Error({ error, reset }: ErrorPageProps) {
+function Error({ error, reset }: ErrorPageProps) {
   const dictionary = useDictionary();
   const onReset = useCallback(() => reset(), [reset]);
 
@@ -27,3 +27,5 @@ export default function Error({ error, reset }: ErrorPageProps) {
     </ErrorWrapper>
   );
 }
+
+export default memo(Error);

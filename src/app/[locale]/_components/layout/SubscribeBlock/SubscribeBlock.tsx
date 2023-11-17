@@ -1,5 +1,7 @@
 "use client";
 
+import { memo } from "react";
+
 import { Input } from "@/components/form";
 import { Button, Heading } from "@/components/ui";
 import { useSendSubscribeMail } from "@/hooks/useSendSubscribeMail";
@@ -7,7 +9,7 @@ import { useSendSubscribeMail } from "@/hooks/useSendSubscribeMail";
 import { type SubscribeBlockProps } from "./interfaces";
 import styles from "./SubscribeBlock.module.scss";
 
-export default function SubscribeBlock({
+function SubscribeBlock({
   heading,
   placeholder,
   buttonText,
@@ -37,3 +39,5 @@ export default function SubscribeBlock({
     </div>
   );
 }
+
+export default memo(SubscribeBlock);

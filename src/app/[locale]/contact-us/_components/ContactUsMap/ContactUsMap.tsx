@@ -2,6 +2,7 @@
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
+import { memo } from "react";
 import Map, { Marker } from "react-map-gl";
 
 import { MAP_DATA } from "@/constants/map";
@@ -11,7 +12,7 @@ import styles from "./ContactUsMap.module.scss";
 
 const MAP_HEIGHT = 400;
 
-export default function ContactUsMap() {
+function ContactUsMap() {
   return (
     <div className={styles.wrapper}>
       <Map
@@ -27,3 +28,5 @@ export default function ContactUsMap() {
     </div>
   );
 }
+
+export default memo(ContactUsMap);

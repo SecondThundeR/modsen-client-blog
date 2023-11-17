@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 
 import { PostsListCard } from "@/app/[locale]/_components";
 import { Heading } from "@/components/ui";
@@ -8,7 +8,7 @@ import { useTagsQuerySelect } from "@/hooks/useTagsQuerySelect";
 
 import { type PostsListProps } from "./intefaces";
 
-export default function PostsList({
+function PostsList({
   locale,
   posts,
   categoriesLocale,
@@ -38,3 +38,5 @@ export default function PostsList({
     />
   ));
 }
+
+export default memo(PostsList);

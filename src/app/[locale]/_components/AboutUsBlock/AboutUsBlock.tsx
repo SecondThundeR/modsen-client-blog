@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { memo } from "react";
 
 import { Body, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
@@ -54,4 +55,4 @@ function AboutUsBlock({ locale, dictionary }: AboutUsBlockProps) {
   );
 }
 
-export default withLazyLoad(AboutUsBlock);
+export default memo(withLazyLoad(AboutUsBlock));

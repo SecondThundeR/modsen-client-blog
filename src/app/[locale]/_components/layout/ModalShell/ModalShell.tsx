@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback } from "react";
+import { memo, useCallback } from "react";
 import { createPortal } from "react-dom";
 
 import { Button, ModalWrapper } from "@/components/ui";
@@ -10,7 +10,7 @@ import { useMounted } from "@/hooks/useMounted";
 
 import { type ModalShellProps } from "./interfaces";
 
-export default function ModalShell({ closeButtonText }: ModalShellProps) {
+function ModalShell({ closeButtonText }: ModalShellProps) {
   const searchParams = useSearchParams();
   const mounted = useMounted();
   const router = useRouter();
@@ -33,3 +33,5 @@ export default function ModalShell({ closeButtonText }: ModalShellProps) {
     )
   );
 }
+
+export default memo(ModalShell);

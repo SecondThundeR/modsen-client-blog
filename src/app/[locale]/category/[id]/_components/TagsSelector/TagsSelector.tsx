@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { useMemo } from "react";
+import { memo, useMemo } from "react";
 
 import { Body, Heading } from "@/components/ui";
 import { tags } from "@/constants/data/tags";
@@ -11,7 +11,7 @@ import { useTagsQuerySelect } from "@/hooks/useTagsQuerySelect";
 import { type TagsSelectorProps } from "./interfaces";
 import styles from "./TagsSelector.module.scss";
 
-export default function TagsSelector({
+function TagsSelector({
   headingString,
   noTagsString,
   tagsLocale,
@@ -58,3 +58,5 @@ export default function TagsSelector({
     </div>
   );
 }
+
+export default memo(TagsSelector);

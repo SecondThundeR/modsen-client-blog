@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { memo } from "react";
 
 import { Body, Heading } from "@/components/ui";
 import { categories } from "@/constants/data/categories";
@@ -42,4 +43,4 @@ function CategoriesGrid({
   );
 }
 
-export default withLazyLoad(CategoriesGrid);
+export default memo(withLazyLoad(CategoriesGrid));

@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import Link from "next/link";
+import { memo } from "react";
 
 import { useLocaleSwitcher } from "@/app/[locale]/_hooks";
 import { Body } from "@/components/ui";
@@ -10,7 +11,7 @@ import { i18n } from "@/locale/i18n-config";
 import { type LocaleSwitcherProps } from "./interfaces";
 import styles from "./LocaleSwitcher.module.scss";
 
-export default function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
+function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
   const redirectedPathName = useLocaleSwitcher();
 
   return (
@@ -34,3 +35,5 @@ export default function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
     </>
   );
 }
+
+export default memo(LocaleSwitcher);

@@ -1,7 +1,7 @@
 "use client";
 
 import { Form, Formik } from "formik";
-import { type ComponentProps, useCallback, useMemo } from "react";
+import { type ComponentProps, memo, useCallback, useMemo } from "react";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 
 import { Input, Select, TextArea } from "@/components/form";
@@ -20,10 +20,7 @@ import { type ContactFormProps } from "./interfaces";
 const FormikContactUs = Formik<ContactUsSchemaType>;
 type FormikSubmitType = ComponentProps<typeof FormikContactUs>["onSubmit"];
 
-export default function ContactForm({
-  formLocale,
-  alertLocale,
-}: ContactFormProps) {
+function ContactForm({ formLocale, alertLocale }: ContactFormProps) {
   const { sentStatus, onSend } = useSendContactUsMail();
   const queryRelatedOptions = useMemo(() => {
     const { heading, first, second, third } = formLocale.query;
@@ -129,3 +126,5 @@ export default function ContactForm({
     </FormikContactUs>
   );
 }
+
+export default memo(ContactForm);

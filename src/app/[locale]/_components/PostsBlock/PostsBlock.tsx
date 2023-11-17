@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { memo } from "react";
 
 import { Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
@@ -54,6 +55,8 @@ function PostsBlock({
   );
 }
 
-export default withLazyLoad(PostsBlock, {
-  threshold: 0.3,
-});
+export default memo(
+  withLazyLoad(PostsBlock, {
+    threshold: 0.3,
+  }),
+);

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { memo } from "react";
 
 import { AuthorLink, Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
@@ -64,6 +65,8 @@ function HomeHero({
   );
 }
 
-export default withLazyLoad(HomeHero, {
-  hasTransformY: false,
-});
+export default memo(
+  withLazyLoad(HomeHero, {
+    hasTransformY: false,
+  }),
+);

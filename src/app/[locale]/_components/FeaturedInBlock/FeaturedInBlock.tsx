@@ -6,6 +6,7 @@ import logo2 from "public/assets/featuredin/logo2.png";
 import logo3 from "public/assets/featuredin/logo3.png";
 import logo4 from "public/assets/featuredin/logo4.png";
 import logo5 from "public/assets/featuredin/logo5.png";
+import { memo } from "react";
 
 import { Body, Heading } from "@/components/ui";
 import { withLazyLoad } from "@/hocs/withLazyLoad/withLazyLoad";
@@ -33,4 +34,4 @@ function FeaturedInBlock({ dictionary }: FeaturedInBlockProps) {
   );
 }
 
-export default withLazyLoad(FeaturedInBlock);
+export default memo(withLazyLoad(FeaturedInBlock));

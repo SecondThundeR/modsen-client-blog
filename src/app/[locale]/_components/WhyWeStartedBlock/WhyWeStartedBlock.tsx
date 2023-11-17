@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import whyWeStartedImage from "public/assets/why-we-started.png";
+import { memo } from "react";
 
 import { Body, Button, Cap, Heading } from "@/components/ui";
 import { routes } from "@/constants/routes";
@@ -39,4 +40,4 @@ function WhyWeStartedBlock({ locale, dictionary }: WhyWeStartedBlockProps) {
   );
 }
 
-export default withLazyLoad(WhyWeStartedBlock);
+export default memo(withLazyLoad(WhyWeStartedBlock));

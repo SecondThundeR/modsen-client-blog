@@ -1,4 +1,4 @@
-import { type DictionaryType } from "@/locale/get-dictionary";
+import { type DictionaryType } from "@/types/dictionary";
 
 export interface HeaderProps {
   dictionary: DictionaryType["aboutUsPage"]["header"];

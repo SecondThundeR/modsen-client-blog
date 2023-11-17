@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
 import { PageSection } from "@/components/ui";
-import { getDictionary } from "@/locale/get-dictionary";
+import { getDictionary } from "@/helpers/getDictionary";
 
 import {
   AboutUsBlock,

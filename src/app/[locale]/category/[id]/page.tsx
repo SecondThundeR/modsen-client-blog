@@ -3,9 +3,9 @@ import { redirect } from "next/navigation";
 
 import { categories } from "@/constants/data/categories";
 import { routes } from "@/constants/routes";
+import { getDictionary } from "@/helpers/getDictionary";
 import { findCategoryByID } from "@/lib/categories/findCategoryByID";
 import { getPostsByCategoryID } from "@/lib/posts/getPostsByCategoryID";
-import { getDictionary } from "@/locale/get-dictionary";
 
 import { CategoriesSelector } from "./_components";
 import {

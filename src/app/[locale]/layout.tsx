@@ -2,8 +2,8 @@ import "@/styles/globals.scss";
 
 import dynamic from "next/dynamic";
 
+import { getDictionary } from "@/helpers/getDictionary";
 import { inter, sen } from "@/lib/fonts";
-import { getDictionary } from "@/locale/get-dictionary";
 
 import { LayoutFooter, LayoutNavbar } from "./_components/layout";
 

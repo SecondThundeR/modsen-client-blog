@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 
 import { PageSection } from "@/components/ui";
 import { posts } from "@/constants/data/posts";
-import { getDictionary } from "@/locale/get-dictionary";
+import { getDictionary } from "@/helpers/getDictionary";
 
 import { JoinUsBlock } from "../_components";
 import {

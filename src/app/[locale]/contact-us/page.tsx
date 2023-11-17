@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 import { Body, Cap, Heading } from "@/components/ui";
-import { getDictionary } from "@/locale/get-dictionary";
+import { getDictionary } from "@/helpers/getDictionary";
 
 import { ContactUsBlock, GeneralWrapper } from "./_components";
 import { ContactFormSkeleton } from "./_components/skeletons";

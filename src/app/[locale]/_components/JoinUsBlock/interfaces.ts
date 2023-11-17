@@ -1,5 +1,6 @@
-import { type DictionaryType } from "@/locale/get-dictionary";
-import { type Locale } from "@/locale/i18n-config";
+import { type Locale } from "i18n-config";
+
+import { type DictionaryType } from "@/types/dictionary";
 
 export interface JoinUsBlockProps {
   locale: Locale;

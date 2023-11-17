@@ -1,6 +1,7 @@
+import { type Locale } from "i18n-config";
+
 import { PageSection } from "@/components/ui";
-import { getDictionary } from "@/locale/get-dictionary";
-import { type Locale } from "@/locale/i18n-config";
+import { getDictionary } from "@/helpers/getDictionary";
 
 import { LayoutHeader } from "./_components/layout";
 

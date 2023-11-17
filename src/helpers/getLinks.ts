@@ -1,5 +1,5 @@
 import { routes } from "@/constants/routes";
-import { type DictionaryType } from "@/locale/get-dictionary";
+import { type DictionaryType } from "@/types/dictionary";
 
 export function getLinks(
   locale: PageLocaleParams["params"]["locale"],

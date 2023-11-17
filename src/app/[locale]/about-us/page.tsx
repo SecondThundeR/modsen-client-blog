@@ -1,4 +1,4 @@
-import { getDictionary } from "@/locale/get-dictionary";
+import { getDictionary } from "@/helpers/getDictionary";
 
 import { AuthorsGrid, JoinUsBlock } from "../_components";
 import { AboutUsHeader, StartedBlock, TeamBlock } from "./_components";

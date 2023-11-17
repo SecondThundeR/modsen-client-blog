@@ -3,8 +3,8 @@ import { redirect } from "next/navigation";
 import { PageSection } from "@/components/ui";
 import { authors } from "@/constants/data/authors";
 import { routes } from "@/constants/routes";
+import { getDictionary } from "@/helpers/getDictionary";
 import { findAuthorByID } from "@/lib/authors/findAuthorByID";
-import { getDictionary } from "@/locale/get-dictionary";
 
 import { AuthorHeader, Posts, PostsHeading } from "./_components";
 

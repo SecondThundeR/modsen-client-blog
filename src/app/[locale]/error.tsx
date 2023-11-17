@@ -3,7 +3,7 @@
 import { memo, useCallback, useEffect } from "react";
 
 import { Body, Button, ErrorWrapper, Heading, Spinner } from "@/components/ui";
-import { useDictionary } from "@/locale/use-dictionary";
+import { useDictionary } from "@/hooks/useDictionary";
 
 function Error({ error, reset }: ErrorPageProps) {
   const dictionary = useDictionary();

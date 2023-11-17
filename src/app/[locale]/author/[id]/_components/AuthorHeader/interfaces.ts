@@ -1,5 +1,5 @@
 import { type Author } from "@/constants/data/authors";
-import { type DictionaryType } from "@/locale/get-dictionary";
+import { type DictionaryType } from "@/types/dictionary";
 
 export interface AuthorHeaderProps {
   authorData: Pick<Author, "name" | "socials" | "image">;

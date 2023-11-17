@@ -1,5 +1,5 @@
 import { type useSendContactUsMail } from "@/hooks/useSendContactUsMail";
-import { type DictionaryType } from "@/locale/get-dictionary";
+import { type DictionaryType } from "@/types/dictionary";
 
 export type ContactFormAlertProps = {
   errorLocale: DictionaryType["contactUs"]["alert"]["error"];

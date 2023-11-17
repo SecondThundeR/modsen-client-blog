@@ -1,5 +1,5 @@
 import { Body, Header, Heading, PageSection } from "@/components/ui";
-import { getDictionary } from "@/locale/get-dictionary";
+import { getDictionary } from "@/helpers/getDictionary";
 
 export default async function PrivacyPolicyLayout({
   children,

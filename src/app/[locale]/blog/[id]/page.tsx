@@ -4,8 +4,8 @@ import postImagePlaceholder from "public/assets/blog/post/placeholder.jpeg";
 import { ArticleComposer } from "@/components";
 import { postArticlePlaceholder, posts } from "@/constants/data/posts";
 import { routes } from "@/constants/routes";
+import { getDictionary } from "@/helpers/getDictionary";
 import { findPostByID } from "@/lib/posts/findPostByID";
-import { getDictionary } from "@/locale/get-dictionary";
 
 import { JoinUsBlock } from "../../_components";
 import {
